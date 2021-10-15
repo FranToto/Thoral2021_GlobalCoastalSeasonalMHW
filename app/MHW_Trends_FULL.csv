@@ -1,0 +1,521 @@
+Scale_1,Scale_2,Region_Name,Season_Name,Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue
+Global,All,None,None,Cumulative_Intensity,0.665266764896817,1.4424378128557e-10,2005,9.86830740578633e-6
+Global,All,None,None,Maximum_Intensity,0.0246026282369254,1.13159640352399e-8,2006,1.1333805404577e-5
+Global,All,None,None,Duration,0.256843195533576,4.84632680317185e-7,2004,2.55846118682728e-5
+Global,All,None,None,Number_Events,1081.62068965517,4.77336443339458e-9,1997,6.48317271315437e-6
+Global,Region,Arctic,None,Cumulative_Intensity,1.05999745492061,8.93674411425335e-11,2006,1.1333805404577e-5
+Global,Region,Arctic,None,Maximum_Intensity,0.0397850750871217,5.97997564942975e-8,2006,1.1333805404577e-5
+Global,Region,Arctic,None,Duration,0.440873883510495,4.81668220208274e-6,2004,2.55846118682728e-5
+Global,Region,Arctic,None,Number_Events,284.945945945946,1.0839014266604e-4,2001,2.48186485431059e-4
+Global,Region,Central Indo-Pacific,None,Cumulative_Intensity,0.157759013301113,2.11645755619939e-6,2004,8.22726234638713e-5
+Global,Region,Central Indo-Pacific,None,Maximum_Intensity,-0.00344882946340852,3.42708675315214e-4,2002,0.00150916021500612
+Global,Region,Central Indo-Pacific,None,Duration,0.136323671111893,7.82962562397342e-8,2004,1.95650829608294e-5
+Global,Region,Central Indo-Pacific,None,Number_Events,150.785714285714,3.51676261366853e-5,1997,1.95261212197266e-4
+Global,Region,Eastern Indo-Pacific,None,Cumulative_Intensity,0.256488070952575,1.33143410820363e-5,2007,2.2022589031756e-4
+Global,Region,Eastern Indo-Pacific,None,Maximum_Intensity,-0.00338726567200669,0.00581407327516317,2009,0.025836546833417
+Global,Region,Eastern Indo-Pacific,None,Duration,0.248231870017657,1.16802529349747e-7,2006,26
+Global,Region,Eastern Indo-Pacific,None,Number_Events,22.2758620689655,7.61104583393064e-6,2001,3.14463122433617e-4
+Global,Region,Southern Ocean,None,Cumulative_Intensity,0.167323484740523,8.02740462147889e-5,2008,2.48186485431059e-4
+Global,Region,Southern Ocean,None,Maximum_Intensity,0.0108045439085442,2.68456341835079e-6,2008,3.53550585750063e-4
+Global,Region,Southern Ocean,None,Duration,0.0596209876395635,0.0733997297972117,2009,0.00823341019145541
+Global,Region,Southern Ocean,None,Number_Events,-94.1666666666667,1.33309958509191e-7,2004,1.49146820674427e-5
+Global,Region,Temperate Australasia,None,Cumulative_Intensity,0.335099739649174,5.33702567489656e-5,2007,1.95261212197266e-4
+Global,Region,Temperate Australasia,None,Maximum_Intensity,0.00614396453214618,0.0353038603319558,2007,0.00186450050096955
+Global,Region,Temperate Australasia,None,Duration,0.194277860027386,5.33702567489656e-5,2008,5.00082025989587e-4
+Global,Region,Temperate Australasia,None,Number_Events,34.8181818181818,4.2900527710888e-6,1997,7.24872866694701e-5
+Global,Region,Temperate Northern Atlantic,None,Cumulative_Intensity,0.458700128464236,1.33309958509191e-7,2005,1.95261212197266e-4
+Global,Region,Temperate Northern Atlantic,None,Maximum_Intensity,0.00840472209853882,2.58936339958039e-4,2005,2.7947646735867e-4
+Global,Region,Temperate Northern Atlantic,None,Duration,0.234074223425867,5.97997564942975e-8,2005,1.95261212197266e-4
+Global,Region,Temperate Northern Atlantic,None,Number_Events,276.25,6.91365076537143e-12,2000,20
+Global,Region,Temperate Northern Pacific,None,Cumulative_Intensity,0.506374097761217,1.50198704441054e-8,1996,8.22726234638713e-5
+Global,Region,Temperate Northern Pacific,None,Maximum_Intensity,0.0161077701060695,6.06156849779376e-6,2006,1.49146820674427e-5
+Global,Region,Temperate Northern Pacific,None,Duration,0.179883615956058,1.66481083552583e-6,1994,14
+Global,Region,Temperate Northern Pacific,None,Number_Events,157.8,3.01837335241988e-8,2002,1.95261212197266e-4
+Global,Region,Temperate South America,None,Cumulative_Intensity,0.249142165232011,0.00724201388269618,2006,0.0387112123933513
+Global,Region,Temperate South America,None,Maximum_Intensity,0.00775810920515506,0.0374648476140977,2006,0.00823341019145541
+Global,Region,Temperate South America,None,Duration,0.0942116155514676,0.010331357016337901,2012,0.0387112123933513
+Global,Region,Temperate South America,None,Number_Events,14.1176470588235,0.0353038603319558,2011,0.204875294259059
+Global,Region,Temperate Southern Africa,None,Cumulative_Intensity,0.102887586261475,0.0591452474631967,1991,21
+Global,Region,Temperate Southern Africa,None,Maximum_Intensity,0.00491886682146796,0.0202006761638157,2007,0.0418725411741909
+Global,Region,Temperate Southern Africa,None,Duration,0.0429982363315697,0.0695960329611764,1991,0.377751205675124
+Global,Region,Temperate Southern Africa,None,Number_Events,2.64,0.00257987339756765,1998,0.00281906541844482
+Global,Region,Tropical Atlantic,None,Cumulative_Intensity,0.175830582267858,2.06172524469117e-5,2000,0.00206996081775425
+Global,Region,Tropical Atlantic,None,Maximum_Intensity,-0.00325634087132456,0.00836136878457581,2002,0.0200798942342176
+Global,Region,Tropical Atlantic,None,Duration,0.17474417585037,1.02281064143858e-7,2001,1.95650829608294e-5
+Global,Region,Tropical Atlantic,None,Number_Events,88.6,5.2216557110427e-8,2001,4.93429947567298e-5
+Global,Region,Tropical Eastern Pacific,None,Cumulative_Intensity,0.12626503233533,0.0815172558207999,2007,28
+Global,Region,Tropical Eastern Pacific,None,Maximum_Intensity,3.40350424214629e-4,0.903715806787905,1984,0.86799717113789
+Global,Region,Tropical Eastern Pacific,None,Duration,0.0882784991814124,0.0500316428009053,2012,0.181435906578825
+Global,Region,Tropical Eastern Pacific,None,Number_Events,11.9310344827586,3.42021852621152e-4,2001,0.00420887071400065
+Global,Region,Western Indo-Pacific,None,Cumulative_Intensity,0.198019937164352,1.66481083552583e-6,2009,0.00121769251462106
+Global,Region,Western Indo-Pacific,None,Maximum_Intensity,-4.29989183019841e-4,0.698682235982436,2001,0.377751205675124
+Global,Region,Western Indo-Pacific,None,Duration,0.152713031625435,1.16802529349747e-7,2006,1.35457472981708e-4
+Global,Region,Western Indo-Pacific,None,Number_Events,80.24,7.61104583393064e-6,1997,3.97183100025278e-4
+Global,Season,None,Autumn,Cumulative_Intensity,0.552463684824139,2.65434263011889e-9,2005,9.86830740578633e-6
+Global,Season,None,Autumn,Maximum_Intensity,0.0179224336043796,5.97997564942975e-8,2005,1.70890990196741e-5
+Global,Season,None,Autumn,Duration,0.240884506388732,1.15653300378769e-6,2005,9.33052777180831e-5
+Global,Season,None,Autumn,Number_Events,329.25,4.77336443339458e-9,1997,5.62709121055857e-6
+Global,Season,None,Spring,Cumulative_Intensity,0.42250283092475,4.12552831528452e-9,2006,5.61367056606542e-5
+Global,Season,None,Spring,Maximum_Intensity,0.0201402778117482,1.97521435738961e-7,2006,1.19723670090242e-4
+Global,Season,None,Spring,Duration,0.182655905178898,1.60506346390523e-4,2004,1.05733944686035e-4
+Global,Season,None,Spring,Number_Events,186.848484848485,1.97521435738961e-7,1997,2.55846118682728e-5
+Global,Season,None,Summer,Cumulative_Intensity,1.0627959436146,3.7001266549237e-10,2001,2.3662832149917e-6
+Global,Season,None,Summer,Maximum_Intensity,0.0366906100755057,6.37927230261735e-9,2001,21
+Global,Season,None,Summer,Duration,0.280500464634875,1.72894936803739e-8,2001,2.23821386974497e-5
+Global,Season,None,Summer,Number_Events,352.566666666667,2.86632347573959e-11,2000,5.62709121055857e-6
+Global,Season,None,Winter,Cumulative_Intensity,0.401591438379811,3.97452114834394e-8,2006,1.05733944686035e-4
+Global,Season,None,Winter,Maximum_Intensity,0.0129376091587288,3.51676261366853e-5,1996,0.00150916021500612
+Global,Season,None,Winter,Duration,0.229839841823156,4.2900527710888e-6,2004,1.05733944686035e-4
+Global,Season,None,Winter,Number_Events,189.809523809524,3.81885002005355e-6,1997,2.55846118682728e-5
+Global,Region x Season,Arctic,Autumn,Cumulative_Intensity,0.785686805967991,2.28703204495146e-8,2005,1.70890990196741e-5
+Global,Region x Season,Arctic,Autumn,Maximum_Intensity,0.0282879216942977,6.79417686548779e-6,2005,1.95261212197266e-4
+Global,Region x Season,Arctic,Autumn,Duration,0.36714778974856,3.39748710287996e-6,2008,2.48186485431059e-4
+Global,Region x Season,Arctic,Autumn,Number_Events,110.4,5.49684810361427e-7,2000,3.80324892993453e-5
+Global,Region x Season,Arctic,Winter,Cumulative_Intensity,0.359174253860911,2.65434263011889e-9,1999,3.33507356054731e-5
+Global,Region x Season,Arctic,Winter,Maximum_Intensity,0.00987837466674288,1.66481083552583e-6,1997,17
+Global,Region x Season,Arctic,Winter,Duration,0.309640861716081,4.94165396038884e-4,2009,2.7947646735867e-4
+Global,Region x Season,Arctic,Winter,Number_Events,44.5333333333333,0.0110743728161696,2000,0.00109250849536931
+Global,Region x Season,Central Indo-Pacific,Autumn,Cumulative_Intensity,0.133743504884388,2.14207877051538e-4,2004,0.00464327169676353
+Global,Region x Season,Central Indo-Pacific,Autumn,Maximum_Intensity,-0.0034323976616027602,0.0127041866406284,2006,0.0357603358904642
+Global,Region x Season,Central Indo-Pacific,Autumn,Duration,0.11869228744012,4.81668220208274e-6,2004,2.7947646735867e-4
+Global,Region x Season,Central Indo-Pacific,Autumn,Number_Events,40.5333333333333,3.75856328122382e-4,1997,9.79420907269785e-4
+Global,Region x Season,Central Indo-Pacific,Spring,Cumulative_Intensity,0.17729790878101,3.51676261366853e-5,2004,3.97183100025278e-4
+Global,Region x Season,Central Indo-Pacific,Spring,Maximum_Intensity,-0.00168678649561675,0.467953813526093,2007,0.660380163523839
+Global,Region x Season,Central Indo-Pacific,Spring,Duration,0.132316022894269,1.66481083552583e-6,2006,5.61367056606542e-5
+Global,Region x Season,Central Indo-Pacific,Spring,Number_Events,39.2352941176471,3.42708675315214e-4,1997,8.77346766009598e-4
+Global,Region x Season,Central Indo-Pacific,Summer,Cumulative_Intensity,0.145823378259482,3.12311605580755e-4,2000,23
+Global,Region x Season,Central Indo-Pacific,Summer,Maximum_Intensity,-0.00338594883059446,0.010331357016337901,2006,0.0118730988541014
+Global,Region x Season,Central Indo-Pacific,Summer,Duration,0.11990605998497,3.81885002005355e-6,2000,23
+Global,Region x Season,Central Indo-Pacific,Summer,Number_Events,38.4615384615385,5.33702567489656e-5,1997,1.19723670090242e-4
+Global,Region x Season,Central Indo-Pacific,Winter,Cumulative_Intensity,0.186891535745817,9.81205867244769e-5,2007,0.00186450050096955
+Global,Region x Season,Central Indo-Pacific,Winter,Maximum_Intensity,-0.00362260743178184,0.0096330390195811,2002,0.00109250849536931
+Global,Region x Season,Central Indo-Pacific,Winter,Duration,0.155868775419337,6.23115933135299e-7,2005,1.19723670090242e-4
+Global,Region x Season,Central Indo-Pacific,Winter,Number_Events,39.3333333333333,3.70194889391621e-5,1997,4.45848513073619e-4
+Global,Region x Season,Eastern Indo-Pacific,Autumn,Cumulative_Intensity,0.230599330357143,5.91435705422171e-4,2005,0.00167810930427332
+Global,Region x Season,Eastern Indo-Pacific,Autumn,Maximum_Intensity,-0.00245591856060605,0.133611243767786,2002,0.555154056666902
+Global,Region x Season,Eastern Indo-Pacific,Autumn,Duration,0.224802452013484,7.25470227146536e-5,2005,4.45848513073619e-4
+Global,Region x Season,Eastern Indo-Pacific,Autumn,Number_Events,6,2.46739507805285e-4,2001,0.00511846772737721
+Global,Region x Season,Eastern Indo-Pacific,Spring,Cumulative_Intensity,0.191472700994098,1.48649326398969e-5,2007,4.45848513073619e-4
+Global,Region x Season,Eastern Indo-Pacific,Spring,Maximum_Intensity,-0.00610101754057563,0.00212198721642947,2006,27
+Global,Region x Season,Eastern Indo-Pacific,Spring,Duration,0.178750339445739,1.02313158177583e-6,2001,6.38154303823238e-5
+Global,Region x Season,Eastern Indo-Pacific,Spring,Number_Events,4.38461538461539,3.57853075926795e-4,2001,7.85290873176704e-4
+Global,Region x Season,Eastern Indo-Pacific,Summer,Cumulative_Intensity,0.263715447573511,1.45622603525576e-4,2008,3.14463122433617e-4
+Global,Region x Season,Eastern Indo-Pacific,Summer,Maximum_Intensity,-0.00271199095022625,0.160546113795999,2012,0.377751205675124
+Global,Region x Season,Eastern Indo-Pacific,Summer,Duration,0.234329564468704,1.48649326398969e-5,2007,5.61367056606542e-5
+Global,Region x Season,Eastern Indo-Pacific,Summer,Number_Events,6.2,5.06193371945136e-5,2001,0.00311985363459873
+Global,Region x Season,Eastern Indo-Pacific,Winter,Cumulative_Intensity,0.250771539393939,2.35577925661531e-4,2006,26
+Global,Region x Season,Eastern Indo-Pacific,Winter,Maximum_Intensity,-0.00238873180453986,0.383767900437737,2000,0.555154056666902
+Global,Region x Season,Eastern Indo-Pacific,Winter,Duration,0.252864782276547,1.87762922713884e-6,2006,0.00109250849536931
+Global,Region x Season,Eastern Indo-Pacific,Winter,Number_Events,5.92857142857143,5.07840772636454e-6,2000,0.00176902595422137
+Global,Region x Season,Southern Ocean,Spring,Cumulative_Intensity,0.0687216982142856,7.7119758521161e-4,2005,26
+Global,Region x Season,Southern Ocean,Spring,Maximum_Intensity,0.00689052156042276,0.00269957989486503,2005,0.045256318771276
+Global,Region x Season,Southern Ocean,Spring,Duration,0.0563609163537258,0.370696984568353,2011,0.0942612433830434
+Global,Region x Season,Southern Ocean,Spring,Number_Events,-26,7.99358517095553e-7,2005,5.62709121055857e-6
+Global,Region x Season,Southern Ocean,Summer,Cumulative_Intensity,0.14447744109874,0.0229532408824804,2009,0.0357603358904642
+Global,Region x Season,Southern Ocean,Summer,Maximum_Intensity,0.00498227438159273,0.105021730775246,2010,0.160171902192576
+Global,Region x Season,Southern Ocean,Summer,Duration,0.0775764628693322,0.0858411484224819,2009,0.0304441116445632
+Global,Region x Season,Southern Ocean,Summer,Number_Events,-16.09375,9.32268195316468e-5,2004,3.7476928569413e-4
+Global,Region x Season,Temperate Australasia,Spring,Cumulative_Intensity,0.14627709772907,0.0397373957866737,1995,0.0387112123933513
+Global,Region x Season,Temperate Australasia,Spring,Maximum_Intensity,0.00398126860749953,0.146605985780811,2006,0.0942612433830434
+Global,Region x Season,Temperate Australasia,Spring,Duration,0.0935411539513262,0.0189357576738901,1995,0.025836546833417
+Global,Region x Season,Temperate Australasia,Spring,Number_Events,5.13793103448276,0.0145092079991265,1997,0.00903316188522533
+Global,Region x Season,Temperate Australasia,Summer,Cumulative_Intensity,0.412266477688978,7.06293773294319e-4,2006,0.00109250849536931
+Global,Region x Season,Temperate Australasia,Summer,Maximum_Intensity,0.0119256868366857,0.00152764207330895,2007,3.53550585750063e-4
+Global,Region x Season,Temperate Australasia,Summer,Duration,0.216540216540217,4.51331183454101e-4,2006,0.00186450050096955
+Global,Region x Season,Temperate Australasia,Summer,Number_Events,10.6896551724138,1.66481083552583e-6,1997,2.7947646735867e-4
+Global,Region x Season,Temperate Northern Atlantic,Autumn,Cumulative_Intensity,0.563322178988328,1.87762922713884e-6,2004,3.14463122433617e-4
+Global,Region x Season,Temperate Northern Atlantic,Autumn,Maximum_Intensity,0.00394084155443554,0.167881351832312,2009,0.0942612433830434
+Global,Region x Season,Temperate Northern Atlantic,Autumn,Duration,0.3004154080423,7.82962562397342e-8,2004,1.35457472981708e-4
+Global,Region x Season,Temperate Northern Atlantic,Autumn,Number_Events,68.625,4.86736760302927e-8,1998,4.88020066125706e-6
+Global,Region x Season,Temperate Northern Atlantic,Winter,Cumulative_Intensity,0.273733107125155,0.0155472242411343,2005,0.00620502875759753
+Global,Region x Season,Temperate Northern Atlantic,Winter,Maximum_Intensity,-0.00454163280619497,0.0695960329611764,1994,0.0879042036985999
+Global,Region x Season,Temperate Northern Atlantic,Winter,Duration,0.217350064350064,8.02740462147889e-5,2005,9.33052777180831e-5
+Global,Region x Season,Temperate Northern Atlantic,Winter,Number_Events,50.5625,2.62812632640582e-8,2004,8.58552681337995e-6
+Global,Region x Season,Temperate Northern Pacific,Autumn,Cumulative_Intensity,0.397027976614403,5.33702567489656e-5,2005,0.00311985363459873
+Global,Region x Season,Temperate Northern Pacific,Autumn,Maximum_Intensity,0.00652330014531835,0.0260259359532503,2005,0.00420887071400065
+Global,Region x Season,Temperate Northern Pacific,Autumn,Duration,0.189336873079939,6.06156849779376e-6,1995,5.60470204167668e-4
+Global,Region x Season,Temperate Northern Pacific,Autumn,Number_Events,43.1481481481481,2.24925406340767e-7,2002,2.2022589031756e-4
+Global,Region x Season,Temperate Northern Pacific,Winter,Cumulative_Intensity,0.225018692212657,0.0374648476140977,2013,0.0527413353956606
+Global,Region x Season,Temperate Northern Pacific,Winter,Maximum_Intensity,-7.28730826870638e-5,0.961407429045934,2004,0.745987739928474
+Global,Region x Season,Temperate Northern Pacific,Winter,Duration,0.148469303372161,6.46496316480991e-4,1994,0.00620502875759753
+Global,Region x Season,Temperate Northern Pacific,Winter,Number_Events,21.8947368421053,1.95027806969271e-5,1994,0.00103452246615332
+Global,Region x Season,Temperate South America,Spring,Cumulative_Intensity,0.207467201466218,0.00581407327516317,1996,0.0330083463012502
+Global,Region x Season,Temperate South America,Spring,Maximum_Intensity,0.0105066520223969,0.0135960684649066,2006,0.00420887071400065
+Global,Region x Season,Temperate South America,Spring,Duration,0.0701696408900636,0.031299561414151,2013,0.0819112371636669
+Global,Region x Season,Temperate South America,Spring,Number_Events,2.39285714285714,0.41762427381764,2013,0.460840668104611
+Global,Region x Season,Temperate South America,Summer,Cumulative_Intensity,0.195892711597997,0.110313155747859,2007,0.160171902192576
+Global,Region x Season,Temperate South America,Summer,Maximum_Intensity,0.0137257116747056,0.0046450884249521,2006,0.00229624966806919
+Global,Region x Season,Temperate South America,Summer,Duration,0.0593114917242823,0.191395414004621,2003,0.258768035700535
+Global,Region x Season,Temperate South America,Summer,Number_Events,3.13333333333333,0.1244365734796,2003,0.127805296177661
+Global,Region x Season,Temperate Southern Africa,Spring,Cumulative_Intensity,0.155527107007576,0.00539783342982398,1998,0.0488749687380303
+Global,Region x Season,Temperate Southern Africa,Spring,Maximum_Intensity,0.0101452688172043,7.06293773294319e-4,2002,0.00311985363459873
+Global,Region x Season,Temperate Southern Africa,Spring,Duration,0.066424322538004,0.0244477841885703,1998,0.108131515123144
+Global,Region x Season,Temperate Southern Africa,Spring,Number_Events,1.19047619047619,9.95502353102527e-4,1999,0.0148301434398428
+Global,Region x Season,Tropical Atlantic,Autumn,Cumulative_Intensity,0.163844450770047,7.7119758521161e-4,2000,0.00682388588027911
+Global,Region x Season,Tropical Atlantic,Autumn,Maximum_Intensity,-0.00206697887677799,0.191395414004621,2007,0.439014152617235
+Global,Region x Season,Tropical Atlantic,Autumn,Duration,0.152434593023256,1.84977287686785e-5,2001,1.35457472981708e-4
+Global,Region x Season,Tropical Atlantic,Autumn,Number_Events,26.9565217391304,1.24528941577132e-7,2001,1.1333805404577e-5
+Global,Region x Season,Tropical Atlantic,Spring,Cumulative_Intensity,0.228380192745503,8.02740462147889e-5,2001,0.00254526760267962
+Global,Region x Season,Tropical Atlantic,Spring,Maximum_Intensity,-1.21131639682641e-4,0.980698067380767,2003,1
+Global,Region x Season,Tropical Atlantic,Spring,Duration,0.186440677966102,5.40491364977218e-6,2001,2.48186485431059e-4
+Global,Region x Season,Tropical Atlantic,Spring,Number_Events,21.2857142857143,1.30658919817109e-6,2001,3.97183100025278e-4
+Global,Region x Season,Tropical Atlantic,Summer,Cumulative_Intensity,0.13943735876509,1.45622603525576e-4,2004,7.02339641877292e-4
+Global,Region x Season,Tropical Atlantic,Summer,Maximum_Intensity,-0.00370315889287257,0.0529290169947308,1995,15
+Global,Region x Season,Tropical Atlantic,Summer,Duration,0.11587892799041,3.09855815728365e-7,2004,6.38154303823238e-5
+Global,Region x Season,Tropical Atlantic,Summer,Number_Events,16.1,3.51676261366853e-5,1994,15
+Global,Region x Season,Tropical Atlantic,Winter,Cumulative_Intensity,0.239064371864883,8.41602584541476e-4,2004,0.00749854622927145
+Global,Region x Season,Tropical Atlantic,Winter,Maximum_Intensity,-0.00705170474227846,0.00897711395908971,2001,21
+Global,Region x Season,Tropical Atlantic,Winter,Duration,0.263641443167305,6.23115933135299e-7,2000,4.93429947567298e-5
+Global,Region x Season,Tropical Atlantic,Winter,Number_Events,21,1.02313158177583e-6,2001,5.00082025989587e-4
+Global,Region x Season,Tropical Eastern Pacific,Autumn,Cumulative_Intensity,0.143996001255493,0.0677356494014704,2003,0.251496999524263
+Global,Region x Season,Tropical Eastern Pacific,Autumn,Maximum_Intensity,4.75749573196768e-4,0.894133801453221,1984,1
+Global,Region x Season,Tropical Eastern Pacific,Autumn,Duration,0.114759535655058,0.0160641951436532,2010,0.119609921394013
+Global,Region x Season,Tropical Eastern Pacific,Autumn,Number_Events,3.25,4.50460837285153e-4,2000,0.0056378459289433
+Global,Region x Season,Tropical Eastern Pacific,Spring,Cumulative_Intensity,0.0858343869731802,0.370696984568353,2009,0.805954041087091
+Global,Region x Season,Tropical Eastern Pacific,Spring,Maximum_Intensity,-0.00313064364876385,0.453251032548484,2015,0.86799717113789
+Global,Region x Season,Tropical Eastern Pacific,Spring,Duration,0.0752840909090909,0.175465440542809,2009,0.417891565490497
+Global,Region x Season,Tropical Eastern Pacific,Spring,Number_Events,2.28571428571429,0.00518354712755025,2001,0.0113498690574986
+Global,Region x Season,Tropical Eastern Pacific,Summer,Cumulative_Intensity,0.1324633640553,0.0236800663874319,2000,0.0848631981645769
+Global,Region x Season,Tropical Eastern Pacific,Summer,Maximum_Intensity,0.00183269400352735,0.490463260786887,2000,0.542757066444742
+Global,Region x Season,Tropical Eastern Pacific,Summer,Duration,0.0833464877663773,0.0195503571455886,2012,0.0975812629499826
+Global,Region x Season,Tropical Eastern Pacific,Summer,Number_Events,2.07142857142857,0.00669155822875057,1995,0.0418725411741909
+Global,Region x Season,Tropical Eastern Pacific,Winter,Cumulative_Intensity,0.158124521910642,0.0446347018332428,2007,0.132072130815446
+Global,Region x Season,Tropical Eastern Pacific,Winter,Maximum_Intensity,0.00342175856620094,0.276278028605147,2007,0.132072130815446
+Global,Region x Season,Tropical Eastern Pacific,Winter,Duration,0.0959247648902821,0.0529290169947308,2012,33
+Global,Region x Season,Tropical Eastern Pacific,Winter,Number_Events,3.25,1.44970679827107e-4,2001,0.00823341019145541
+Global,Region x Season,Western Indo-Pacific,Autumn,Cumulative_Intensity,0.197843441826948,1.45622603525576e-4,2009,0.00823341019145541
+Global,Region x Season,Western Indo-Pacific,Autumn,Maximum_Intensity,-0.00112356352258119,0.594544275903627,2005,0.805954041087091
+Global,Region x Season,Western Indo-Pacific,Autumn,Duration,0.151882025142423,6.79417686548779e-6,2007,0.00150916021500612
+Global,Region x Season,Western Indo-Pacific,Autumn,Number_Events,19.5454545454545,2.24416216028661e-4,1996,0.00186450050096955
+Global,Region x Season,Western Indo-Pacific,Spring,Cumulative_Intensity,0.17201409734659,3.51676261366853e-5,1997,6.27655263239725e-4
+Global,Region x Season,Western Indo-Pacific,Spring,Maximum_Intensity,0.00160512851323851,0.513607292487685,1997,0.530532258158197
+Global,Region x Season,Western Indo-Pacific,Spring,Duration,0.12151535546031,3.51676261366853e-5,1997,7.02339641877292e-4
+Global,Region x Season,Western Indo-Pacific,Spring,Number_Events,25,4.54079169715892e-7,1997,8.22726234638713e-5
+Global,Region x Season,Western Indo-Pacific,Summer,Cumulative_Intensity,0.209201997832558,4.2900527710888e-6,1995,0.00186450050096955
+Global,Region x Season,Western Indo-Pacific,Summer,Maximum_Intensity,1.35130798127187e-4,0.903715806787905,1992,0.244382063408552
+Global,Region x Season,Western Indo-Pacific,Summer,Duration,0.151190421418165,1.87762922713884e-6,2006,5.60470204167668e-4
+Global,Region x Season,Western Indo-Pacific,Summer,Number_Events,20.25,1.52723775502069e-4,1996,0.0154954654569041
+Global,Region x Season,Western Indo-Pacific,Winter,Cumulative_Intensity,0.161947243190313,0.00180242248619312,2009,0.00990278147284135
+Global,Region x Season,Western Indo-Pacific,Winter,Maximum_Intensity,-0.00406914151576124,0.01186448483255,2002,0.0141905888542183
+Global,Region x Season,Western Indo-Pacific,Winter,Duration,0.169098676727606,9.81205867244769e-5,2008,28
+Global,Region x Season,Western Indo-Pacific,Winter,Number_Events,15.8695652173913,1.19667908760563e-4,1997,9.79420907269785e-4
+Global,Region x Season,Arctic,Spring,Cumulative_Intensity,0.370025763793185,3.09855815728365e-7,2001,26
+Global,Region x Season,Arctic,Spring,Maximum_Intensity,0.0101180540594894,0.0236800663874319,2007,0.155180789712317
+Global,Region x Season,Arctic,Spring,Duration,0.280552719781627,6.75166055425267e-4,2003,3.7476928569413e-4
+Global,Region x Season,Arctic,Spring,Number_Events,-4.71428571428571,0.762313660403286,2014,0.0975812629499826
+Global,Region x Season,Arctic,Summer,Cumulative_Intensity,2.00629364874217,1.09075814127854e-7,2001,2.09283248598764e-5
+Global,Region x Season,Arctic,Summer,Maximum_Intensity,0.0611814976145983,6.2186181734292e-5,2005,8.00572373180171e-6
+Global,Region x Season,Arctic,Summer,Duration,0.530147502012108,1.05129023394873e-8,2000,20
+Global,Region x Season,Arctic,Summer,Number_Events,87.6818181818182,1.38521340570207e-4,2003,0.00103452246615332
+Global,Region x Season,Southern Ocean,Autumn,Cumulative_Intensity,0.131127948151755,2.46739507805285e-4,2006,0.0040059713631704
+Global,Region x Season,Southern Ocean,Autumn,Maximum_Intensity,0.0117710028797506,5.61211325928597e-5,2006,0.00241779295569731
+Global,Region x Season,Southern Ocean,Autumn,Duration,0.037200817023993,0.240602370782333,2008,0.119609921394013
+Global,Region x Season,Southern Ocean,Autumn,Number_Events,-17.5,5.06193371945136e-5,2005,0.00176902595422137
+Global,Region x Season,Southern Ocean,Winter,Cumulative_Intensity,0.0713534136091191,3.58567322018813e-4,2007,4.20854399668073e-4
+Global,Region x Season,Southern Ocean,Winter,Maximum_Intensity,0.00805048980509252,7.18045240614356e-6,2004,3.33467467705703e-4
+Global,Region x Season,Southern Ocean,Winter,Duration,0.00143847452967279,0.971048513631528,2009,0.349472593394358
+Global,Region x Season,Southern Ocean,Winter,Number_Events,-32.9655172413793,1.21189856659196e-8,2001,22
+Global,Region x Season,Temperate Australasia,Autumn,Cumulative_Intensity,0.307163677273856,0.00187643116479156,2005,0.0040059713631704
+Global,Region x Season,Temperate Australasia,Autumn,Maximum_Intensity,0.00463245100521599,0.0641757492197951,2005,0.0192404889470727
+Global,Region x Season,Temperate Australasia,Autumn,Duration,0.213124604680582,2.7113303604761e-4,1996,0.00115351715947891
+Global,Region x Season,Temperate Australasia,Autumn,Number_Events,11.3571428571429,8.43222784565003e-5,1997,0.00176902595422137
+Global,Region x Season,Temperate Australasia,Winter,Cumulative_Intensity,0.0838523797920728,0.156940216044129,2011,0.165290939897915
+Global,Region x Season,Temperate Australasia,Winter,Maximum_Intensity,-0.0016189068825911,0.431659976901441,1998,0.211089693357283
+Global,Region x Season,Temperate Australasia,Winter,Duration,0.0997728359636538,0.0385726912383765,2007,0.145574138095811
+Global,Region x Season,Temperate Australasia,Winter,Number_Events,5.3125,0.00602178082782919,1996,0.00487556401369912
+Global,Region x Season,Temperate Northern Atlantic,Spring,Cumulative_Intensity,0.267577634303127,0.00146408195410712,2005,0.00143075215701429
+Global,Region x Season,Temperate Northern Atlantic,Spring,Maximum_Intensity,0.00970711937523995,0.0575187405092873,2004,0.00487556401369912
+Global,Region x Season,Temperate Northern Atlantic,Spring,Duration,0.147002660309563,5.61211325928597e-5,2005,0.00159155124380903
+Global,Region x Season,Temperate Northern Atlantic,Spring,Number_Events,61.44,9.50759029562873e-8,1996,23
+Global,Region x Season,Temperate Northern Atlantic,Summer,Cumulative_Intensity,0.532152038964583,6.2186181734292e-5,2000,5.93170688252884e-4
+Global,Region x Season,Temperate Northern Atlantic,Summer,Maximum_Intensity,0.0248416679609935,2.42017938188355e-5,2000,2.3381161492352e-4
+Global,Region x Season,Temperate Northern Atlantic,Summer,Duration,0.172454767445271,1.38521340570207e-4,2000,0.00103452246615332
+Global,Region x Season,Temperate Northern Atlantic,Summer,Number_Events,83.7368421052632,1.85017124171823e-8,2000,1.05767451627179e-5
+Global,Region x Season,Temperate Northern Pacific,Spring,Cumulative_Intensity,0.278637162176239,4.3081927256042e-4,1995,15
+Global,Region x Season,Temperate Northern Pacific,Spring,Maximum_Intensity,0.0124376392715018,5.16487685649669e-4,1996,0.00328110601762103
+Global,Region x Season,Temperate Northern Pacific,Spring,Duration,0.113880573688703,6.75166055425267e-4,1993,0.00650774619274316
+Global,Region x Season,Temperate Northern Pacific,Spring,Number_Events,24.7741935483871,2.0399941871499e-4,2000,0.0124180000314953
+Global,Region x Season,Temperate Northern Pacific,Summer,Cumulative_Intensity,0.689481594247154,2.12797024973822e-8,2002,8.00572373180171e-6
+Global,Region x Season,Temperate Northern Pacific,Summer,Maximum_Intensity,0.0216018569775525,7.18045240614356e-6,2004,6.95682246199152e-6
+Global,Region x Season,Temperate Northern Pacific,Summer,Duration,0.195067652792111,8.48850586973418e-7,2002,1.44040942305937e-4
+Global,Region x Season,Temperate Northern Pacific,Summer,Number_Events,54.5454545454545,3.5215170083863e-7,2002,1.27360373873508e-4
+Global,Region x Season,Temperate South America,Autumn,Cumulative_Intensity,0.380046212913026,0.00187643116479156,2011,0.0176550313086456
+Global,Region x Season,Temperate South America,Autumn,Maximum_Intensity,0.00857587470524109,0.0486170831776459,1999,0.11185178524707
+Global,Region x Season,Temperate South America,Autumn,Duration,0.164408372882133,0.00559898066972248,2011,0.0113498690574986
+Global,Region x Season,Temperate South America,Autumn,Number_Events,2.82142857142857,0.136687076945158,2013,0.542757066444742
+Global,Region x Season,Temperate South America,Winter,Cumulative_Intensity,0.219712080640197,0.0150302522853103,2009,0.22395714750817
+Global,Region x Season,Temperate South America,Winter,Maximum_Intensity,0.00435057014784523,0.292567953393115,1999,0.198804628846053
+Global,Region x Season,Temperate South America,Winter,Duration,0.106625205148138,0.0303495199600114,2009,0.127805296177661
+Global,Region x Season,Temperate South America,Winter,Number_Events,2.58064516129032,0.250437663361516,2011,0.266196775516144
+Global,Region x Season,Temperate Southern Africa,Autumn,Cumulative_Intensity,-0.106745833333333,0.187284279271447,1995,21
+Global,Region x Season,Temperate Southern Africa,Autumn,Maximum_Intensity,-0.00586371729293723,0.1244365734796,1995,0.187086873094534
+Global,Region x Season,Temperate Southern Africa,Autumn,Duration,-0.0119400527009223,0.663162418479321,1994,0.660380163523839
+Global,Region x Season,Temperate Southern Africa,Autumn,Number_Events,-0.212121212121212,0.409942235366078,2006,0.518480521291783
+Global,Region x Season,Temperate Southern Africa,Summer,Cumulative_Intensity,0.0992461827956989,0.250437663361516,2000,0.674265771575219
+Global,Region x Season,Temperate Southern Africa,Summer,Maximum_Intensity,0.00173994886363637,0.671987746245531,2006,0.619681853657851
+Global,Region x Season,Temperate Southern Africa,Summer,Duration,0.0541666666666667,0.149971210134774,2000,0.349472593394358
+Global,Region x Season,Temperate Southern Africa,Summer,Number_Events,1.21428571428571,0.0106799326346541,1997,0.0141905888542183
+Global,Region x Season,Temperate Southern Africa,Winter,Cumulative_Intensity,0.0153912337662337,0.79945468062484,1994,0.702503226485199
+Global,Region x Season,Temperate Southern Africa,Winter,Maximum_Intensity,-6.36670918367344e-4,0.818202582360394,1991,1
+Global,Region x Season,Temperate Southern Africa,Winter,Duration,0.0170770202020202,0.553321614846232,2011,31
+Global,Region x Season,Temperate Southern Africa,Winter,Number_Events,0.310344827586207,0.438611557387884,1996,0.593367360508727
+NZ,All,None,None,Cumulative_Intensity,0.275258784552845,0.00897711395908971,2012,0.0129853473089505
+NZ,All,None,None,Maximum_Intensity,0.00254632609471547,0.482917044456812,2012,0.483370826760971
+NZ,All,None,None,Duration,0.19617965029374,0.00100063073714528,2012,0.0108475574506478
+NZ,All,None,None,Number_Events,17.3030303030303,9.17930358478503e-4,1997,0.0056378459289433
+NZ,Region,North Eastern,None,Cumulative_Intensity,0.196218335765223,0.110261050564434,2010,0.108131515123144
+NZ,Region,North Eastern,None,Maximum_Intensity,-2.03284933870007e-4,0.961401784796273,2010,1
+NZ,Region,North Eastern,None,Duration,0.135123104743358,0.0591081142029551,2010,0.0762666530940904
+NZ,Region,North Eastern,None,Number_Events,1.55555555555556,0.11856169545906,1995,0.322737514155738
+NZ,Region,Subantarctic Islands,None,Cumulative_Intensity,0.11202285,0.0880018340510861,1997,0.119609921394013
+NZ,Region,Subantarctic Islands,None,Maximum_Intensity,6.00891341256365e-4,0.780790396722189,1991,0.948093148557501
+NZ,Region,Subantarctic Islands,None,Duration,0.117647058823529,0.0657445539563531,2001,0.119609921394013
+NZ,Region,Subantarctic Islands,None,Number_Events,0.476190476190476,0.0568132041990324,1997,0.192875797169388
+NZ,Region,Southland,None,Cumulative_Intensity,0.125108404713115,0.104919978003472,2008,0.0568686753593708
+NZ,Region,Southland,None,Maximum_Intensity,0.00463757034499634,0.383628669078429,2005,0.160171902192576
+NZ,Region,Southland,None,Duration,0.0752158090724443,0.0857494107675084,2008,0.108131515123144
+NZ,Region,Southland,None,Number_Events,1.54545454545455,0.0341718692727162,1996,0.0269265161753805
+NZ,Region,Chatham Islands,None,Cumulative_Intensity,0.102949319982394,0.276067112476844,2006,0.181435906578825
+NZ,Region,Chatham Islands,None,Maximum_Intensity,0.00201103479853479,0.69855635396604,2010,0.580460405766985
+NZ,Region,Chatham Islands,None,Duration,0.100589225589226,0.255285232159251,2006,0.305758614963655
+NZ,Region,Chatham Islands,None,Number_Events,0.32,0.314756447696554,1992,0.123651918186439
+NZ,Region,East Coast South Island,None,Cumulative_Intensity,0.0715690760059617,0.345255337509366,2008,0.230613850431821
+NZ,Region,East Coast South Island,None,Maximum_Intensity,0.00351224607166913,0.255354828256527,2004,0.0942612433830434
+NZ,Region,East Coast South Island,None,Duration,0.0604649920597583,0.298044681824442,2008,0.160171902192576
+NZ,Region,East Coast South Island,None,Number_Events,0.944444444444444,0.0351073330988641,2008,0.0735701768407466
+NZ,Region,Eastern North Island,None,Cumulative_Intensity,0.0970203535353535,0.270801641698153,1992,0.251496999524263
+NZ,Region,Eastern North Island,None,Maximum_Intensity,0.00489947368421052,0.260410701593224,2003,0.187086873094534
+NZ,Region,Eastern North Island,None,Duration,0.0357072594924257,0.569518262977453,1992,0.251496999524263
+NZ,Region,Eastern North Island,None,Number_Events,0.192307692307692,0.512866224851608,1992,0.0975812629499826
+NZ,Region,Fiordland,None,Cumulative_Intensity,0.142536229643373,0.321012532259148,2006,0.289444510054287
+NZ,Region,Fiordland,None,Maximum_Intensity,0.00172869369369368,0.753022208684051,2008,0.3587261429145
+NZ,Region,Fiordland,None,Duration,0.0873803615739099,0.240303937643937,2006,0.237421577936384
+NZ,Region,Fiordland,None,Number_Events,0.2,0.43838790394828703,1994,0.136454498801214
+NZ,Region,Kermadec Islands,None,Cumulative_Intensity,0.0617721326164874,0.602709282367617,1996,0.790758956986179
+NZ,Region,Kermadec Islands,None,Maximum_Intensity,0.00144791666666666,0.836960900378515,2015,1
+NZ,Region,Kermadec Islands,None,Duration,0.0304054054054054,0.50526904751939306,1996,0.580460405766985
+NZ,Region,Kermadec Islands,None,Number_Events,0,0.760654491598955,1995,0.397471553034294
+NZ,Region,North Cook Strait,None,Cumulative_Intensity,0.250282026515151,0.0268140783932932,2010,0.119609921394013
+NZ,Region,North Cook Strait,None,Maximum_Intensity,0.00236719073498965,0.490399763647155,2011,0.281533535512736
+NZ,Region,North Cook Strait,None,Duration,0.173920654042978,0.00748659133241126,1994,0.0547715393501391
+NZ,Region,North Cook Strait,None,Number_Events,0.806451612903226,0.112641260030677,1994,0.0659612956204193
+NZ,Region,South Cook Strait,None,Cumulative_Intensity,0.114699517374517,0.250298957817541,2007,0.281533535512736
+NZ,Region,South Cook Strait,None,Maximum_Intensity,0.00472910216718267,0.377022928171462,2001,0.266196775516144
+NZ,Region,South Cook Strait,None,Duration,0.0630199430199431,0.320918013192635,2007,0.258768035700535
+NZ,Region,South Cook Strait,None,Number_Events,0.115384615384615,0.725416333388654,2007,0.555154056666902
+NZ,Region,West Coast South Island,None,Cumulative_Intensity,0.169060114583333,0.143123644982308,2007,0.0227972999228781
+NZ,Region,West Coast South Island,None,Maximum_Intensity,0.00158241087344028,0.707556116825484,2009,0.187086873094534
+NZ,Region,West Coast South Island,None,Duration,0.0909963985594238,0.107512963436133,2007,0.0790463674030072
+NZ,Region,West Coast South Island,None,Number_Events,0.4,0.505539543109718,1994,0.387524161530772
+NZ,Region,Western North Island,None,Cumulative_Intensity,0.209417475083056,0.121417049025301,2010,0.0169069861325621
+NZ,Region,Western North Island,None,Maximum_Intensity,8.64816053511715e-4,0.790078160972741,2010,0.115677233175972
+NZ,Region,Western North Island,None,Duration,0.114817275747508,0.0857494107675084,2008,0.0357603358904642
+NZ,Region,Western North Island,None,Number_Events,0.444444444444444,0.297572617825851,2008,0.368152092603782
+NZ,Season,None,Spring,Cumulative_Intensity,0.109548734816924,0.130477976991945,1995,0.145574138095811
+NZ,Season,None,Spring,Maximum_Intensity,0.00197979323308271,0.619888719541734,1996,0.790758956986179
+NZ,Season,None,Spring,Duration,0.0841346153846154,0.0591081142029551,1995,0.11185178524707
+NZ,Season,None,Spring,Number_Events,0.962962962962963,0.230905827359788,1995,0.217449697582891
+NZ,Season,None,Summer,Cumulative_Intensity,0.159477487605212,0.113010359156952,2011,0.0635789938335351
+NZ,Season,None,Summer,Maximum_Intensity,0.00721398679571579,0.0836339638414926,2008,0.0435358573441055
+NZ,Season,None,Summer,Duration,0.0717238187055365,0.130477976991945,2011,0.11185178524707
+NZ,Season,None,Summer,Number_Events,2.27272727272727,0.195441143999268,2008,0.3587261429145
+NZ,Season,None,Winter,Cumulative_Intensity,0.155885544783855,0.0559293662740718,1994,0.0819112371636669
+NZ,Season,None,Winter,Maximum_Intensity,0.00107479838709678,0.680813077122659,1994,0.181435906578825
+NZ,Season,None,Winter,Duration,0.118605109993095,0.0528942963642359,1994,0.0659612956204193
+NZ,Season,None,Winter,Number_Events,2.61111111111111,0.0171276414367748,1994,0.0040059713631704
+NZ,Season,None,Autumn,Cumulative_Intensity,0.149466388888889,0.12734586440413,2008,0.170539939862859
+NZ,Season,None,Autumn,Maximum_Intensity,0,0.980692416932116,2008,0.931870981053643
+NZ,Season,None,Autumn,Duration,0.117110959216222,0.037409081640842,1993,0.0819112371636669
+NZ,Season,None,Autumn,Number_Events,2.56521739130435,0.130309096384066,1993,0.175920925904045
+NZ,Region x Season,North Eastern,Spring,Cumulative_Intensity,0.0297374999999998,0.474918006973935,1999,0.821279107267757
+NZ,Region x Season,North Eastern,Spring,Maximum_Intensity,7.19717261904761e-4,0.799253303389578,1998,1
+NZ,Region x Season,North Eastern,Spring,Duration,0.0267441860465117,0.489550886773357,1999,0.883804419169051
+NZ,Region x Season,North Eastern,Spring,Number_Events,0,0.761760667487734,2002,1
+NZ,Region x Season,Subantarctic Islands,Spring,Cumulative_Intensity,0,0.990337717830828,1998,0.883804419169051
+NZ,Region x Season,Subantarctic Islands,Spring,Maximum_Intensity,-4.5954861111111e-4,0.689424903822238,1990,11
+NZ,Region x Season,Subantarctic Islands,Spring,Duration,0.010989010989011,0.653495849973765,1997,0.702503226485199
+NZ,Region x Season,Subantarctic Islands,Spring,Number_Events,-0.04,0.511623619320614,2011,0.660380163523839
+NZ,Region x Season,North Eastern,Winter,Cumulative_Intensity,0.00655454761904757,0.645455001126036,2016,0.96440747709671
+NZ,Region x Season,North Eastern,Winter,Maximum_Intensity,4.24285714285729e-4,0.789957987792748,2015,0.91574574158593
+NZ,Region x Season,North Eastern,Winter,Duration,0.00750000000000001,0.734552104417486,2006,1
+NZ,Region x Season,North Eastern,Winter,Number_Events,0.142857142857143,0.452057393364059,2016,0.688307573730825
+NZ,Region x Season,Southland,Summer,Cumulative_Intensity,0.0568672532781228,0.594328352859833,2004,0.555154056666902
+NZ,Region x Season,Southland,Summer,Maximum_Intensity,0.00466129629629626,0.452986442386262,2002,0.170539939862859
+NZ,Region x Season,Southland,Summer,Duration,0.0326278659611993,0.619683685774996,2005,0.745987739928474
+NZ,Region x Season,Southland,Summer,Number_Events,0.125,0.459681559744905,1995,0.542757066444742
+NZ,Region x Season,Southland,Spring,Cumulative_Intensity,-0.0212869847670251,0.610987426607788,2014,0.805954041087091
+NZ,Region x Season,Southland,Spring,Maximum_Intensity,-0.00473373015873016,0.383210426221493,2010,0.506602623976043
+NZ,Region x Season,Southland,Spring,Duration,0,1,1997,23
+NZ,Region x Season,Southland,Spring,Number_Events,0,0.903462430524977,2014,1
+NZ,Region x Season,Subantarctic Islands,Winter,Cumulative_Intensity,0.02086,0.544870640666815,1992,1
+NZ,Region x Season,Subantarctic Islands,Winter,Maximum_Intensity,0,0.9613678672141,1996,22
+NZ,Region x Season,Subantarctic Islands,Winter,Duration,0.0128968253968254,0.449759163398833,1992,0.731346006193598
+NZ,Region x Season,Subantarctic Islands,Winter,Number_Events,0,0.643601064181532,1996,0.660380163523839
+NZ,Region x Season,Chatham Islands,Summer,Cumulative_Intensity,0.00229888888888885,0.818019313048378,2002,1
+NZ,Region x Season,Chatham Islands,Summer,Maximum_Intensity,3.70616883116879e-4,0.818019313048378,2002,1
+NZ,Region x Season,Chatham Islands,Summer,Duration,0.00649350649350646,0.743638714176868,2002,1
+NZ,Region x Season,Chatham Islands,Summer,Number_Events,0.0833333333333333,0.423190846285343,2013,0.96440747709671
+NZ,Region x Season,Chatham Islands,Autumn,Cumulative_Intensity,-0.0469812592592593,0.552856340364746,2006,1
+NZ,Region x Season,Chatham Islands,Autumn,Maximum_Intensity,-8.17399267399277e-4,0.762043288230293,1984,1
+NZ,Region x Season,Chatham Islands,Autumn,Duration,0,0.913154211784454,1996,1
+NZ,Region x Season,Chatham Islands,Autumn,Number_Events,-0.0344827586206897,0.472505137324677,2011,1
+NZ,Region x Season,East Coast South Island,Summer,Cumulative_Intensity,0.0910398128342246,0.195375724533436,2004,0.0635789938335351
+NZ,Region x Season,East Coast South Island,Summer,Maximum_Intensity,0.0104911842105263,0.0363023169702457,2001,0.0135759372968677
+NZ,Region x Season,East Coast South Island,Summer,Duration,0.0387612387612388,0.445832089397739,2006,0.198804628846053
+NZ,Region x Season,East Coast South Island,Summer,Number_Events,0.227272727272727,0.17455875797339,2003,0.181435906578825
+NZ,Region x Season,East Coast South Island,Autumn,Cumulative_Intensity,0.0157797368421052,0.743723348481386,2000,0.790758956986179
+NZ,Region x Season,East Coast South Island,Autumn,Maximum_Intensity,3.45040726817044e-4,0.836913771221318,2000,1
+NZ,Region x Season,East Coast South Island,Autumn,Duration,0.0216374269005848,0.585782618914123,2002,0.86799717113789
+NZ,Region x Season,East Coast South Island,Autumn,Number_Events,0.0769230769230769,0.618980649495166,1991,1
+NZ,Region x Season,East Coast South Island,Winter,Cumulative_Intensity,0.095856704980843,0.230700863929499,1988,0.646652953587865
+NZ,Region x Season,East Coast South Island,Winter,Maximum_Intensity,0.00106875000000001,0.602656127662442,2003,1
+NZ,Region x Season,East Coast South Island,Winter,Duration,0.0757575757575757,0.182617839363323,1988,0.428364915164982
+NZ,Region x Season,East Coast South Island,Winter,Number_Events,0.15,0.375948887830018,1988,9
+NZ,Region x Season,East Coast South Island,Spring,Cumulative_Intensity,0,1,1988,1
+NZ,Region x Season,East Coast South Island,Spring,Maximum_Intensity,3.90909090909074e-4,0.82747964886862,2009,0.731346006193598
+NZ,Region x Season,East Coast South Island,Spring,Duration,0,0.769891966533169,1999,23
+NZ,Region x Season,East Coast South Island,Spring,Number_Events,0.0909090909090909,0.544121802359983,2001,0.731346006193598
+NZ,Region x Season,Eastern North Island,Summer,Cumulative_Intensity,0.0528964285714286,0.505560332272471,1999,0.98080906217072
+NZ,Region x Season,Eastern North Island,Summer,Maximum_Intensity,0.00446611455108359,0.41735148679508,2000,0.542757066444742
+NZ,Region x Season,Eastern North Island,Summer,Duration,0.00608187134502927,0.680252430843947,1995,1
+NZ,Region x Season,Eastern North Island,Summer,Number_Events,0,0.9805773964677,1990,30
+NZ,Region x Season,Eastern North Island,Winter,Cumulative_Intensity,0.0168020833333334,0.725403449770861,2010,1
+NZ,Region x Season,Eastern North Island,Winter,Maximum_Intensity,0.00141333333333332,0.445431980596663,2010,1
+NZ,Region x Season,Eastern North Island,Winter,Duration,0.0119047619047619,0.725222888624425,2006,1
+NZ,Region x Season,Eastern North Island,Winter,Number_Events,0.0303030303030303,0.427664644394145,1988,0.805954041087091
+NZ,Region x Season,Eastern North Island,Spring,Cumulative_Intensity,0.0810629761904761,0.303071927365411,2007,0.86799717113789
+NZ,Region x Season,Eastern North Island,Spring,Maximum_Intensity,0.00400000000000005,0.28088540677019,2011,0.86799717113789
+NZ,Region x Season,Eastern North Island,Spring,Duration,0.0277777777777778,0.337580743613945,1988,0.688307573730825
+NZ,Region x Season,Eastern North Island,Spring,Number_Events,0.1,0.349953774133547,2004,0.899722058279784
+NZ,Region x Season,Fiordland,Summer,Cumulative_Intensity,0.0344855769230768,0.594112085824438,1986,1
+NZ,Region x Season,Fiordland,Summer,Maximum_Intensity,0.0020991452991453,0.544811655082444,1991,0.716850245801617
+NZ,Region x Season,Fiordland,Summer,Duration,0.0197368421052632,0.645358144335232,1986,1
+NZ,Region x Season,Fiordland,Summer,Number_Events,0.0294117647058824,0.372266159444083,2013,1
+NZ,Region x Season,Fiordland,Autumn,Cumulative_Intensity,0,0.932443293446128,1997,0.674265771575219
+NZ,Region x Season,Fiordland,Autumn,Maximum_Intensity,-0.00241666666666673,0.636715052073542,1997,28
+NZ,Region x Season,Fiordland,Autumn,Duration,0.0169930875576037,0.671670849743531,1997,0.646652953587865
+NZ,Region x Season,Fiordland,Autumn,Number_Events,0,0.688063218933806,1987,0.760772536356441
+NZ,Region x Season,Fiordland,Spring,Cumulative_Intensity,0.0025324095022624,0.771144000115545,1994,1
+NZ,Region x Season,Fiordland,Spring,Maximum_Intensity,0,0.789747187301344,1997,1
+NZ,Region x Season,Fiordland,Spring,Duration,0,0.808212991550128,1985,1
+NZ,Region x Season,Fiordland,Spring,Number_Events,0,0.941697658723677,1985,1
+NZ,Region x Season,Kermadec Islands,Summer,Cumulative_Intensity,0.0606861111111111,0.552720362872541,1993,0.821279107267757
+NZ,Region x Season,Kermadec Islands,Summer,Maximum_Intensity,6.10160427807482e-4,0.79915719604957,1992,1
+NZ,Region x Season,Kermadec Islands,Summer,Duration,0.0261437908496731,0.552331175328574,1991,0.790758956986179
+NZ,Region x Season,Kermadec Islands,Summer,Number_Events,0,0.712649277931995,2010,1
+NZ,Region x Season,Kermadec Islands,Autumn,Cumulative_Intensity,0,0.903589368364442,2008,0.9972928633154
+NZ,Region x Season,Kermadec Islands,Autumn,Maximum_Intensity,-7.64045454545457e-4,0.752811970939921,2008,1
+NZ,Region x Season,Kermadec Islands,Autumn,Duration,0,0.941898385080862,2008,1
+NZ,Region x Season,Kermadec Islands,Autumn,Number_Events,0,0.67851464222005,1990,1
+NZ,Region x Season,North Cook Strait,Summer,Cumulative_Intensity,0.183828571428571,0.199551017721609,2008,0.181435906578825
+NZ,Region x Season,North Cook Strait,Summer,Maximum_Intensity,0.0024257918552036,0.513422339782862,2008,0.273784774103314
+NZ,Region x Season,North Cook Strait,Summer,Duration,0.0948761261261261,0.199265589935599,2008,0.273784774103314
+NZ,Region x Season,North Cook Strait,Summer,Number_Events,0.2,0.1986939980776,2008,0.123651918186439
+NZ,Region x Season,North Cook Strait,Autumn,Cumulative_Intensity,0.0385245454545454,0.716476405490762,1990,0.702503226485199
+NZ,Region x Season,North Cook Strait,Autumn,Maximum_Intensity,3.65148164528954e-4,0.827504535681821,1990,1
+NZ,Region x Season,North Cook Strait,Autumn,Duration,0.0222222222222222,0.619255467363937,1990,0.530532258158197
+NZ,Region x Season,North Cook Strait,Autumn,Number_Events,0,1,1990,1
+NZ,Region x Season,North Cook Strait,Winter,Cumulative_Intensity,0.0595303846153846,0.505497956994229,1988,0.821279107267757
+NZ,Region x Season,North Cook Strait,Winter,Maximum_Intensity,0,0.913234547471188,1999,0.542757066444742
+NZ,Region x Season,North Cook Strait,Winter,Duration,0.0462962962962962,0.389515993944308,1988,0.674265771575219
+NZ,Region x Season,North Cook Strait,Winter,Number_Events,0.105263157894737,0.269018108575333,1988,0.349472593394358
+NZ,Region x Season,North Cook Strait,Spring,Cumulative_Intensity,0.0726681547619048,0.308996968048581,2011,0.407593883798148
+NZ,Region x Season,North Cook Strait,Spring,Maximum_Intensity,0,0.961362205586077,2007,1
+NZ,Region x Season,North Cook Strait,Spring,Duration,0.0273752012882448,0.528074259184779,2011,0.449839397771979
+NZ,Region x Season,North Cook Strait,Spring,Number_Events,0,0.980620412350347,2016,1
+NZ,Region x Season,North Eastern,Summer,Cumulative_Intensity,0.092380701754386,0.255285232159251,2005,0.0218572276308141
+NZ,Region x Season,North Eastern,Summer,Maximum_Intensity,0.00372371647509579,0.513422339782862,2005,0.417891565490497
+NZ,Region x Season,North Eastern,Summer,Duration,0.0646135265700483,0.216977968006114,2005,0.0237731149804489
+NZ,Region x Season,North Eastern,Summer,Number_Events,0.380952380952381,0.225968257251726,2005,0.0975812629499826
+NZ,Region x Season,South Cook Strait,Summer,Cumulative_Intensity,0.0794449066558441,0.383489346319603,2007,0.160171902192576
+NZ,Region x Season,South Cook Strait,Summer,Maximum_Intensity,0.00636731601731601,0.332886196569761,2006,0.506602623976043
+NZ,Region x Season,South Cook Strait,Summer,Duration,0.0454545454545455,0.490124337977974,2007,0.136454498801214
+NZ,Region x Season,South Cook Strait,Summer,Number_Events,0.0526315789473684,0.503930939493547,2002,0.506602623976043
+NZ,Region x Season,South Cook Strait,Autumn,Cumulative_Intensity,0,0.942071623577717,2010,1
+NZ,Region x Season,South Cook Strait,Autumn,Maximum_Intensity,-0.0022328431372549,0.410194154128384,2014,0.836730524848076
+NZ,Region x Season,South Cook Strait,Autumn,Duration,0.00965517241379308,0.771263732481067,1995,1
+NZ,Region x Season,South Cook Strait,Autumn,Number_Events,0,0.678777829580024,1989,1
+NZ,Region x Season,South Cook Strait,Winter,Cumulative_Intensity,0,0.96135654146815,1984,1
+NZ,Region x Season,South Cook Strait,Winter,Maximum_Intensity,0.00327912457912458,0.275644775598449,1985,1
+NZ,Region x Season,South Cook Strait,Winter,Duration,-0.0104166666666667,0.716317250787771,2012,1
+NZ,Region x Season,South Cook Strait,Winter,Number_Events,0,0.643124800141463,1985,1
+NZ,Region x Season,South Cook Strait,Spring,Cumulative_Intensity,0,0.903589368364442,1985,25
+NZ,Region x Season,South Cook Strait,Spring,Maximum_Intensity,0,0.942063139855519,1992,1
+NZ,Region x Season,South Cook Strait,Spring,Duration,0,0.883911530100497,2006,1
+NZ,Region x Season,South Cook Strait,Spring,Number_Events,0,1,2012,1
+NZ,Region x Season,Southland,Autumn,Cumulative_Intensity,0.0323339583333334,0.561132375464103,2000,0.688307573730825
+NZ,Region x Season,Southland,Autumn,Maximum_Intensity,4.70153383934219e-4,0.771372417222072,2000,1
+NZ,Region x Season,Southland,Autumn,Duration,0.0343258891645989,0.332649983144987,2000,0.472017876101211
+NZ,Region x Season,Southland,Autumn,Number_Events,0.260869565217391,0.344642380360811,1989,0.790758956986179
+NZ,Region x Season,Subantarctic Islands,Summer,Cumulative_Intensity,0.00336785714285716,0.771339828062969,2001,0.805954041087091
+NZ,Region x Season,Subantarctic Islands,Summer,Maximum_Intensity,-5.7054313929314e-4,0.716396861605731,2004,1
+NZ,Region x Season,Subantarctic Islands,Summer,Duration,0.0103448275862069,0.636484144897978,2001,1
+NZ,Region x Season,Subantarctic Islands,Summer,Number_Events,0,0.980574518547588,1985,1
+NZ,Region x Season,Subantarctic Islands,Autumn,Cumulative_Intensity,0.0133480192076831,0.707310682158942,2017,1
+NZ,Region x Season,Subantarctic Islands,Autumn,Maximum_Intensity,0,0.913196521526795,2009,1
+NZ,Region x Season,Subantarctic Islands,Autumn,Duration,0.0039682539682540504,0.706982473510364,2017,1
+NZ,Region x Season,Subantarctic Islands,Autumn,Number_Events,0,0.902992665397656,1995,0.674265771575219
+NZ,Region x Season,West Coast South Island,Summer,Cumulative_Intensity,-0.00913585858585854,0.8086638175193,2014,0.805954041087091
+NZ,Region x Season,West Coast South Island,Summer,Maximum_Intensity,0,0.942088579847647,2003,0.555154056666902
+NZ,Region x Season,West Coast South Island,Summer,Duration,0,0.961373526354044,2003,1
+NZ,Region x Season,West Coast South Island,Summer,Number_Events,0,0.724899570782155,2014,0.96440747709671
+NZ,Region x Season,West Coast South Island,Autumn,Cumulative_Intensity,-0.0434598027909121,0.671716176825694,1999,1
+NZ,Region x Season,West Coast South Island,Autumn,Maximum_Intensity,-0.00116703703703704,0.689468069054224,2001,0.674265771575219
+NZ,Region x Season,West Coast South Island,Autumn,Duration,-0.0138888888888889,0.716264139677834,1999,0.9972928633154
+NZ,Region x Season,West Coast South Island,Autumn,Number_Events,0,0.951617595588609,1999,1
+NZ,Region x Season,West Coast South Island,Winter,Cumulative_Intensity,0,0.836843000796918,2007,1
+NZ,Region x Season,West Coast South Island,Winter,Maximum_Intensity,4.18867924528277e-4,0.725364788041275,2003,1
+NZ,Region x Season,West Coast South Island,Winter,Duration,0,0.87486781553969,1991,1
+NZ,Region x Season,West Coast South Island,Winter,Number_Events,0,0.780225322988566,2009,1
+NZ,Region x Season,West Coast South Island,Spring,Cumulative_Intensity,0,0.990334882654078,1988,1
+NZ,Region x Season,West Coast South Island,Spring,Maximum_Intensity,0,0.913183835097536,2003,1
+NZ,Region x Season,West Coast South Island,Spring,Duration,0,0.855096753460717,2017,1
+NZ,Region x Season,West Coast South Island,Spring,Number_Events,0,0.874452981462706,1989,0.931870981053643
+NZ,Region x Season,Western North Island,Summer,Cumulative_Intensity,0.123169660774009,0.332957014212443,2008,0.258768035700535
+NZ,Region x Season,Western North Island,Summer,Maximum_Intensity,0.0074742857142857,0.309351523820678,2003,0.530532258158197
+NZ,Region x Season,Western North Island,Summer,Duration,0.075,0.338409764162821,2008,0.266196775516144
+NZ,Region x Season,Western North Island,Summer,Number_Events,0.25,0.145738401631006,2004,0.140954476466508
+NZ,Region x Season,Western North Island,Spring,Cumulative_Intensity,-0.00613321428571429,0.725364788041275,2002,1
+NZ,Region x Season,Western North Island,Spring,Maximum_Intensity,0,0.951702763372263,2004,1
+NZ,Region x Season,Western North Island,Spring,Duration,-0.00326797385620914,0.653686378499656,2012,1
+NZ,Region x Season,Western North Island,Spring,Number_Events,0,0.798305457518114,2013,1
+NZ,Region x Season,Chatham Islands,Winter,Cumulative_Intensity,0.0927076203208556,0.259828377518709,1992,0.460840668104611
+NZ,Region x Season,Chatham Islands,Winter,Maximum_Intensity,0,0.836811517690533,2007,1
+NZ,Region x Season,Chatham Islands,Winter,Duration,0.0994897959183674,0.221055749749451,1992,0.483370826760971
+NZ,Region x Season,Chatham Islands,Winter,Number_Events,0.0416666666666667,0.488569475937877,1991,1
+NZ,Region x Season,Chatham Islands,Spring,Cumulative_Intensity,-0.00120529100529102,0.836866601173389,1996,1
+NZ,Region x Season,Chatham Islands,Spring,Maximum_Intensity,0,0.9324334073739,1996,1
+NZ,Region x Season,Chatham Islands,Spring,Duration,0,0.855568798092024,2013,1
+NZ,Region x Season,Chatham Islands,Spring,Number_Events,0,0.584327511482687,2011,1
+NZ,Region x Season,Fiordland,Winter,Cumulative_Intensity,0,0.817817952257003,2012,0.852304519019232
+NZ,Region x Season,Fiordland,Winter,Maximum_Intensity,-1.42045454545457e-4,0.725145396241514,1991,1
+NZ,Region x Season,Fiordland,Winter,Duration,0,0.970986194433538,2012,0.883804419169051
+NZ,Region x Season,Fiordland,Winter,Number_Events,0,0.87470359475426,2013,1
+NZ,Region x Season,Southland,Winter,Cumulative_Intensity,0.0107318326947637,0.743650809922967,1996,0.948093148557501
+NZ,Region x Season,Southland,Winter,Maximum_Intensity,0.00131059523809523,0.489954625697743,2006,0.688307573730825
+NZ,Region x Season,Southland,Winter,Duration,0.00461601307189552,0.743529775397642,1996,0.821279107267757
+NZ,Region x Season,Southland,Winter,Number_Events,0,0.913094874072599,1990,1
+NZ,Region x Season,Western North Island,Winter,Cumulative_Intensity,0.0318881578947368,0.528781304312244,1985,0.745987739928474
+NZ,Region x Season,Western North Island,Winter,Maximum_Intensity,0,1,2005,0.731346006193598
+NZ,Region x Season,Western North Island,Winter,Duration,0.025,0.451813300853483,1985,0.633086207436071
+NZ,Region x Season,Western North Island,Winter,Number_Events,0.0333333333333333,0.463403631311254,1985,0.580460405766985
+NZ,Region x Season,Eastern North Island,Autumn,Cumulative_Intensity,0.0511425,0.207898372239481,1987,0.258768035700535
+NZ,Region x Season,Eastern North Island,Autumn,Maximum_Intensity,0,0.884465018259189,2000,0.530532258158197
+NZ,Region x Season,Eastern North Island,Autumn,Duration,0.061524334251607,0.225059585565622,1987,0.244382063408552
+NZ,Region x Season,Eastern North Island,Autumn,Number_Events,0.117647058823529,0.274019560111318,1991,0.368152092603782
+NZ,Region x Season,North Eastern,Autumn,Cumulative_Intensity,0.0749887459150327,0.410331431818437,2000,0.555154056666902
+NZ,Region x Season,North Eastern,Autumn,Maximum_Intensity,0.00114354978354979,0.611091996471868,2001,0.244382063408552
+NZ,Region x Season,North Eastern,Autumn,Duration,0.05421888053467,0.452544618090646,1998,0.619681853657851
+NZ,Region x Season,North Eastern,Autumn,Number_Events,0.0588235294117647,0.680089587079804,1999,0.542757066444742
+NZ,Region x Season,Western North Island,Autumn,Cumulative_Intensity,0,0.903603441680681,1996,0.91574574158593
+NZ,Region x Season,Western North Island,Autumn,Maximum_Intensity,-0.00225074198867303,0.344831157470903,2011,0.331479239405007
+NZ,Region x Season,Western North Island,Autumn,Duration,0.00961538461538458,0.82742984291346,1996,0.760772536356441
+NZ,Region x Season,Western North Island,Autumn,Number_Events,0,0.846246573340051,1985,1
+NZ,Region x Season,Kermadec Islands,Winter,Cumulative_Intensity,0,0.734013565003896,2011,1
+NZ,Region x Season,Kermadec Islands,Winter,Maximum_Intensity,0,0.846045466074171,1991,1
+NZ,Region x Season,Kermadec Islands,Winter,Duration,0,0.76123800457558,2011,1
+NZ,Region x Season,Kermadec Islands,Winter,Number_Events,0,0.652414318222462,2011,0.805954041087091
+NZ,Region x Season,Kermadec Islands,Spring,Cumulative_Intensity,0,0.724977271069325,2014,1
+NZ,Region x Season,Kermadec Islands,Spring,Maximum_Intensity,0,1,2014,1
+NZ,Region x Season,Kermadec Islands,Spring,Duration,0,0.710247613869221,2009,29
+NZ,Region x Season,Kermadec Islands,Spring,Number_Events,0,0.89009961418647,2009,1
