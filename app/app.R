@@ -59,7 +59,7 @@ ui <- fluidPage(
                             
                             
                             tags$div(id="cite",
-                                     'Data compiled for ', tags$em('Thoral et al., 2021 - Global long-term trends in coastal marine heatwaves.'), 'in prep.'
+                                     'Data compiled for ', tags$em('Thoral et al., 2021 - Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Regions.'), 'in prep.'
                             )
                         )
                ),
