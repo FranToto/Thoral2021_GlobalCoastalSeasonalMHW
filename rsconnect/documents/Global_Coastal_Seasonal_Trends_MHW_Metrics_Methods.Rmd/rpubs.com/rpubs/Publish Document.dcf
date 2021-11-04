@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/822365/9e1b189ff5f542f0afd9999ce32dca67
+bundleId: https://api.rpubs.com/api/v1/document/822365/9e1b189ff5f542f0afd9999ce32dca67
+url: http://rpubs.com/FranToto/822365
+when: 1635992908.50056
+lastSyncTime: 1635992908.50056
