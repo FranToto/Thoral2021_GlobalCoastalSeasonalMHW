@@ -1,30 +1,21 @@
 ---
 title: "Global_Coastal_Seasonal_Trends_MHW_Metrics_Methods"
 author: "Francois Thoral"
-date: "15/10/2021"
+date: "10/02/2022"
 output: html_document
 bibliography: bibliography.bib
 ---
 
 ```{r setup, include=T, message=F}
 knitr::opts_chunk$set(fig.width=10, fig.height=7) 
-library(rgdal)
+
 library(tidyverse)
-library(raster)
+library(terra)
 library(sf)
-library(broom)
-library(knitr)
-library(units)
-library(lwgeom)
-library(plotly)
-library(RColorBrewer)
-library(maps)
-library(shiny)
-library(zoo)
+library(heatwaveR)
 library(lubridate)
 library(trend)
-library(kableExtra)
-library(heatwaveR)
+library(rnaturalearth)
 ```
 
 > version
@@ -44,7 +35,7 @@ language       R
 version.string R version 4.1.0 (2021-05-18)
 nickname       Camp Pontanezen  
 
-__AIM__ : Methodology in support of Thoral et al., (2021), Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Regions. 
+__AIM__ : Methodology in support of Thoral et al., (2022), Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Regions. 
 
 __Document Note__ : A related app is available here - https://frantoto.shinyapps.io/Global_Coastal_Seasonal_Trends_MHW_Metrics/
 
@@ -66,146 +57,213 @@ __Document Note__ : A related app is available here - https://frantoto.shinyapps
 Data Downloading and Preparing NOAA OISST Data
 By Robert W Schlegel and AJ Smit
 From https://robwschlegel.github.io/heatwaveR/articles/OISST_preparation.html.
-Because of the size of data to get (daily, world), we splitted the world into longitudinal (10 degrees wide) and temporal (~9 years) chunks, dowloaded data for these and only keep data at close to shore pixels.
+
+Otherwise, gridded ncdf data can be accessed from here: https://www.ncei.noaa.gov/data/sea-surface-temperature-optimum-interpolation/v2.1/access/avhrr/
+
+R packages used:
+
+* terra: @terra (v1.3-4)
+* sf: @sf (v1.0-2)
+* tidyverse: @tidyverse v(1.3.1)
+* viridis: @viridis v(0.6.1)
+* trend: @trend v(1.1.4)
+* lubridate: @lubridate v(1.7.10)
+* rnaturalearth: @rnaturalearth v(0.1.0)
+
+## Only keep OISST pixels within the realms (MEOW regions)
+Here, we use the R function terra::extract() to only keep daily OISST values from the pixels within the realms (following @spalding2007marine). As input, we take the daily and global ncdf OISST files. As output, we save the daily OISST values in .Rds files. We do so for each year as it we run it on a local computer and saving the daily output Rds files is more manageable than having an unique Rds file. But this could have been bypassed if using another format, like ncdf.
 
 ```{r, eval=F}
-library(dplyr) # A staple for modern data management in R
-library(lubridate) # Useful functions for dealing with dates
-library(ggplot2) # The preferred library for data visualisation
-library(tidync) # For easily dealing with NetCDF data
-library(rerddap) # For easily downloading subsets of data
-library(doParallel) # For parallel processing
-library(sf)
+#### Part 1 : Get MEOW, filenames of ncdf OISST, extract pixels from within realms, convert to tibble, pivot longer and save as Rds file. Loop over years #### 
 
-memory.limit(size = 35000)  #Windows-specific 
+memory.limit(60000) #You might need to use this depending on your OS
 
-## Zone
-zone_lat <- c(-89.875, 89.875)
+meow_lonlat <- st_read('~YOUR_PATH/Marine_Ecoregions_Of_the_World__MEOW_.shp') %>% 
+  st_make_valid(.) %>% 
+  st_transform(.,crs = 4326)#Re-project MEOW to lon lat
 
-zone_lon_vec <- c(-179.875,179.875)
+#Convert MEOW sf to SpatVector (terra::)
+meow_lonlat_spat <- as(meow_lonlat, 'SpatVector')
 
-for (z in 1:length(zone_lon_vec)){
-  ## Zone lon
-  zone_lon <- c(zone_lon_vec[z], zone_lon_vec[z] + 10)
+for (y in 1982:2021){
+  print(y)
+  #Get filenames of ncdf files
+  name_file <- list.files(path =paste0('~YOUR_PATH/OI-global_v2.1/',y,'/'), pattern = "*.nc", full.names = TRUE )
+  #print(name_file)
+  ymod <- substr(name_file,start = 43,stop=50)#YearMonthDay
   
-  ## Distance to Shore - https://oceancolor.gsfc.nasa.gov/docs/distfromcoast/
-  print('Distance to Shore raster')
-  r_dShore <- raster('GMT_intermediate_coast_distance_01d.tif')
-  system.time(
-    r_dShore_crop <- crop(r_dShore,extent(rbind(zone_lon,zone_lat)))
-  )#7s
-  
-  ## Assign NAs to pixels > dmin? and negative distance to shore (inland)
-  print('NAs to distance to shore >10km')
-  system.time(
-    values(r_dShore_crop)[which(values(r_dShore_crop) >10 | values(r_dShore_crop)<0)] <- NA
-  )#5s
-  
-  ## Convert raster to sf (via sp)
-  dShore_sp <- as(r_dShore_crop, "SpatialPointsDataFrame")
-  dShore_sf <- st_as_sf(dShore_sp) %>% mutate(lon = sf::st_coordinates(.)[,1],lat = sf::st_coordinates(.)[,2])
-  
-  ## Donwload Function
-  OISST_sub_dl_World <- function(time_df){
-    OISST_dat <- griddap(x = "ncdcOisst21Agg_LonPM180", #for zones -90 to 0
-                         url = "https://coastwatch.pfeg.noaa.gov/erddap/", 
-                         time = c(time_df$start, time_df$end), 
-                         zlev = c(0, 0),
-                         latitude = zone_lat,
-                         longitude = zone_lon,
-                         fields = c("sst"))$data %>% 
-      mutate(time = as.Date(stringr::str_remove(time, "T00:00:00Z"))) %>% 
-      dplyr::rename(t = time, temp = sst) %>% 
-      dplyr::select(lon, lat, t, temp) %>% 
-      na.omit()
+  for(i in 1:length(name_file)){
+    print(i)
+
+    oisst_1day_terra <- terra::rast(name_file[i],subds='sst') %>%
+      terra::rotate(.) #OISST has to be rotated to match MEOW (easier this way)
+
+    if(i ==1){
+      oisst_1day_terra_realms_bind <- terra::extract(oisst_1day_terra,meow_lonlat_spat,list=F,xy=T) %>%
+        as_tibble() %>%
+        drop_na() %>%
+        dplyr::select(-ID) %>%
+        rename_with(.,.fn = ~ paste0('sst_',ymod[i]), .cols = `sst_zlev=0`)# NICE, thanks to https://stackoverflow.com/questions/43487773/how-to-rename-selected-columns-using-dplyr-with-new-column-names-as-strings
+    }else{
+      oisst_1day_terra_realms <- terra::extract(oisst_1day_terra,meow_lonlat_spat,list=F,xy=T) %>%
+        as_tibble() %>%
+        drop_na() %>%
+        dplyr::select(-ID) %>%
+        rename_with(.,.fn = ~ paste0('sst_',ymod[i]), .cols = `sst_zlev=0`)# NICE, thanks to https://stackoverflow.com/questions/43487773/how-to-rename-selected-columns-using-dplyr-with-new-column-names-as-strings
+
+      oisst_1day_terra_realms_bind <- left_join(oisst_1day_terra_realms_bind,oisst_1day_terra_realms,by=c('x','y'))
+    }
   }
   
+  oisst_1day_terra_realms_bind <- oisst_1day_terra_realms_bind %>% 
+    pivot_longer(-c(x,y),names_to = "date",names_prefix = 'sst_',values_to = 'sst') %>% 
+    mutate(date = as.Date(date,format = '%Y%m%d'))
   
-  ## Time vector
-  dl_years <- data.frame(date_index = 1:9,start = as.Date(c("1982-01-01","1986-01-01","1990-01-01","1994-01-01","1999-01-01",
-                                                            "2004-01-01", "2008-01-01", "2013-01-01", "2017-01-01")),
-                         end = as.Date(c("1985-12-31","1989-12-31","1993-12-31","1998-12-31",
-                                         "2003-12-31", "2007-12-31", "2012-12-31", "2016-12-31", "2020-12-31")))
-
-  
-  print('Download OISST by time chunks, get coastal pixels')
-  
-  # - Start of loop to break up time vec? 
-  for (i in (1:dim(dl_years)[1])){
-    print(dl_years[i,])
-    ## Get data
-    print('Get Data')
-    system.time(
-      OISST_data <- #dl_years %>% 
-        dl_years[i,] %>%
-        group_by(date_index) %>% 
-        group_modify(~OISST_sub_dl_World(.x)) %>% 
-        ungroup() %>% 
-        dplyr::select(lon, lat, t, temp)
-    ) 
-    
-    ## Convert data to sf
-    print('Convert data to sf')
-    system.time(
-      OISST_data_sf <- st_as_sf(OISST_data, coords = c("lon", "lat"), crs = crs(r_dShore_crop))
-    )
-    rm(OISST_data)
-    
-    ## Keep data only within dShore - st_intersection
-    print('Keep data only within dShore<10km')
-    system.time(
-      OISST_data_coastal_sf <- st_intersection(OISST_data_sf,dShore_sf)
-    )
-    rm(OISST_data_sf)
-    
-    ## Save (rbind or saveRDS time frame) 
-    print('Save Data Time Chunk')
-    namefile <- paste0("OISST_vignette_Zone",zone_lon[1],zone_lon[2],yearmon(decimal_date(dl_years$start)),yearmon(decimal_date(dl_years$end)),".Rds")[i]
-    print(namefile)
-    saveRDS(OISST_data_coastal_sf, file = namefile)
-    rm(OISST_data_coastal_sf)
-  }
+  rds_name <- paste0("~YOUR_PATH/oisst-avhrr-v02r01.",y,"_REALMS.Rds")
+  print(rds_name)
+  saveRDS(oisst_1day_terra_realms_bind,rds_name)
 }
-```
-
-Event Detection - Uses heatwaveR:: [@heatwaver], translation of GitHub python functions from Eric C.J. Oliver (published in paper @Holbrook2019 A global assessment of marine heatwaves and their drivers)
-https://robwschlegel.github.io/heatwaveR/articles/gridded_event_detection.html. Here we proceed by longitudinal chunks too. Within each longitudinal chunks, we binded the temporal chunks in order to have full time series, then detecting MHW events at each coastal pixels. We repeated the operation for each longitudinal chunks and assigned Realms following @spalding2007marine which eventually produced the document MHW_Events_Global_FULL_Realm_BIND.csv
-
-
-```{r, eval=F}
-## Examples of binding temporal chunks
-OISST_bloc1 <- readRDS('OISST_vignette_ZoneLat-39-32Aug 1982Dec 1985.Rds')
-OISST_bloc2 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 1986Dec 1989.Rds')
-OISST_bloc3 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 1990Dec 1993.Rds')
-OISST_bloc4 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 1994Dec 1998.Rds')
-OISST_bloc5 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 1999Dec 2003.Rds')
-OISST_bloc6 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 2004Dec 2007.Rds')
-OISST_bloc7 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 2008Dec 2012.Rds')
-OISST_bloc8 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 2013Dec 2016.Rds')
-OISST_bloc9 <- readRDS('OISST_vignette_ZoneLat-39-32Jan 2017Dec 2020.Rds')
-
-OISST_data <- bind_rows(OISST_bloc1,OISST_bloc2,OISST_bloc3,OISST_bloc4,OISST_bloc5,OISST_bloc6,OISST_bloc7,OISST_bloc8,OISST_bloc9)
-
-
-## Run detect_event() and get event_only()
-
-event_only <- function(df){
-  # First calculate the climatologies
-  clim <- ts2clm(data = df, climatologyPeriod = c("1983-01-01", "2012-12-31"))
-  # Then the events
-  event <- detect_event(data = clim)
-  # Return only the event metric dataframe of results
-  return(event$event)
-}
-
-MHW_dplyr <- OISST_data %>% as_tibble() %>% dplyr::select(-geometry,-GMT_intermediate_coast_distance_01d) %>% 
-    group_by(lon, lat) %>% 
-    group_modify(~event_only(.x))
 
 ```
 
-Selecting Coastal Pixels - In the global OISST dataset, pixels less than 10km from the shore have been selected as coastal pixels. We have used the Distance to Nearest Coastline at 0.01 Degree Grid dataset provided by NOAA (https://data.noaa.gov/dataset/dataset/distance-to-nearest-coastline-0-01-degree-grid2).
 
+## Calculate climatology from time series
+First step: Calculate climatology for each pixels. Here we proceed by longitudinal chunks given the size that the daily OISST takes in memory on a local computer. We apply the clim_only() function which uses functions from the heatwaveR:: package [@heatwaver]. Inputs here are the Rds files of the OISST pixels within realms from prior step. Outputs are Rds files of MHW days (only) for all the pixels within the longitudinal chunks (here 196 chunks). 
+
+
+```{r, eval=F}
+clim_only <- function(df)
+    # First calculate the climatologies
+    clim <- ts2clm(data = df, climatologyPeriod = c("1983-01-01", "2012-12-31"))
+    # Then the events
+    event <- detect_event(data = clim)
+    # Return only the climatology metric dataframe of results
+    return(event$climatology)
+}
+
+
+rds_files <- list.files(path ='~YOURPATH/', pattern = "*_REALMS.Rds", full.names = TRUE )
+lon_vec <- sort(unique(readRDS(rds_files[1])$x))
+
+for (j in c(seq(1,length(lon_vec),10))){
+  print(paste0('Filter daily OISST in realm pixels in longitudinal slice from ',lon_vec[j]," to ",lon_vec[j+9]))
+  
+  for (i in 1:length(rds_files)){
+    #for (i in 1:2){
+    print(rds_files[i])
+    
+    if(i == 1){
+      oisst_bind <- readRDS(rds_files[i]) %>%
+        dplyr::filter(between(x,lon_vec[j],lon_vec[j+9]))
+    }else{
+      oisst <- readRDS(rds_files[i]) %>%
+        dplyr::filter(between(x,lon_vec[j],lon_vec[j+9]))
+
+      oisst_bind <- bind_rows(oisst_bind,oisst)
+    }
+  }
+  
+  print('Calculate Events')
+  oisst_event <- oisst_bind %>%
+    rename(lon=x,lat=y,t=date,temp=sst) %>%
+    group_by(lon,lat) %>%
+    group_modify(~clim_only(.x)) %>%
+    drop_na()
+  
+  print('Save ')
+  rds_name <- paste0("~YOURPATH/MHW_lon_slice_",lon_vec[j],'_to_',lon_vec[j+9],'_MHWdays_Only.Rds')
+  print(rds_name)
+  saveRDS(oisst_event,rds_name)
+}
+```
+
+## Calculating mean MHW metrics by season and year + Assigning Realms
+From the SST climatology, we can calculate the daily intensity of MHW by $$intensity = temp - seas$$. From the daily intensity, we can calculate the MHW metrics of number of events, number of MHW days, cumulative intensity, mean intensity and max intensity for each season at each pixels.
+
+```{r, eval=F}
+## Get names of .Rds files containing MHW days
+rds_files <- list.files(path ='~YOURPATH/', pattern = "*_MHWdays_Only.Rds", full.names = TRUE )
+
+for (i in 1:length(rds_files)){
+  print(rds_files[i])
+  mhw_pixels <- readRDS(rds_files[i]) 
+  
+  if (i==1){
+    mhw_metrics_mean <- mhw_pixels %>% 
+      mutate(season_num = month(as.Date(floor_date(t, unit="season"))),
+             year = year(t)) %>%
+      mutate(season = if_else(lat<0,
+                              recode_factor(season_num, `12` = "Summer", `3` = "Autumn", `6` = "Winter", `9` = "Spring"),
+                              recode_factor(season_num, `6` = "Summer", `9` = "Autumn", `12` = "Winter", `3` = "Spring"))) %>% 
+      mutate(intensity = temp-seas) %>% 
+      relocate(intensity,.after=seas) %>% 
+      group_by(lon,lat,year,season) %>% 
+      summarise(nevents = length(unique(event_no)),
+                nMHWdays = length(t),
+                int_cumulative = sum(intensity), 
+                int_mean = mean(intensity),
+                int_max = max(intensity)) %>% 
+      pivot_longer(-c(lon,lat,year,season),names_to = 'metrics', values_to = 'values')
+    
+  }else{
+    temp <- mhw_pixels %>% 
+      mutate(season_num = month(as.Date(floor_date(t, unit="season"))),
+             year = year(t)) %>%
+      mutate(season = if_else(lat<0,
+                              recode_factor(season_num, `12` = "Summer", `3` = "Autumn", `6` = "Winter", `9` = "Spring"),
+                              recode_factor(season_num, `6` = "Summer", `9` = "Autumn", `12` = "Winter", `3` = "Spring"))) %>% 
+      mutate(intensity = temp-seas) %>% 
+      group_by(lon,lat,year,season) %>% 
+      summarise(nevents = length(unique(event_no)),
+                nMHWdays = length(t),
+                int_cumulative = sum(intensity), 
+                int_mean = mean(intensity),
+                int_max = max(intensity)) %>% 
+      pivot_longer(-c(lon,lat,year,season),names_to = 'metrics', values_to = 'values')
+    
+    mhw_metrics_mean <- bind_rows(mhw_metrics_mean,temp)
+  }
+}
+
+## Assign realms
+# We only get the pixels here (rather than time series of MHW days), converted to sf object
+mhw_metrics_mean_pixelsOnly <- mhw_metrics_mean %>% 
+    group_by(lon,lat) %>% 
+    tally() %>% 
+    st_as_sf(.,coords=c('lon','lat'),crs=4326) 
+
+# And assign them the realms
+mhw_metrics_mean_pixelsOnly_realm <- st_join(mhw_metrics_mean_pixelsOnly,meow_lonlat) %>% 
+    dplyr::select(c(geometry,REALM))
+
+unique(mhw_metrics_mean_pixelsOnly_realm$REALM)
+mhw_metrics_mean_pixelsOnly_NArealm <- mhw_metrics_mean_pixelsOnly_realm %>% 
+  dplyr::filter(is.na(REALM))
+mhw_metrics_mean_pixelsOnly_NArealm
+# There are some NAs though, only 8 pixels but still let's find a way to assign them their corresponding realms
+
+# We use st_nearest_feature() instead of st_intersects() in order to assgin a realm ONLY to pixels with NA realm
+mhw_metrics_mean_pixelsOnly2 <- st_join(mhw_metrics_mean_pixelsOnly_NArealm,meow_lonlat,join=st_nearest_feature) %>% 
+  dplyr::select(c(geometry,REALM.y)) %>% 
+  rename(REALM = REALM.y)
+
+mhw_metrics_mean_pixelsOnly_realm_lonlat <- mhw_metrics_mean_pixelsOnly_realm %>% 
+  filter(!is.na(REALM)) %>% 
+  bind_rows(.,mhw_metrics_mean_pixelsOnly2) %>% 
+  mutate(REALM = factor(REALM,levels=c("Arctic", "Temperate Northern Atlantic", "Temperate Northern Pacific","Tropical Atlantic",
+                                       "Eastern Indo-Pacific","Central Indo-Pacific","Western Indo-Pacific","Tropical Eastern Pacific", 
+                                       "Temperate South America","Temperate Southern Africa","Temperate Australasia","Southern Ocean"))) %>% 
+  mutate(lon = sf::st_coordinates(.)[,1],lat = sf::st_coordinates(.)[,2]) %>% 
+  as_tibble() %>% 
+  dplyr::select(-geometry)
+
+mhw_metrics_mean_realm <- left_join(mhw_metrics_mean,mhw_metrics_mean_pixelsOnly_realm_lonlat,by=c('lon','lat'))
+unique(mhw_metrics_mean_realm$REALM)
+# No NA anymore
+
+rds_name <- paste0("~YOURPATH/YearSeason_REALM_MeanMetrics_MHWDays_Pixels_1982_2021_OISST.Rds")
+saveRDS(mhw_metrics_mean_realm,rds_name)
+```
 
 # Trend Calculation <a name="trend"></a>
 
@@ -215,146 +273,229 @@ Change-Point detection – Non-parametric Pettitt test are performed to detect a
 
 Seasons Definition - Northern Hemisphere (>0 degLat): Summer[June,July,August], Autumn[September,October,November], Winter[December,January,February], Spring[March,April,May] // Southern Hemisphere (<0 degLat): Summer[December,January,February], Autumn[March,April,May], Winter[June,July,August], Spring[September,October,November]
 
-Other R packages used:
-
-* raster: @raster
-* sf: @sf
-* trend: @trend
-* tidyverse: @tidyverse
-* viridis: @viridis
 
 ```{r, eval=F}
-## Global - 4 Metrics - NO SEASON (4 rows)
-MHW_dplyr <- read_csv('MHW_Events_Global_FULL_Realm_BIND.csv')
+mhw_metrics_mean_realm <- readRDS("~YOURPATH/YearSeason_REALM_MeanMetrics_MHWDays_Pixels_1982_2021_OISST.Rds")
 
-MHW_coastal_year <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year) %>% 
-  summarize(Cumulative_Intensity = mean(intensity_cumulative), 
-            Maximum_Intensity = mean(intensity_max), Duration = mean(duration), Number_Events = sum(length(event_no))) %>%  pivot_longer(-Year,names_to='Metrics',values_to='values')
+## Global - 5 Metrics - NO SEASON (5 rows)
+MHW_global <- mhw_metrics_mean_realm %>%
+  pivot_wider(names_from = metrics,values_from = values) %>% 
+  group_by(year) %>% 
+  summarize(Number_MHW_days = sum(nMHWdays)/260010,
+              Nevents = sum(nevents)/260010, 
+              Mean_Intensity = mean(int_mean), 
+              Maximum_Intensity = mean(int_max),#get the max instead of mean(max)--> nope, tells different story
+              Cumulative_Intensity = sum(int_cumulative)/260010) %>% 
+  pivot_longer(-year,names_to='Metrics',values_to='values') %>% 
+  mutate(Metrics = factor(Metrics,levels=c("Number_MHW_days", "Nevents", "Mean_Intensity", "Maximum_Intensity", "Cumulative_Intensity")))
 
-MHW_global_trends <- MHW_coastal_year %>% group_by(Metrics) %>% dplyr::select(-Year) %>% nest() %>% 
-  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2020,frequency = 1))) %>% 
+MHW_global_trends <- MHW_global %>% group_by(Metrics) %>% nest() %>% 
+  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2021,frequency = 1))) %>% 
   mutate(sens = purrr::map(ts_out, ~sens.slope(.x, conf.level = 0.95)), 
-         pettitt = purrr::map(ts_out, ~pettitt.test(.x))) %>%
+         pettitt = purrr::map(ts_out, ~pettitt.test(.x)),
+         lm = purrr::map(data,~lm(values ~ year,.x))) %>% 
   mutate(Sens_Slope = as.numeric(unlist(sens)[1]),P_Value =as.numeric(unlist(sens)[3]),
-         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4])) %>% 
-  dplyr::select(Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue)
+         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4]),
+         lm_slope = unlist(lm)$coefficients.year) %>% 
+  # Add step of cutting time series in 2 using Change_Point_Year 
+  mutate(pre_ts = purrr::map(ts_out,~window(.x,start=1982,end=Change_Point_Year)),
+         post_ts = purrr::map(ts_out,~window(.x,start=Change_Point_Year,end=2021))) %>% 
+  # Add step of calculating sen's slope and p-value to pre and post change point year
+  mutate(sens_pre = purrr::map(pre_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_pre = as.numeric(unlist(sens_pre)[1]),P_Value_pre =as.numeric(unlist(sens_pre)[3]),
+         sens_post = purrr::map(post_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_post = as.numeric(unlist(sens_post)[1]),P_Value_post =as.numeric(unlist(sens_post)[3])) %>% 
+  dplyr::select(Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue,lm_slope,Sens_Slope_pre,P_Value_pre,Sens_Slope_post,P_Value_post)
 ##
 
-## Global - 4 Metrics - 4 Seasons (16 rows)
-MHW_coastal_season <- MHW_dplyr %>% 
-  group_by(Year,Season) %>% 
-  summarize(Cumulative_Intensity = mean(intensity_cumulative), 
-            Maximum_Intensity = mean(intensity_max), Duration = mean(duration), Number_Events = sum(length(event_no))) %>% 
-  pivot_longer(-c(Year,Season),names_to='Metrics',values_to='values')
+## Global - 4 Metrics - 5 Seasons (20 rows)
+MHW_global_season <- mhw_metrics_mean_realm %>%
+    pivot_wider(names_from = metrics,values_from = values) %>% 
+    group_by(year,season) %>% 
+    summarize(Number_MHW_days = sum(nMHWdays)/260010,
+              Nevents = sum(nevents)/260010, 
+              Mean_Intensity = mean(int_mean), 
+              Maximum_Intensity = mean(int_max),#get the max instead of mean(max)--> nope, tells different story
+              Cumulative_Intensity = sum(int_cumulative)/260010) %>% 
+    pivot_longer(-c(year,season),names_to='Metrics',values_to='values') %>% 
+    mutate(Metrics = factor(Metrics,levels=c("Number_MHW_days", "Nevents", "Mean_Intensity", "Maximum_Intensity", "Cumulative_Intensity")))
 
-
-MHW_global_trends_seasons <- MHW_coastal_season %>% group_by(Metrics,Season) %>% dplyr::select(-Year) %>% nest() %>% 
-  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2020,frequency = 1))) %>% 
+MHW_global_seasons_trends <- MHW_global_season %>% group_by(Metrics,season) %>% nest() %>% 
+  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2021,frequency = 1))) %>% 
   mutate(sens = purrr::map(ts_out, ~sens.slope(.x, conf.level = 0.95)),
-         pettitt = purrr::map(ts_out, ~pettitt.test(.x))) %>%
+         pettitt = purrr::map(ts_out, ~pettitt.test(.x)),
+         lm = purrr::map(data,~lm(values ~ year,.x))) %>%
   mutate(Sens_Slope = as.numeric(unlist(sens)[1]),P_Value =as.numeric(unlist(sens)[3]),
-         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4])) %>% 
+         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4]),
+         lm_slope = unlist(lm)$coefficients.year) %>% 
+  # Add step of cutting time series in 2 using Change_Point_Year 
+  mutate(pre_ts = purrr::map(ts_out,~window(.x,start=1982,end=Change_Point_Year)),
+         post_ts = purrr::map(ts_out,~window(.x,start=Change_Point_Year,end=2021))) %>% 
+  # Add step of calculating sen's slope and p-value to pre and post change point year
+  mutate(sens_pre = purrr::map(pre_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_pre = as.numeric(unlist(sens_pre)[1]),P_Value_pre =as.numeric(unlist(sens_pre)[3]),
+         sens_post = purrr::map(post_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_post = as.numeric(unlist(sens_post)[1]),P_Value_post =as.numeric(unlist(sens_post)[3])) %>% 
   ungroup() %>% #To remove Season column
-  dplyr::select(Season,Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue)
+  dplyr::select(season,Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue,lm_slope,Sens_Slope_pre,P_Value_pre,Sens_Slope_post,P_Value_post)
 ##
 
-## Global Realms 12 - 4 Metrics - NO SEASON (48 rows)
-MHW_coastal_year_regions <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>%
-  group_by(Year,REALM) %>% 
-  summarize(Cumulative_Intensity = mean(intensity_cumulative), 
-            Maximum_Intensity = mean(intensity_max), Duration = mean(duration), Number_Events = sum(length(event_no))) %>% 
-  pivot_longer(-c(Year,REALM),names_to='Metrics',values_to='values')
+## Global Realms 12 - 5 Metrics - NO SEASON (60 rows)
+# number of pixels per realms and bind to tb
+npix_realms <- mhw_metrics_mean_realm %>% 
+  group_by(lon,lat,REALM) %>% 
+  tally() %>% 
+  group_by(REALM) %>% 
+  tally() %>% 
+  rename(npix = n)
 
-MHW_global_trends_realms <- MHW_coastal_year_regions %>% group_by(Metrics,REALM) %>% dplyr::select(-Year) %>% nest() %>% 
-  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2020,frequency = 1))) %>% 
+#X TOTAL                        260,010
+#1 Arctic                       55,659
+#2 Temperate Northern Atlantic  21,815
+#3 Temperate Northern Pacific   18,864
+#4 Tropical Atlantic             18,494
+#5 Eastern Indo-Pacific          25,710
+#6 Central Indo-Pacific         37,768
+#7 Western Indo-Pacific          19,507
+#8 Tropical Eastern Pacific      5,817
+#9 Temperate South America       10,789
+#10 Temperate Southern Africa      2,973
+#11 Temperate Australasia         9,023
+#12 Southern Ocean               33,591
+
+mhw_metrics_mean_realm <- left_join(mhw_metrics_mean_realm,npix_realms,by='REALM')
+
+
+MHW_realm <- mhw_metrics_mean_realm %>%
+    pivot_wider(names_from = metrics,values_from = values) %>% 
+    group_by(year,REALM,npix) %>% 
+    summarize(Number_MHW_days = sum(nMHWdays),
+              Nevents = sum(nevents), 
+              Mean_Intensity = mean(int_mean), 
+              Maximum_Intensity = mean(int_max),#get the max instead of mean(max)--> nope, tells different story
+              Cumulative_Intensity = sum(int_cumulative)) %>% 
+    mutate(Number_MHW_days = Number_MHW_days/npix,
+           Nevents = Nevents/npix, 
+           Cumulative_Intensity = Cumulative_Intensity/npix) %>% 
+    dplyr::select(-npix) %>% 
+    pivot_longer(-c(year,REALM),names_to='Metrics',values_to='values') %>% 
+    mutate(Metrics = factor(Metrics,levels=c("Number_MHW_days", "Nevents", "Mean_Intensity", "Maximum_Intensity", "Cumulative_Intensity")))
+
+MHW_realms_trends <- MHW_realm %>% group_by(Metrics,REALM) %>% nest() %>% 
+  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2021,frequency = 1))) %>% 
   mutate(sens = purrr::map(ts_out, ~sens.slope(.x, conf.level = 0.95)),
-         pettitt = purrr::map(ts_out, ~pettitt.test(.x))) %>%
+         pettitt = purrr::map(ts_out, ~pettitt.test(.x)),
+         lm = purrr::map(data,~lm(values ~ year,.x))) %>%
   mutate(Sens_Slope = as.numeric(unlist(sens)[1]),P_Value =as.numeric(unlist(sens)[3]),
-         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4])) %>% 
-  #ungroup() %>% #To remove Realms column
-  dplyr::select(REALM,Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue)
+         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4]),
+         lm_slope = unlist(lm)$coefficients.year) %>% 
+  # Add step of cutting time series in 2 using Change_Point_Year 
+  mutate(pre_ts = purrr::map(ts_out,~window(.x,start=1982,end=Change_Point_Year)),
+         post_ts = purrr::map(ts_out,~window(.x,start=Change_Point_Year,end=2021))) %>% 
+  # Add step of calculating sen's slope and p-value to pre and post change point year
+  mutate(sens_pre = purrr::map(pre_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_pre = as.numeric(unlist(sens_pre)[1]),P_Value_pre =as.numeric(unlist(sens_pre)[3]),
+         sens_post = purrr::map(post_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_post = as.numeric(unlist(sens_post)[1]),P_Value_post =as.numeric(unlist(sens_post)[3])) %>% 
+  ungroup() %>% #To remove Season column
+  dplyr::select(REALM,Metrics,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue,lm_slope,Sens_Slope_pre,P_Value_pre,Sens_Slope_post,P_Value_post)
 ##
 
-## Global Realms 12 - 4 Metrics - 4 Seasons (192 rows)
-MHW_coastal_year_regions_season <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>%
-  group_by(Year,REALM,Season) %>% 
-  summarize(Cumulative_Intensity = mean(intensity_cumulative), 
-            Maximum_Intensity = mean(intensity_max), Duration = mean(duration), Number_Events = sum(length(event_no))) %>% 
-  pivot_longer(-c(Year,REALM,Season),names_to='Metrics',values_to='values')
+## Global Realms 12 - 5 Metrics - 4 Seasons (240 rows)
+MHW_realm_season <- mhw_metrics_mean_realm %>%
+    pivot_wider(names_from = metrics,values_from = values) %>% 
+    group_by(year,REALM,season,npix) %>% 
+    summarize(Number_MHW_days = sum(nMHWdays),
+              Nevents = sum(nevents), 
+              Mean_Intensity = mean(int_mean), 
+              Maximum_Intensity = mean(int_max),#get the max instead of mean(max)--> nope, tells different story
+              Cumulative_Intensity = sum(int_cumulative)) %>% 
+    mutate(Number_MHW_days = Number_MHW_days/npix,
+           Nevents = Nevents/npix, 
+           Cumulative_Intensity = Cumulative_Intensity/npix) %>% 
+    dplyr::select(-npix) %>% 
+    pivot_longer(-c(year,REALM,season),names_to='Metrics',values_to='values') %>% 
+    mutate(Metrics = factor(Metrics,levels=c("Number_MHW_days", "Nevents", "Mean_Intensity", "Maximum_Intensity", "Cumulative_Intensity")))
 
-MHW_coastal_trends_year_regions <- MHW_coastal_year_regions_season %>% group_by(Metrics,REALM,Season) %>% dplyr::select(-Year) %>% nest() %>% 
-  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2020,frequency = 1))) %>% 
+
+MHW_realms_season_trends <- MHW_realm_season %>% group_by(Metrics,REALM,season) %>% nest() %>% 
+  mutate(ts_out = purrr::map(data, ~ts(.x$values,start=1982,end=2021,frequency = 1))) %>% 
   mutate(sens = purrr::map(ts_out, ~sens.slope(.x, conf.level = 0.95)),
-         pettitt = purrr::map(ts_out, ~pettitt.test(.x))) %>%
+         pettitt = purrr::map(ts_out, ~pettitt.test(.x)),
+         lm = purrr::map(data,~lm(values ~ year,.x))) %>%
   mutate(Sens_Slope = as.numeric(unlist(sens)[1]),P_Value =as.numeric(unlist(sens)[3]),
-         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4])) %>% 
-  #ungroup() %>% #To remove Realms column
-  dplyr::select(REALM,Metrics,Season,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue)
+         Change_Point_Year = time(ts_out[[1]])[as.numeric(unlist(pettitt)[3])],Change_Point_pvalue =as.numeric(unlist(pettitt)[4]),
+         lm_slope = unlist(lm)$coefficients.year) %>% 
+  # Add step of cutting time series in 2 using Change_Point_Year 
+  mutate(pre_ts = purrr::map(ts_out,~window(.x,start=1982,end=Change_Point_Year)),
+         post_ts = purrr::map(ts_out,~window(.x,start=Change_Point_Year,end=2021))) %>% 
+  # Add step of calculating sen's slope and p-value to pre and post change point year
+  mutate(sens_pre = purrr::map(pre_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_pre = as.numeric(unlist(sens_pre)[1]),P_Value_pre =as.numeric(unlist(sens_pre)[3]),
+         sens_post = purrr::map(post_ts, ~sens.slope(.x, conf.level = 0.95)),
+         Sens_Slope_post = as.numeric(unlist(sens_post)[1]),P_Value_post =as.numeric(unlist(sens_post)[3])) %>% 
+  ungroup() %>% #To remove Season column
+  dplyr::select(REALM,Metrics,season,Sens_Slope,P_Value,Change_Point_Year,Change_Point_pvalue,lm_slope,Sens_Slope_pre,P_Value_pre,Sens_Slope_post,P_Value_post)
 ##
 
-# Global
+## Merge different scales of trends #### 
 MHW_global_trends <- MHW_global_trends %>%  
-  mutate(Scale_1 = 'Global', Scale_2 = 'All',Region_Name = 'None', Season_Name = 'None')
+  mutate(Scale = 'All',Region_Name = 'None', Season_Name = 'None')
 
-MHW_global_trends_seasons <- MHW_global_trends_seasons %>%  
-  mutate(Scale_1 = 'Global', Scale_2 = 'Season', Region_Name = 'None', Season_Name = Season)
+MHW_global_trends_seasons <- MHW_global_seasons_trends %>%  
+  mutate(Scale = 'Season', Region_Name = 'None', Season_Name = season)
 
-MHW_global_trends_realms <- MHW_global_trends_realms %>%  
-  mutate(Scale_1 = 'Global', Scale_2 = 'Region', Region_Name = REALM, Season_Name = 'None')
+MHW_global_trends_realms <- MHW_realms_trends %>%  
+  mutate(Scale = 'Region', Region_Name = REALM, Season_Name = 'None')
 
-MHW_coastal_trends_year_regions <- MHW_coastal_trends_year_regions %>%  
-  mutate(Scale_1 = 'Global', Scale_2 = 'Region x Season', Region_Name = REALM, Season_Name = Season)
-# 
+MHW_coastal_trends_year_regions <- MHW_realms_season_trends %>%  
+  mutate(Scale = 'Region x Season', Region_Name = REALM, Season_Name = season)
 
-# Merge by common columns
-MHW_Trends_FULL <- bind_rows(MHW_global_trends,MHW_global_trends_realms,MHW_global_trends_seasons,MHW_coastal_trends_year_regions) %>% 
-  relocate(6:11) %>% dplyr::select(-c(Region,REALM,Season))
-#
+MHW_trends_FULL <- bind_rows(MHW_global_trends,MHW_global_trends_seasons,MHW_global_trends_realms,MHW_coastal_trends_year_regions) %>% 
+  mutate(Trend_Decadal = Sens_Slope*10, 
+         Trend_Decadal_lm = lm_slope*10,
+         Trend_Decadal_pre = Sens_Slope_pre*10,
+         Trend_Decadal_post = Sens_Slope_post*10) %>% 
+  relocate(11:15) %>% 
+  dplyr::select(-c(REALM,season))
 
-# Save as csv
-write_csv(MHW_Trends_FULL,'MHW_Trends_FULL.csv')
+write_csv(MHW_trends_FULL,'~YOURPATH/MHW_Trends_FULL_Realm_Pixels_Reviews_check.csv')
 ```
 
-The above creates the MHW_Trends_FULL.csv which contains the Sen's slopes, p-value, and change-point detection stats at the different scale*season levels.
+The above creates the MHW_Trends_FULL_Realm_Pixels_Reviews_check.csv which contains the Sen's slopes (and decadal trends), p-value, and change-point detection stats at the different scale*season levels.
 
 
 # Figures <a name="figures"></a>
 
 ```{r, eval=F}
-## Load full MHW Attributes outputs
-MHW_dplyr <- read_csv('MHW_Events_Global_FULL_Realm_BIND.csv') %>% 
+meow_lonlat <- st_read('C:/Users/thoralf/OneDrive - NIWA/Documents/Collab/NZ_Coastal_MHW/Marine_Ecoregions_Of_the_World_(MEOW)-shp/Marine_Ecoregions_Of_the_World__MEOW_.shp') %>% 
+  st_make_valid(.) %>% 
   mutate(REALM = factor(REALM,levels=c("Arctic", "Temperate Northern Atlantic", "Temperate Northern Pacific","Tropical Atlantic",
                                        "Eastern Indo-Pacific","Central Indo-Pacific","Western Indo-Pacific","Tropical Eastern Pacific", 
-                                       "Temperate South America","Temperate Southern Africa","Temperate Australasia","Southern Ocean")),
-         Season = factor(Season,levels=c("Summer","Autumn","Winter","Spring")))
+                                       "Temperate South America","Temperate Southern Africa","Temperate Australasia","Southern Ocean"))) %>% 
+  st_transform(.,4326)
 
-##
+coast <- ne_coastline(scale = "medium", returnclass = "sf") %>% 
+  st_cast(.,"MULTIPOLYGON")
 
-coastal_spal <- st_read('Marine_Ecoregions_Of_the_World__MEOW_.shp') %>% 
-  mutate(REALM = factor(REALM,levels=c("Arctic", "Temperate Northern Atlantic", "Temperate Northern Pacific","Tropical Atlantic",
-                                       "Eastern Indo-Pacific","Central Indo-Pacific","Western Indo-Pacific","Tropical Eastern Pacific", 
-                                       "Temperate South America","Temperate Southern Africa","Temperate Australasia","Southern Ocean")))
-
-coastal_spal_lonlat <- st_transform(coastal_spal,CRS("+proj=longlat +datum=WGS84 +no_defs ")) 
-MHW_dplyr_sf_pts <- MHW_dplyr %>% group_by(REALM,lon,lat) %>% tally() %>% st_as_sf(.,coords=c('lon','lat'),crs=crs("+proj=longlat +datum=WGS84 +no_defs"))
-
-
-p <- ggplot() + geom_sf(data=coastal_spal_lonlat,aes(fill=REALM)) + 
-  borders('world',fill='grey') +
-  geom_sf(data=MHW_dplyr_sf_pts,size=.3) +
+p_pixels <- ggplot() +
+  geom_sf(data=meow_lonlat,aes(fill=REALM)) +
+  geom_sf(data=coast,fill='grey') +
   theme(panel.background = element_rect(fill = 'aliceblue')) +
   xlab('') + ylab('') +
-  theme(legend.position = "none",
+  theme(legend.position = "bottom",
         legend.title = element_blank(),
         legend.text = element_text(size=16))
-p
+p_pixels
+ggsave('./Fig1_MapRealms.png',width=14,height=14,dpi=500)
 # --> Map of realms
 
-signif_seasonalTrends <- read_csv('MHW_Trends_FULL.csv') %>% 
-  dplyr::filter(Scale_1=='Global', Scale_2 =='Region x Season') %>% 
+signif_seasonalTrends <- MHW_trends_FULL %>% 
+  dplyr::filter(Scale =='Region x Season') %>% 
   rename(REALM = Region_Name) %>% 
-  mutate(Signif = ifelse(P_Value<0.05,'Signif','Not Signif'), Sign = ifelse(Sens_Slope>0,"Positive","Negative"))
+  mutate(Signif = ifelse(P_Value<0.05,'Signif','Not Signif'), 
+         Sign = ifelse(Sens_Slope>0,"Positive","Negative"),
+         Ratio = Trend_Decadal_post/Trend_Decadal_pre)
 
 p <- signif_seasonalTrends %>% 
   dplyr::filter(Signif == 'Signif') %>% 
@@ -362,15 +503,17 @@ p <- signif_seasonalTrends %>%
   mutate(REALM = factor(REALM,levels=c("Arctic", "Temperate Northern Atlantic", "Temperate Northern Pacific","Tropical Atlantic",
                                        "Eastern Indo-Pacific","Central Indo-Pacific","Western Indo-Pacific","Tropical Eastern Pacific", 
                                        "Temperate South America","Temperate Southern Africa","Temperate Australasia","Southern Ocean")),
-         Metrics = factor(Metrics,levels=c("Number_Events", "Duration", "Maximum_Intensity", "Cumulative_Intensity"))) %>% 
+         Metrics = factor(Metrics,levels=c("Number_MHW_days", "Nevents","Mean_Intensity", "Maximum_Intensity", "Cumulative_Intensity"))) %>% 
   ggplot(data=.,aes(x=Metrics)) +
   geom_bar(aes(fill=Sign)) +
   facet_wrap(~REALM) + 
   scale_fill_viridis(begin = 0.3, end = .8,option="inferno",discrete = T) +
   scale_x_discrete(labels=c(`Cumulative_Intensity` = "Cumulative Intensity (°C Days)",
                             `Duration` = "Duration (Days)",
+                            `Mean_Intensity` = "Mean Intensity (°C)",
                             `Maximum_Intensity` = "Maximum Intensity (°C)",
-                            `Number_Events` = "Number of Events")) +
+                            `Nevents` = "Number of Events",
+                            `Number_MHW_days` = "Number of MHW days")) +
   xlab('') + ylab('Significant Seasonal Trends') + 
   theme_bw() +
   theme(strip.text = element_text(size=16), 
@@ -382,34 +525,28 @@ p <- signif_seasonalTrends %>%
         panel.background = element_rect(fill = "transparent",colour = NA),
         plot.background = element_rect(fill = "transparent",colour = NA))
 p
+ggsave('./Fig1_MHW_Realms_Hist_check.png',width=14,height=14,dpi=500)
+
 # --> Histograms of trend
 ```
 
 The combination of these 2 plots give figure 1 of the paper. 
 
-![Figure 1. Map showing number of significant effects from seasonal trend analyses on MHW frequency, duration, maximum intensity, and cumulative intensity (bars from left to right; 4 seasonal analyses per metric) at a global scale (insert) and for 12 coastal realms (map). Of the 192 analyses (12 regions x 4 metrics x 4 seasons, see Fig. 3-6), 69% increased significantly, 5% decreased and 26% were unaffected. The black dots represent the coastal SST pixels used in this study.](Figure_1_InsetsOnMap.png)
+![Figure 1. Map showing the direction of trend from the seasonal trend analyses on MHW days, number of events, mean intensity, maximum intensity, and cumulative intensity (bars from left to right; 4 seasonal analyses per metric) at a global scale (insert) and for 12 coastal realms (map) 21. Of the 240 analyses (12 regions x 5 metrics x 4 seasons, see Fig. 3-6), 70% increased significantly, 5% decreased and 25% were unaffected. All OISST pixels within the realms were kept in the analysis (n=260,010).](Fig1_RealmsMap_Hist.png)
 
 
 Below is how to make figure 2.
 
 ```{r, eval=F}
 ## Figure 2: MHW Metrics in Coastal Area Globally.
-# To make sure color is consistent with fig 3
-MHW_coastal_year <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year) %>% 
-  summarize(Cumulative_Intensity = mean(intensity_cumulative), 
-            Maximum_Intensity = mean(intensity_max), Duration = mean(duration), Number_Events = sum(length(event_no))) %>%  
-  pivot_longer(-Year,names_to='Metrics',values_to='values') %>% 
-  mutate(Metrics = factor(Metrics,levels=c("Number_Events", "Duration", "Maximum_Intensity", "Cumulative_Intensity")))
-
-# New facet label names for Metrics
-metrics.labs <- c(`Cumulative_Intensity` = "Cumulative Intensity (°C Days)",
-                  `Duration` = "Duration (Days)",
+metrics.labs <- c(`Number_MHW_days` = "Number of MHW days",
+                  `Nevents` = "Number of Events",
+                  `Mean_Intensity` = "Mean Intensity (°C)",
                   `Maximum_Intensity` = "Maximum Intensity (°C)",
-                  `Number_Events` = "Number of Events")
+                  `Cumulative_Intensity` = "Cumulative Intensity (°C Days)")
 
-p <- ggplot(MHW_coastal_year, aes(x=Year,y=values,col=Metrics)) + 
-  facet_wrap(Metrics~.,scales = 'free',labeller = as_labeller(metrics.labs)) + 
+p <- ggplot(MHW_global, aes(x=year,y=values,col=Metrics)) + 
+  facet_wrap(Metrics~.,scales = 'free',labeller = as_labeller(metrics.labs),ncol=2) + 
   geom_line(size=.5) + 
   geom_smooth(se=T,size=1.5) +
   scale_colour_viridis(begin = 0, end = .75,option="viridis",discrete = T) + 
@@ -418,125 +555,143 @@ p <- ggplot(MHW_coastal_year, aes(x=Year,y=values,col=Metrics)) +
   theme(legend.position="none",
         strip.text = element_text(size=20), 
         axis.text=element_text(size=20),
-        axis.title = element_text(size=20))
+        axis.title = element_text(size=20)) 
 p
+ggsave('./Fig2_MHW_Global_check.png',width=14,height=14,dpi=500)
+
 ```
 
-![Figure 2. Annual global trends from January 1982 to December 2020 in the average number (events per year), duration (days per event), maximum intensity (°C per event) and cumulative intensity (°C days per event) of coastal marine heatwaves (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis.](Fig2_MHW_Metrics_Global2.png)
+![Figure 2. Global trends from January 1982 to December 2021 in the number of yearly-averaged and pixel-averaged marine heatwave days, number of events, mean intensity (°C) , maximum intensity (°C) and cumulative intensity (°C days) of marine heatwaves in coastal realms (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis.](Fig2_MHW_Global_check.png)
 
-Below is how to make figures 3-6
+Below is how to make figures 3-7
 
 ```{r, eval=F}
-# Figure 3: Number of coastal MHW per season and Realms
-NEvents_seasonRealm <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year,Season,REALM) %>% 
-  summarise(Number_Events = sum(length(event_no)))
-
-p <- ggplot(NEvents_seasonRealm,aes(Year,Number_Events,col=Season)) + 
-  facet_wrap(vars(REALM),scales='free',ncol=3) + 
+# Figure 3: Number of MHW days per season and Realms
+p <- MHW_realm_season %>% 
+  dplyr::filter(Metrics == 'Number_MHW_days') %>% 
+  ggplot(., aes(x=year,y=values,col=season)) + 
+  facet_wrap(REALM~.,scales = 'free',ncol=3) + 
   geom_line(size=.5) + 
-  geom_smooth(se=T,size=1.5) +  
-  #ggtitle('Number of Events of MHW in Coastal Realms Per Season') + 
-  ylab('Number of Events') + xlab('Year') + 
+  geom_smooth(se=T,size=1.5) +
+  ylab('Number of MHW days') + xlab('Year') + 
   scale_colour_viridis(begin = 0, end = .75,option="inferno",discrete = T) +
   theme_bw() + 
   theme(legend.position="bottom",
-        #legend.title = element_text(size=26),
         legend.title = element_blank(),
         legend.text = element_text(size=26),
         strip.text = element_text(size=20), 
         axis.text=element_text(size=17),
-        axis.title = element_text(size=26))
+        axis.title = element_text(size=26))+
+  guides(colour = guide_legend(override.aes = list(shape=15,size=8)))
 p
-ggsave('Fig3_MHW_NumberEvents_Seasons_Realms_Global2.png',width=14,height=14,dpi=1000)
+ggsave('./Fig3_MHW_Realms_Season_nMHWdays_check.png',width=14,height=14,dpi=500)
+
 ```
 
-![Figure 3. Annual trends from 1982 to 2020 in the average number (events per year) of coastal marine heatwaves per realm and season (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis.](Fig3_MHW_NumberEvents_Seasons_Realms_Global2.png)
-
+![Figure 3. Seasonal trends from 1982 to 2021 in the yearly-averaged and pixel-averaged marine heatwave days per coastal realm and season. See caption of figure 2 for similarities in figure legend.](Fig3_MHW_Realms_Season_nMHWdays_check.png)
 
 
 ```{r, eval=F}
-# Figure 4: Duration of coastal MHW per season and Realms
-Duration_seasonRealm <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year,Season,REALM) %>% 
-  summarise(meanDuration = mean(duration))
-
-p <- ggplot(Duration_seasonRealm,aes(Year,meanDuration,col=Season)) + 
-  facet_wrap(vars(REALM),scales='free',ncol=3) + 
+# Figure 4: Number of events
+p <- MHW_realm_season %>% 
+  dplyr::filter(Metrics == 'Nevents') %>% 
+  ggplot(., aes(x=year,y=values,col=season)) + 
+  facet_wrap(REALM~.,scales = 'free',ncol=3) + 
   geom_line(size=.5) + 
-  geom_smooth(se=T,size=1.5) + 
-  #ggtitle('Duration of MHW in Coastal Realms Per Season (Days)') + 
-  ylab('Duration (Days)') + xlab('Year') +
+  geom_smooth(se=T,size=1.5) +
+  ylab('Number of events') + xlab('Year') + 
   scale_colour_viridis(begin = 0, end = .75,option="inferno",discrete = T) +
   theme_bw() + 
   theme(legend.position="bottom",
-        #legend.title = element_text(size=26),
         legend.title = element_blank(),
         legend.text = element_text(size=26),
         strip.text = element_text(size=20), 
         axis.text=element_text(size=17),
-        axis.title = element_text(size=26))
+        axis.title = element_text(size=26))+
+  guides(colour = guide_legend(override.aes = list(shape=15,size=8)))
 p
-ggsave('Fig4_MHW_Duration_Seasons_Realms_Global2.png',width=14,height=14,dpi=1000)
+ggsave('./Fig4_MHW_Realms_Season_nEvents_check.png',width=14,height=14,dpi=500)
+
 ```
 
-![Figure 4. Annual trends from 1982 to 2020 in the average duration (days per event) of coastal marine heatwaves in realms per season (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis.](Fig4_MHW_Duration_Seasons_Realms_Global2.png)
+![Figure 4. Seasonal trends from 1982 to 2021 in the yearly-averaged and pixel-averaged number of marine heatwave (events) per coastal realm and season. See caption of figure 2 for similarities in figure legend.](Fig4_MHW_Realms_Season_nEvents_check.png)
 
 
 ```{r, eval=F}
-# Figure 5: Max Intensity of coastal MHW per season and Realms
-MaxInt_seasonRealm <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year,Season,REALM) %>% 
-  summarise(meanMaxInt = mean(intensity_max ))
-
-p <- ggplot(MaxInt_seasonRealm,aes(Year,meanMaxInt,col=Season)) + 
-  facet_wrap(vars(REALM),scales='free',ncol=3) + 
+# Figure 5: Mean intensity
+p <- MHW_realm_season %>% 
+  dplyr::filter(Metrics == 'Mean_Intensity') %>% 
+  ggplot(., aes(x=year,y=values,col=season)) +  
+  facet_wrap(REALM~.,scales = 'free',ncol=3) + 
   geom_line(size=.5) + 
-  geom_smooth(se=T,size=1.5) + 
-  #ggtitle('Max Intensity of MHW in Coastal Realms Per Season (°C)') + 
-  ylab('Max Intensity (°C)') + xlab('Year') +
+  geom_smooth(se=T,size=1.5) +
   scale_colour_viridis(begin = 0, end = .75,option="inferno",discrete = T) +
+  ylab('Mean intensity (°C)') + xlab('Year') + 
   theme_bw() + 
   theme(legend.position="bottom",
-        #legend.title = element_text(size=26),
         legend.title = element_blank(),
         legend.text = element_text(size=26),
         strip.text = element_text(size=20), 
         axis.text=element_text(size=17),
-        axis.title = element_text(size=26))
+        axis.title = element_text(size=26))+
+  guides(colour = guide_legend(override.aes = list(shape=15,size=8)))
 p
-ggsave('Fig5_MHW_MaxInt_Seasons_Realms_Global2.png',width=14,height=14,dpi=1000)
+ggsave('./Fig5_MHW_Realms_Season_MeanInt_check.png',width=14,height=14,dpi=500)
+
 ```
 
-![Figure 5. Annual trends from 1982 to 2020 in the average maximum intensity (°C per event) of coastal marine heatwaves in realms per season (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis. ](Fig5_MHW_MaxInt_Seasons_Realms_Global2.png)
+![Figure 5. Seasonal trends from 1982 to 2021 in the yearly-averaged and pixel-averaged mean intensity (°C) of marine heatwave per coastal realm and season. See caption of figure 2 for similarities in figure legend. ](Fig5_MHW_Realms_Season_MeanInt_check.png)
 
 ```{r, eval=F}
-# Figure 6: Cumulative Intensity of coastal MHW per season and Realms
-CumInt_seasonRealm <- MHW_dplyr %>% #mutate(year = lubridate::year(date_peak)) %>% 
-  group_by(Year,Season,REALM) %>% 
-  summarise(meanCumInt = mean(intensity_cumulative))
-
-p <- ggplot(CumInt_seasonRealm,aes(Year,meanCumInt,col=Season)) + 
-  facet_wrap(vars(REALM),scales='free',ncol=3) + 
+# Figure 6: Max Intensity 
+p <- MHW_realm_season %>% 
+  dplyr::filter(Metrics == 'Maximum_Intensity') %>% 
+  ggplot(., aes(x=year,y=values,col=season)) +  
+  facet_wrap(REALM~.,scales = 'free',ncol=3) + 
   geom_line(size=.5) + 
-  geom_smooth(se=T,size=1.5) + 
-  #ggtitle('Cumulative Intensity of MHW in Coastal Realms Per Season (°C Days)') + 
-  ylab('Cumulative Intensity (°C Days)') + xlab('Year') + 
+  geom_smooth(se=T,size=1.5) +
   scale_colour_viridis(begin = 0, end = .75,option="inferno",discrete = T) +
+  ylab('Maximum intensity (°C)') + xlab('Year') + 
   theme_bw() + 
   theme(legend.position="bottom",
-        #legend.title = element_text(size=26),
         legend.title = element_blank(),
         legend.text = element_text(size=26),
         strip.text = element_text(size=20), 
         axis.text=element_text(size=17),
-        axis.title = element_text(size=26))
+        axis.title = element_text(size=26))+
+  guides(colour = guide_legend(override.aes = list(shape=15,size=8)))
 p
-ggsave('Fig6_MHW_CumIntensity_Seasons_Realms_Global2.png',width=14,height=14,dpi=1000)
+ggsave('./Fig6_MHW_Realms_Season_MaxInt_check.png',width=14,height=14,dpi=500)
+
 ```
 
-![Figure 6. Annual trends from 1982 to 2020 in the average cumulative intensity (°C days per event) of coastal marine heatwaves in realms per season (thin lines). The thick lines show loess smoothing (+ the 95% confidence interval around smoothing), indicating potential breakpoint in linear trend analysis.](Fig6_MHW_CumIntensity_Seasons_Realms_Global2.png)
+![Figure 6. Seasonal trends from 1982 to 2021 in the yearly-averaged and pixel-averaged maximum intensity (°C) of marine heatwave per coastal realm and season. See caption of figure 2 for similarities in figure legend.](Fig6_MHW_Realms_Season_MaxInt_check.png)
 
+
+```{r, eval=F}
+# Figure 6: Cumulative Intensity 
+p <- MHW_realm_season %>% 
+  dplyr::filter(Metrics == 'Cumulative_Intensity') %>% 
+  ggplot(., aes(x=year,y=values,col=season)) +  
+  facet_wrap(REALM~.,scales = 'free',ncol=3) + 
+  geom_line(size=.5) + 
+  geom_smooth(se=T,size=1.5) +
+  scale_colour_viridis(begin = 0, end = .75,option="inferno",discrete = T) +
+  ylab('Cumulative intensity (°C Days)') + xlab('Year') + 
+  theme_bw() + 
+  theme(legend.position="bottom",
+        legend.title = element_blank(),
+        legend.text = element_text(size=26),
+        strip.text = element_text(size=20), 
+        axis.text=element_text(size=17),
+        axis.title = element_text(size=26))+
+  guides(colour = guide_legend(override.aes = list(shape=15,size=8)))
+p
+ggsave('./Fig7_MHW_Realms_Season_CumInt_check.png',width=14,height=14,dpi=500)
+
+```
+
+![Figure 7.Seasonal trends from 1982 to 2021 in the yearly-averaged and pixel-averaged cumulative intensity (°C days) of marine heatwave per coastal realm and season. See caption of figure 2 for similarities in figure legend.](Fig7_MHW_Realms_Season_CumInt_check.png)
 
 
 # Bibliography <a name="Biblio"></a>
