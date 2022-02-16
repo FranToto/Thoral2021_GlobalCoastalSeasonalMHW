@@ -451,15 +451,19 @@ MHW_global_trends_realms <- MHW_realms_trends %>%
 MHW_coastal_trends_year_regions <- MHW_realms_season_trends %>%  
   mutate(Scale = 'Region x Season', Region_Name = REALM, Season_Name = season)
 
-MHW_trends_FULL <- bind_rows(MHW_global_trends,MHW_global_trends_seasons,MHW_global_trends_realms,MHW_coastal_trends_year_regions) %>% 
+MHW_trends_FULL_clean <- bind_rows(MHW_global_trends,MHW_global_trends_seasons,MHW_global_trends_realms,MHW_coastal_trends_year_regions) %>% 
   mutate(Trend_Decadal = Sens_Slope*10, 
          Trend_Decadal_lm = lm_slope*10,
          Trend_Decadal_pre = Sens_Slope_pre*10,
-         Trend_Decadal_post = Sens_Slope_post*10) %>% 
-  relocate(11:15) %>% 
-  dplyr::select(-c(REALM,season))
+         Trend_Decadal_post = Sens_Slope_post*10,
+         RatioPostPre = Trend_Decadal_post/Trend_Decadal_pre) %>% 
+  dplyr::select(Scale,Region_Name,Season_Name,Metrics,Trend_Decadal,P_Value,Change_Point_Year,Trend_Decadal_pre,P_Value_pre,Trend_Decadal_post,P_Value_post,RatioPostPre)
 
-write_csv(MHW_trends_FULL,'~YOURPATH/MHW_Trends_FULL_Realm_Pixels_Reviews_check.csv')
+MHW_trends_FULL_clean <- MHW_trends_FULL %>% 
+  mutate(RatioPostPre = Trend_Decadal_post/Trend_Decadal_pre) %>% 
+  dplyr::select(Scale,Region_Name,Season_Name,Metrics,Trend_Decadal,P_Value,Change_Point_Year,Trend_Decadal_pre,P_Value_pre,Trend_Decadal_post,P_Value_post,RatioPostPre)
+
+write_csv(MHW_trends_FULL,'~YOURPATH/MHW_Trends_FULL_Realm_Pixels_Reviews_check_clean.csv')
 ```
 
 The above creates the MHW_Trends_FULL_Realm_Pixels_Reviews_check.csv which contains the Sen's slopes (and decadal trends), p-value, and change-point detection stats at the different scale*season levels.
