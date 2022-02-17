@@ -10,4 +10,4 @@ Shiny app accessible here: https://frantoto.shinyapps.io/Global_Coastal_Seasonal
 And related code to make it in folder app/
 
 ## Data
-HW_Trends_FULL_Realm_Pixels_Reviews_check_clean.csv: table of global and seasonal trends for coastal realms.
+MHW_Trends_FULL_Realm_Pixels_Reviews_check_clean.csv: table of global and seasonal trends for coastal realms.
