@@ -3,7 +3,7 @@ Supporting Data and Methodology for the paper Thoral et al. (2022) Unravelling S
 
 ## Code and Analysis
 Global_Coastal_Seasonal_Trends_MHW_Metrics_Methods.Rmd
-Published in RPubs: rpubs.com/frantoto/globalmhwtrends
+Published in RPubs: https://rpubs.com/FranToto/GlobalMHWTrends
 
 ## Interactive app
 Shiny app accessible here: https://frantoto.shinyapps.io/Global_Coastal_Seasonal_Trends_MHW_Metrics/
