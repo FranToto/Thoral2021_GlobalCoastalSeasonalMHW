@@ -1,326 +1,326 @@
-Scale,Region_Name,Season_Name,Metrics,Trend_Decadal,P_Value,Change_Point_Year,Trend_Decadal_pre,P_Value_pre,Trend_Decadal_post,P_Value_post,RatioPostPre
-All,None,None,Number_MHW_days,11.6984824,6.87e-8,2001,1.388213549,0.58125476,28.87405094,1.26e-4,20.7994302899575
-All,None,None,Nevents,0.743945613,4.65e-8,2001,0.2111227,0.144292055,0.993904081,0.002794388,4.707708271067015
-All,None,None,Mean_Intensity,0.087556028,2.45e-7,1996,-0.007984432,0.7665253,0.078697412,0.006273132,-9.856356970664914
-All,None,None,Maximum_Intensity,0.153522385,1.91e-7,2004,0.08420101,0.11305102,0.162929647,0.033909076,1.935008226148356
-All,None,None,Cumulative_Intensity,19.72093969,2.62e-9,2001,5.545680675,0.085514806,40.54707068,4.57e-5,7.311468700819129
-Season,None,Summer,Number_MHW_days,3.150077361,1.39e-8,2002,0.846338952,0.065473358,6.177181006,6.58e-4,7.298708149261691
-Season,None,Summer,Nevents,0.202914049,2.09e-8,2001,0.073147335,0.074352905,0.279461011,0.001869082,3.8205221147154576
-Season,None,Summer,Mean_Intensity,0.112422732,3.74e-6,2003,0.041086347,0.429795272,0.098921157,0.107542829,2.407640596522246
-Season,None,Summer,Maximum_Intensity,0.194764859,1.89e-6,2003,0.044268017,0.498564387,0.252930261,0.020940934,5.713611725594124
-Season,None,Summer,Cumulative_Intensity,7.033740642,5.31e-9,2002,1.704169039,0.085210083,13.7918432,1.13e-4,8.093001858602596
-Season,None,Autumn,Number_MHW_days,3.71479506,4.01e-9,2001,0.629966155,0.229969078,8.9129692,2.58e-4,14.148330238471303
-Season,None,Autumn,Nevents,0.223750359,1.83e-8,2000,0.05222876,0.29391717,0.335213069,3.07e-4,6.418170161420642
-Season,None,Autumn,Mean_Intensity,0.083440565,5.22e-6,2005,0.049281842,0.096533829,0.012202543,0.836819705,0.2476072830232279
-Season,None,Autumn,Maximum_Intensity,0.152423687,4.02e-7,2004,0.070205938,0.139144175,0.151517167,0.040815848,2.1581816483956104
-Season,None,Autumn,Cumulative_Intensity,5.901279928,9.55e-10,2002,1.646122992,0.037197694,13.68147119,4.06e-4,8.31132986811474
-Season,None,Winter,Number_MHW_days,2.656,1.91e-7,2004,0.525,0.342,9.488,0.004,18.07238095238095
-Season,None,Winter,Nevents,0.192,4.54e-7,2001,0.022,0.626,0.248,0.0041,11.272727272727273
-Season,None,Winter,Mean_Intensity,0.085,6.87e-8,1996,0.023,0.621,0.069,0.0136,3.0000000000000004
-Season,None,Winter,Maximum_Intensity,0.135,5.3e-8,1996,0.01,0.843,0.124,0.0063,12.4
-Season,None,Winter,Cumulative_Intensity,3.482,6.1e-9,1996,-0.902,0.428,5.846,0,-6.481152993348116
-Season,None,Spring,Number_MHW_days,2.275,2.16e-7,2001,0.24,0.381,5.89,0.0015,24.541666666666668
-Season,None,Spring,Nevents,0.148,3.14e-7,1996,-0.06,0.235,0.173,8e-4,-2.8833333333333333
-Season,None,Spring,Mean_Intensity,0.082,5.12e-7,2006,0.045,0.088,0.037,0.3444,0.8222222222222222
-Season,None,Spring,Maximum_Intensity,0.13,8.29e-7,2006,0.083,0.107,0.077,0.3004,0.927710843373494
-Season,None,Spring,Cumulative_Intensity,3.205,2.09e-8,1996,-0.508,0.767,4.915,1e-4,-9.6751968503937
-Region,Arctic,None,Number_MHW_days,16.904,4.54e-7,2002,-1.312,0.74,40.944,0.0026,-31.20731707317073
-Region,Arctic,None,Nevents,0.69,1.54e-5,2001,-0.035,0.974,0.49,0.1742,-13.999999999999998
-Region,Arctic,None,Mean_Intensity,0.2,5.12e-7,2006,0.133,0.01,0.004,0.9641,0.03007518796992481
-Region,Arctic,None,Maximum_Intensity,0.329,4.02e-7,2006,0.179,0.01,0.078,0.8219,0.4357541899441341
-Region,Arctic,None,Cumulative_Intensity,27.549,2.27e-9,2002,5.012,0.05,57.778,0.0039,11.527932960893855
-Region,Temperate Northern Atlantic,None,Number_MHW_days,18.894,3.93e-10,2001,8.412,0.025,24.351,0.001,2.8947931526390867
-Region,Temperate Northern Atlantic,None,Nevents,1.342,9.55e-10,2001,0.771,0.021,1.345,0.0019,1.7444876783398184
-Region,Temperate Northern Atlantic,None,Mean_Intensity,0,0.99070403,1994,0.046,0.669,0.045,0.0553,0.9782608695652174
-Region,Temperate Northern Atlantic,None,Maximum_Intensity,0.076,0.006181537,2005,-0.083,0.097,0.136,0.0435,-1.6385542168674698
-Region,Temperate Northern Atlantic,None,Cumulative_Intensity,34.519,2.92e-10,2001,13.577,0.01,48.149,8e-4,3.546365176401267
-Region,Temperate Northern Pacific,None,Number_MHW_days,13.161,5.22e-6,2002,6.224,0.11,31.1,0.0644,4.996786632390745
-Region,Temperate Northern Pacific,None,Nevents,0.903,5.84e-6,2002,0.591,0.085,1.42,0.041,2.4027072758037225
-Region,Temperate Northern Pacific,None,Mean_Intensity,0.078,1.68e-4,1997,-0.002,1,0.033,0.3153,-16.5
-Region,Temperate Northern Pacific,None,Maximum_Intensity,0.178,2.12e-6,1997,0.004,1,0.16,0.0125,40
-Region,Temperate Northern Pacific,None,Cumulative_Intensity,26.72,6.53e-7,2002,13.474,0.057,66.877,0.0179,4.963411013804364
-Region,Tropical Atlantic,None,Number_MHW_days,13.342,8.9e-8,2001,1.926,0.417,37.954,0.0103,19.7061266874351
-Region,Tropical Atlantic,None,Nevents,1.192,4.54e-7,2001,0.284,0.315,1.638,0.0497,5.767605633802817
-Region,Tropical Atlantic,None,Mean_Intensity,-0.033,1.84e-4,2002,0.001,0.976,-0.02,0.4957,-20
-Region,Tropical Atlantic,None,Maximum_Intensity,-0.018,0.357347194,2002,0.008,0.88,0.012,0.7212,1.5
-Region,Tropical Atlantic,None,Cumulative_Intensity,15.004,1.91e-7,2001,3.094,0.417,38.963,0.0103,12.593083387201036
-Region,Eastern Indo-Pacific,None,Number_MHW_days,12.359,5.84e-6,2001,1.308,0.673,29.96,0.0275,22.90519877675841
-Region,Eastern Indo-Pacific,None,Nevents,0.821,5.28e-5,2001,0.276,0.626,0.681,0.2389,2.467391304347826
-Region,Eastern Indo-Pacific,None,Mean_Intensity,-0.018,0.063951978,2002,0.007,0.695,-0.023,0.3468,-3.2857142857142856
-Region,Eastern Indo-Pacific,None,Maximum_Intensity,-0.001,0.99070403,1995,-0.21,0.037,-0.034,0.359,0.1619047619047619
-Region,Eastern Indo-Pacific,None,Cumulative_Intensity,15.143,1.25e-5,2001,3.526,0.315,30.542,0.0748,8.661939875212706
-Region,Central Indo-Pacific,None,Number_MHW_days,12.46,2.78e-7,1997,-1.56,0.753,18.584,0.0035,-11.912820512820511
-Region,Central Indo-Pacific,None,Nevents,1.04,1.5e-6,1997,-0.26,0.685,1.193,0.0095,-4.588461538461538
-Region,Central Indo-Pacific,None,Mean_Intensity,-0.024,5.28e-5,2002,-0.009,0.566,-0.022,0.1119,2.4444444444444446
-Region,Central Indo-Pacific,None,Maximum_Intensity,0,0.99070403,1984,-0.276,1,0.008,0.4507,-0.02898550724637681
-Region,Central Indo-Pacific,None,Cumulative_Intensity,15.977,7.36e-7,1997,-2.185,0.62,22.667,0.0072,-10.373913043478261
-Region,Western Indo-Pacific,None,Number_MHW_days,13.529,1.89e-6,2004,3.358,0.369,35.48,0.01,10.565812983918999
-Region,Western Indo-Pacific,None,Nevents,1.097,1.25e-5,2004,0.426,0.342,1.808,0.0408,4.244131455399061
-Region,Western Indo-Pacific,None,Mean_Intensity,-0.015,0.016919054,2006,0.002,0.907,-0.002,1,-1
-Region,Western Indo-Pacific,None,Maximum_Intensity,0.011,0.521648149,1995,-0.096,0.125,0.006,0.9005,-0.0625
-Region,Western Indo-Pacific,None,Cumulative_Intensity,16.581,2.66e-6,2004,4.369,0.398,44.079,0.0124,10.089036392767225
-Region,Tropical Eastern Pacific,None,Number_MHW_days,6.569,0.008174287,2005,1.232,0.785,23.978,0.1275,19.46266233766234
-Region,Tropical Eastern Pacific,None,Nevents,0.62,0.007628452,2001,-0.122,0.82,1.271,0.1235,-10.418032786885245
-Region,Tropical Eastern Pacific,None,Mean_Intensity,-0.018,0.40811042,2016,0.011,0.532,-0.366,0.0085,-33.27272727272727
-Region,Tropical Eastern Pacific,None,Maximum_Intensity,-0.007,0.753082136,2017,0.026,0.438,-0.521,0.2207,-20.03846153846154
-Region,Tropical Eastern Pacific,None,Cumulative_Intensity,9.04,0.015875547,2005,1.333,0.862,29.265,0.174,21.95423855963991
-Region,Temperate South America,None,Number_MHW_days,5.471,0.013076818,2003,0.256,0.91,16.635,0.0931,64.98046875
-Region,Temperate South America,None,Nevents,0.24,0.091142799,2003,-0.012,0.91,0.42,0.363,-35
-Region,Temperate South America,None,Mean_Intensity,0.047,0.018022282,2006,0.009,0.761,-0.083,0.2604,-9.222222222222223
-Region,Temperate South America,None,Maximum_Intensity,0.091,0.002968184,2006,0.017,0.761,-0.075,0.444,-4.411764705882352
-Region,Temperate South America,None,Cumulative_Intensity,10.733,0.011462469,2003,-0.716,0.91,26.143,0.0358,-36.512569832402235
-Region,Temperate Southern Africa,None,Number_MHW_days,8.778,1.89e-6,1998,0.353,0.837,11.928,0.0043,33.79036827195468
-Region,Temperate Southern Africa,None,Nevents,0.667,1.01e-5,1998,-0.075,0.773,0.65,0.0309,-8.666666666666668
-Region,Temperate Southern Africa,None,Mean_Intensity,0.052,9.76e-4,2005,0.047,0.385,0.05,0.2661,1.0638297872340425
-Region,Temperate Southern Africa,None,Maximum_Intensity,0.113,1.71e-5,2006,0.061,0.338,0.093,0.1151,1.5245901639344261
-Region,Temperate Southern Africa,None,Cumulative_Intensity,16.46,5.12e-7,1998,3.146,0.592,22.76,0.0032,7.234583598219962
-Region,Temperate Australasia,None,Number_MHW_days,13.94,1.12e-5,1997,-2.926,0.499,16.179,0.0585,-5.5293916609706075
-Region,Temperate Australasia,None,Nevents,0.914,1.01e-5,1997,-0.272,0.558,0.692,0.0721,-2.5441176470588234
-Region,Temperate Australasia,None,Mean_Intensity,0.012,0.258412876,2008,-0.043,0.024,0.004,0.9128,-0.0930232558139535
-Region,Temperate Australasia,None,Maximum_Intensity,0.063,0.011462469,2007,-0.055,0.123,0.024,0.6922,-0.4363636363636364
-Region,Temperate Australasia,None,Cumulative_Intensity,20.956,6.51e-6,1997,-5.465,0.444,25.35,0.0422,-4.638609332113449
-Region,Southern Ocean,None,Number_MHW_days,-4.672,1.15e-4,2006,-0.956,0.414,0.409,1,-0.42782426778242677
-Region,Southern Ocean,None,Nevents,-0.482,7.27e-6,2006,-0.113,0.338,-0.291,0.4995,2.575221238938053
-Region,Southern Ocean,None,Mean_Intensity,0.104,2.88e-5,2005,-0.043,0.056,0.253,0.0015,-5.883720930232559
-Region,Southern Ocean,None,Maximum_Intensity,0.139,5.83e-5,2005,-0.066,0.04,0.341,8e-4,-5.166666666666667
-Region,Southern Ocean,None,Cumulative_Intensity,-0.591,0.491823743,1993,7.17,0.244,0.613,0.7215,0.08549511854951185
-Region x Season,Arctic,Summer,Number_MHW_days,4.004,1.58e-7,2002,1.382,0.156,6.307,0.0252,4.563675832127353
-Region x Season,Arctic,Summer,Nevents,0.191,1.62e-5,2002,0.103,0.239,0.057,0.8203,0.5533980582524273
-Region x Season,Arctic,Summer,Mean_Intensity,0.359,4.54e-5,2006,0.001,0.981,0.268,0.3444,268
-Region x Season,Arctic,Summer,Maximum_Intensity,0.555,9.04e-5,2006,-0.004,0.907,0.463,0.444,-115.75
-Region x Season,Arctic,Summer,Cumulative_Intensity,11.975,1.22e-7,2002,2.326,0.194,28.077,0.015,12.070937231298366
-Region x Season,Arctic,Autumn,Number_MHW_days,4.895,4.65e-8,2000,0.201,0.78,9.28,6e-4,46.16915422885572
-Region x Season,Arctic,Autumn,Nevents,0.248,6.04e-8,2000,0.067,0.294,0.278,0.0095,4.149253731343284
-Region x Season,Arctic,Autumn,Mean_Intensity,0.191,1.15e-4,2002,0.087,0.566,0.106,0.5376,1.2183908045977012
-Region x Season,Arctic,Autumn,Maximum_Intensity,0.351,1.89e-6,2002,0.066,0.381,0.414,0.1273,6.2727272727272725
-Region x Season,Arctic,Autumn,Cumulative_Intensity,8.001,7.02e-9,2002,1.762,0.065,16.354,0.015,9.28149829738933
-Region x Season,Arctic,Winter,Number_MHW_days,3.778,5.83e-5,2004,-0.473,0.635,13.157,0.0489,-27.816067653276956
-Region x Season,Arctic,Winter,Nevents,0.179,7.59e-4,2000,-0.188,0.08,0.166,0.2147,-0.8829787234042553
-Region x Season,Arctic,Winter,Mean_Intensity,0.086,7.36e-7,1998,0.115,0.004,0.02,0.5352,0.17391304347826086
-Region x Season,Arctic,Winter,Maximum_Intensity,0.144,1.91e-7,1998,0.14,0.019,0.04,0.3334,0.2857142857142857
-Region x Season,Arctic,Winter,Cumulative_Intensity,3.835,6.1e-9,2000,-0.174,0.675,6.062,0,-34.839080459770116
-Region x Season,Arctic,Spring,Number_MHW_days,2.567,0.005962604,2002,-1.257,0.037,6.75,0.0855,-5.369928400954654
-Region x Season,Arctic,Spring,Nevents,0.06,0.118442464,2002,-0.087,0.139,-0.139,0.2843,1.5977011494252875
-Region x Season,Arctic,Spring,Mean_Intensity,0.055,0.032038025,1989,0.115,0.536,0.003,0.9876,0.02608695652173913
-Region x Season,Arctic,Spring,Maximum_Intensity,0.094,0.006867055,1989,0.158,0.711,0.025,0.5664,0.15822784810126583
-Region x Season,Arctic,Spring,Cumulative_Intensity,2.458,7.8e-7,2002,0.301,0.216,3.702,0.0556,12.299003322259136
-Region x Season,Temperate Northern Atlantic,Summer,Number_MHW_days,4.86,1.71e-8,2001,1.78,0.086,4.846,0.0275,2.7224719101123593
-Region x Season,Temperate Northern Atlantic,Summer,Nevents,0.348,1.95e-8,2001,0.143,0.064,0.319,0.0431,2.230769230769231
-Region x Season,Temperate Northern Atlantic,Summer,Mean_Intensity,0.062,0.00845565,2001,-0.038,0.581,0.015,0.6506,-0.39473684210526316
-Region x Season,Temperate Northern Atlantic,Summer,Maximum_Intensity,0.196,5.54e-5,2001,-0.03,0.77,0.143,0.1941,-4.766666666666667
-Region x Season,Temperate Northern Atlantic,Summer,Cumulative_Intensity,10.652,2.55e-8,2001,4.312,0.086,11.282,0.0372,2.6164192949907235
-Region x Season,Temperate Northern Atlantic,Autumn,Number_MHW_days,5.735,6.14e-10,1998,1.746,0.108,9.288,0.0012,5.319587628865979
-Region x Season,Temperate Northern Atlantic,Autumn,Nevents,0.342,2.62e-9,1998,0.082,0.266,0.371,0.0019,4.524390243902439
-Region x Season,Temperate Northern Atlantic,Autumn,Mean_Intensity,0.008,0.552376505,2011,-0.021,0.254,-0.021,0.7555,1
-Region x Season,Temperate Northern Atlantic,Autumn,Maximum_Intensity,0.071,0.005359425,2009,-0.012,0.737,0.134,0.4277,-11.166666666666668
-Region x Season,Temperate Northern Atlantic,Autumn,Cumulative_Intensity,9.78,4.57e-10,1998,2.411,0.149,17.273,6e-4,7.164247200331812
-Region x Season,Temperate Northern Atlantic,Winter,Number_MHW_days,4.578,7.12e-10,2001,1.847,0.018,6.814,0.0023,3.6892257715213863
-Region x Season,Temperate Northern Atlantic,Winter,Nevents,0.342,1.48e-9,2001,0.151,0.018,0.342,0.0103,2.264900662251656
-Region x Season,Temperate Northern Atlantic,Winter,Mean_Intensity,-0.012,0.649547898,1993,0.114,0.732,0.043,0.1709,0.3771929824561403
-Region x Season,Temperate Northern Atlantic,Winter,Maximum_Intensity,0.045,0.204097893,2009,-0.067,0.072,0.204,0.1272,-3.0447761194029845
-Region x Season,Temperate Northern Atlantic,Winter,Cumulative_Intensity,7.065,5.3e-10,2004,3.09,0.002,13.22,0.0153,4.27831715210356
-Region x Season,Temperate Northern Atlantic,Spring,Number_MHW_days,3.858,4.34e-8,2001,1.971,0.098,5.296,0.0072,2.686960933536276
-Region x Season,Temperate Northern Atlantic,Spring,Nevents,0.29,2.23e-8,1997,0.064,0.499,0.248,0.0019,3.875
-Region x Season,Temperate Northern Atlantic,Spring,Mean_Intensity,-0.025,0.31631607,1994,0.027,0.951,0.04,0.2133,1.4814814814814816
-Region x Season,Temperate Northern Atlantic,Spring,Maximum_Intensity,0.032,0.375866139,2006,-0.193,0.023,0.037,0.9641,-0.19170984455958548
-Region x Season,Temperate Northern Atlantic,Spring,Cumulative_Intensity,6.493,3.81e-8,1998,1.265,0.303,9.134,0.0027,7.220553359683795
-Region x Season,Temperate Northern Pacific,Summer,Number_MHW_days,4.837,2.51e-6,2003,2.088,0.048,9.218,0.0931,4.414750957854406
-Region x Season,Temperate Northern Pacific,Summer,Nevents,0.352,3.15e-6,2003,0.22,0.063,0.412,0.0802,1.8727272727272726
-Region x Season,Temperate Northern Pacific,Summer,Mean_Intensity,0.067,0.00165524,2005,-0.017,0.637,0.039,0.5923,-2.2941176470588234
-Region x Season,Temperate Northern Pacific,Summer,Maximum_Intensity,0.205,1.31e-5,2003,-0.068,0.573,0.279,0.0358,-4.102941176470589
-Region x Season,Temperate Northern Pacific,Summer,Cumulative_Intensity,11.247,1.25e-6,2003,4.318,0.055,23.789,0.0501,5.509263547938861
-Region x Season,Temperate Northern Pacific,Autumn,Number_MHW_days,4.223,9.34e-7,2002,1.161,0.319,10.435,0.0039,8.987941429801895
-Region x Season,Temperate Northern Pacific,Autumn,Nevents,0.256,3.77e-7,2002,0.109,0.239,0.394,0.0026,3.614678899082569
-Region x Season,Temperate Northern Pacific,Autumn,Mean_Intensity,0.042,0.016919054,2005,-0.016,0.785,-0.001,1,0.0625
-Region x Season,Temperate Northern Pacific,Autumn,Maximum_Intensity,0.127,0.001355162,2005,-0.004,0.941,0.143,0.387,-35.74999999999999
-Region x Season,Temperate Northern Pacific,Autumn,Cumulative_Intensity,7.627,1.68e-7,2002,2.13,0.216,20.921,0.0026,9.822065727699531
-Region x Season,Temperate Northern Pacific,Winter,Number_MHW_days,2.21,2.66e-4,1994,-0.801,0.502,2.599,0.0505,-3.244694132334582
-Region x Season,Temperate Northern Pacific,Winter,Nevents,0.161,1.26e-4,1994,-0.06,0.502,0.166,0.046,-2.766666666666667
-Region x Season,Temperate Northern Pacific,Winter,Mean_Intensity,0.049,0.005359425,1997,0.06,0.26,-0.016,0.5283,-0.26666666666666666
-Region x Season,Temperate Northern Pacific,Winter,Maximum_Intensity,0.099,7.1e-5,1996,0.115,0.138,0.053,0.2901,0.46086956521739125
-Region x Season,Temperate Northern Pacific,Winter,Cumulative_Intensity,3.386,4.78e-5,1994,-0.763,0.583,3.932,0.0313,-5.153342070773263
-Region x Season,Temperate Northern Pacific,Spring,Number_MHW_days,2.083,0.001528084,2013,0.418,0.292,-11.484,0.7545,-27.47368421052632
-Region x Season,Temperate Northern Pacific,Spring,Nevents,0.148,0.001104298,2013,0.05,0.263,0.071,0.917,1.4199999999999997
-Region x Season,Temperate Northern Pacific,Spring,Mean_Intensity,0.075,0.00308075,1997,0.015,0.893,-0.02,0.6238,-1.3333333333333335
-Region x Season,Temperate Northern Pacific,Spring,Maximum_Intensity,0.161,1.1e-4,1997,0.073,0.499,0.055,0.4982,0.7534246575342466
-Region x Season,Temperate Northern Pacific,Spring,Cumulative_Intensity,3.881,6.13e-4,1994,1.521,0.76,4.652,0.1186,3.0585141354372127
-Region x Season,Tropical Atlantic,Summer,Number_MHW_days,2.257,2.88e-5,2002,0.575,0.415,5.598,0.1119,9.735652173913044
-Region x Season,Tropical Atlantic,Summer,Nevents,0.206,2.21e-4,1997,-0.01,0.964,0.26,0.1543,-26
-Region x Season,Tropical Atlantic,Summer,Mean_Intensity,-0.031,0.010723676,1996,-0.029,0.692,-0.017,0.4275,0.5862068965517242
-Region x Season,Tropical Atlantic,Summer,Maximum_Intensity,-0.007,0.700619648,1984,0.427,0.296,0.007,0.8015,0.01639344262295082
-Region x Season,Tropical Atlantic,Summer,Cumulative_Intensity,2.721,2.11e-5,2002,0.653,0.349,7.228,0.0744,11.068912710566615
-Region x Season,Tropical Atlantic,Autumn,Number_MHW_days,4.61,1.6e-8,2001,0.629,0.256,9.994,0.0103,15.888712241653417
-Region x Season,Tropical Atlantic,Autumn,Nevents,0.384,6.04e-8,2001,0.077,0.206,0.398,0.032,5.1688311688311694
-Region x Season,Tropical Atlantic,Autumn,Mean_Intensity,-0.023,0.032995395,2002,0.022,0.45,-0.013,0.5813,-0.5909090909090909
-Region x Season,Tropical Atlantic,Autumn,Maximum_Intensity,0.003,0.806710622,1994,-0.123,0.36,-0.011,0.5144,0.08943089430894309
-Region x Season,Tropical Atlantic,Autumn,Cumulative_Intensity,5.188,4.07e-8,2001,0.652,0.381,10.261,0.0086,15.73773006134969
-Region x Season,Tropical Atlantic,Winter,Number_MHW_days,4.44,1.83e-8,2001,0.448,0.538,13.28,3e-4,29.642857142857142
-Region x Season,Tropical Atlantic,Winter,Nevents,0.365,1.01e-7,2001,0.039,0.538,0.711,0.0019,18.23076923076923
-Region x Season,Tropical Atlantic,Winter,Mean_Intensity,-0.03,0.013956996,2002,0.025,0.415,-0.017,0.5813,-0.68
-Region x Season,Tropical Atlantic,Winter,Maximum_Intensity,-0.007,0.616375003,2002,0.027,0.608,0.054,0.4173,2
-Region x Season,Tropical Atlantic,Winter,Cumulative_Intensity,4.653,4.65e-8,2001,0.656,0.284,13.612,0.0015,20.75
-Region x Season,Tropical Atlantic,Spring,Number_MHW_days,3.155,3.53e-5,2001,0.236,0.82,7.334,0.032,31.076271186440678
-Region x Season,Tropical Atlantic,Spring,Nevents,0.229,3.53e-5,2001,0.044,0.673,0.395,0.0748,8.977272727272728
-Region x Season,Tropical Atlantic,Spring,Mean_Intensity,-0.039,0.002547699,2002,-0.011,0.74,-0.03,0.3145,2.7272727272727275
-Region x Season,Tropical Atlantic,Spring,Maximum_Intensity,-0.033,0.187983838,1998,-0.01,0.902,0.018,0.8622,-1.7999999999999998
-Region x Season,Tropical Atlantic,Spring,Cumulative_Intensity,3.66,8.62e-5,2001,0.112,0.974,8.258,0.0372,73.73214285714285
-Region x Season,Eastern Indo-Pacific,Summer,Number_MHW_days,3.094,1.05e-4,2001,0.097,0.922,6.408,0.0372,66.0618556701031
-Region x Season,Eastern Indo-Pacific,Summer,Nevents,0.2,6.98e-4,2001,0.017,0.871,0.186,0.4149,10.941176470588234
-Region x Season,Eastern Indo-Pacific,Summer,Mean_Intensity,-0.011,0.40811042,2012,0.008,0.734,-0.033,0.5915,-4.125
-Region x Season,Eastern Indo-Pacific,Summer,Maximum_Intensity,0.026,0.158606077,1995,-0.156,0.101,0.006,0.8349,-0.038461538461538464
-Region x Season,Eastern Indo-Pacific,Summer,Cumulative_Intensity,3.897,2.21e-4,2001,0.152,0.974,7.145,0.032,47.00657894736842
-Region x Season,Eastern Indo-Pacific,Autumn,Number_MHW_days,2.833,5.28e-5,2001,0.032,0.871,10.561,0.0201,330.03125
-Region x Season,Eastern Indo-Pacific,Autumn,Nevents,0.202,0.001151461,2001,-0.029,0.82,0.291,0.1742,-10.034482758620689
-Region x Season,Eastern Indo-Pacific,Autumn,Mean_Intensity,-0.023,0.04145691,2002,-0.013,0.88,-0.034,0.2843,2.615384615384616
-Region x Season,Eastern Indo-Pacific,Autumn,Maximum_Intensity,-0.011,0.583967534,1999,0.019,0.762,0.003,0.9579,0.15789473684210528
-Region x Season,Eastern Indo-Pacific,Autumn,Cumulative_Intensity,3.366,1.68e-4,2001,0.094,0.871,11.414,0.0497,121.42553191489361
-Region x Season,Eastern Indo-Pacific,Winter,Number_MHW_days,3.511,7.36e-7,1998,1.9,0.149,6.61,0.0092,3.478947368421053
-Region x Season,Eastern Indo-Pacific,Winter,Nevents,0.241,4.68e-6,2001,0.196,0.041,0.243,0.1095,1.2397959183673468
-Region x Season,Eastern Indo-Pacific,Winter,Mean_Intensity,-0.015,0.239293512,2002,0.054,0.11,-0.01,0.5376,-0.1851851851851852
-Region x Season,Eastern Indo-Pacific,Winter,Maximum_Intensity,0.005,0.806710622,2002,0.106,0.065,0.031,0.4957,0.29245283018867924
-Region x Season,Eastern Indo-Pacific,Winter,Cumulative_Intensity,3.648,1.68e-6,1998,2.042,0.174,6.693,0.0122,3.2776689520078355
-Region x Season,Eastern Indo-Pacific,Spring,Number_MHW_days,2.949,8.11e-6,2001,0.35,0.626,4.479,0.0372,12.797142857142859
-Region x Season,Eastern Indo-Pacific,Spring,Nevents,0.176,1.84e-4,2000,-0.005,1,0.102,0.2839,-20.4
-Region x Season,Eastern Indo-Pacific,Spring,Mean_Intensity,-0.018,0.126938771,2002,0.029,0.45,-0.016,0.7212,-0.5517241379310345
-Region x Season,Eastern Indo-Pacific,Spring,Maximum_Intensity,-0.012,0.753082136,1995,-0.297,0.016,-0.06,0.211,0.20202020202020202
-Region x Season,Eastern Indo-Pacific,Spring,Cumulative_Intensity,3.657,2.88e-5,1999,0.027,1,5.316,0.013,196.88888888888889
-Region x Season,Central Indo-Pacific,Summer,Number_MHW_days,3.386,2.98e-6,2000,0.577,0.675,6.747,0.0112,11.693240901213173
-Region x Season,Central Indo-Pacific,Summer,Nevents,0.279,1.71e-5,1997,-0.057,0.62,0.327,0.0235,-5.7368421052631575
-Region x Season,Central Indo-Pacific,Summer,Mean_Intensity,-0.027,5.39e-4,2006,-0.009,0.528,-0.023,0.3444,2.555555555555556
-Region x Season,Central Indo-Pacific,Summer,Maximum_Intensity,0.004,0.934998804,1994,-0.198,0.017,-0.012,0.7074,0.06060606060606061
-Region x Season,Central Indo-Pacific,Summer,Cumulative_Intensity,4.535,4.68e-6,1997,-0.734,0.62,7.054,0.0072,-9.610354223433243
-Region x Season,Central Indo-Pacific,Autumn,Number_MHW_days,3.055,4.18e-6,1997,-0.322,0.62,4.437,0.0142,-13.779503105590063
-Region x Season,Central Indo-Pacific,Autumn,Nevents,0.26,3.53e-5,1997,-0.044,0.685,0.274,0.065,-6.227272727272728
-Region x Season,Central Indo-Pacific,Autumn,Mean_Intensity,-0.021,0.003451102,2006,-0.004,0.726,-0.002,0.9641,0.5
-Region x Season,Central Indo-Pacific,Autumn,Maximum_Intensity,-0.004,0.735453618,2006,0.026,0.272,0.038,0.6204,1.4615384615384617
-Region x Season,Central Indo-Pacific,Autumn,Cumulative_Intensity,3.731,1.71e-5,1997,-0.6,0.558,4.796,0.0299,-7.993333333333334
-Region x Season,Central Indo-Pacific,Winter,Number_MHW_days,3.224,2.74e-8,1997,0.28,0.753,4.939,0.0016,17.639285714285712
-Region x Season,Central Indo-Pacific,Winter,Nevents,0.274,2.16e-7,1997,-0.003,1,0.334,0.0047,-111.33333333333334
-Region x Season,Central Indo-Pacific,Winter,Mean_Intensity,-0.012,0.078525511,2002,0.002,0.74,0.012,0.3145,6
-Region x Season,Central Indo-Pacific,Winter,Maximum_Intensity,0.017,0.067367792,2009,-0.011,0.514,0.062,0.1272,-5.636363636363637
-Region x Season,Central Indo-Pacific,Winter,Cumulative_Intensity,4.08,2.74e-8,1997,0.339,0.822,5.587,0.0016,16.480825958702063
-Region x Season,Central Indo-Pacific,Spring,Number_MHW_days,3.01,8.11e-6,1997,-0.747,0.392,4.625,0.0083,-6.191432396251673
-Region x Season,Central Indo-Pacific,Spring,Nevents,0.264,3.53e-5,1997,-0.091,0.392,0.345,0.0471,-3.791208791208791
-Region x Season,Central Indo-Pacific,Spring,Mean_Intensity,-0.026,0.003718462,2000,-0.008,0.78,-0.022,0.2594,2.75
-Region x Season,Central Indo-Pacific,Spring,Maximum_Intensity,-0.003,0.78871949,1983,-0.041,1,0.004,0.8846,-0.0975609756097561
-Region x Season,Central Indo-Pacific,Spring,Cumulative_Intensity,3.732,1.71e-5,1997,-1.119,0.344,5.699,0.0161,-5.092940125111706
-Region x Season,Western Indo-Pacific,Summer,Number_MHW_days,3.197,3.34e-6,2004,0.947,0.291,10.495,0.01,11.082365364308341
-Region x Season,Western Indo-Pacific,Summer,Nevents,0.309,8.11e-6,2004,0.121,0.316,0.543,0.028,4.487603305785124
-Region x Season,Western Indo-Pacific,Summer,Mean_Intensity,-0.008,0.204097893,2007,0.014,0.311,-0.007,0.7665,-0.5
-Region x Season,Western Indo-Pacific,Summer,Maximum_Intensity,0.037,0.054552843,1996,-0.046,0.692,0.027,0.4806,-0.5869565217391305
-Region x Season,Western Indo-Pacific,Summer,Cumulative_Intensity,4.253,4.18e-6,2004,1.306,0.267,14.34,0.0124,10.980091883614088
-Region x Season,Western Indo-Pacific,Autumn,Number_MHW_days,3.138,4.68e-6,2004,1.31,0.154,7.429,0.0582,5.6709923664122135
-Region x Season,Western Indo-Pacific,Autumn,Nevents,0.269,3.91e-5,1996,-0.218,0.488,0.36,0.0093,-1.6513761467889907
-Region x Season,Western Indo-Pacific,Autumn,Mean_Intensity,-0.016,0.126938771,2005,0.009,0.71,-0.007,0.9016,-0.7777777777777779
-Region x Season,Western Indo-Pacific,Autumn,Maximum_Intensity,0.012,0.568066961,1996,-0.117,0.553,-0.008,0.8255,0.06837606837606837
-Region x Season,Western Indo-Pacific,Autumn,Cumulative_Intensity,3.739,9.04e-6,2004,1.721,0.154,9.125,0.069,5.302149912841371
-Region x Season,Western Indo-Pacific,Winter,Number_MHW_days,2.956,4.18e-6,2005,0.711,0.264,6.194,0.0435,8.711673699015472
-Region x Season,Western Indo-Pacific,Winter,Nevents,0.235,3.19e-5,2004,0.08,0.342,0.364,0.0956,4.55
-Region x Season,Western Indo-Pacific,Winter,Mean_Intensity,-0.011,0.078525511,2001,0.024,0.23,-0.021,0.2389,-0.875
-Region x Season,Western Indo-Pacific,Winter,Maximum_Intensity,0.009,0.700619648,1985,0.078,1,0.02,0.2552,0.25641025641025644
-Region x Season,Western Indo-Pacific,Winter,Cumulative_Intensity,3.358,7.27e-6,2005,0.885,0.309,7.146,0.0435,8.07457627118644
-Region x Season,Western Indo-Pacific,Spring,Number_MHW_days,3.57,1.33e-6,2004,0.804,0.369,11.28,0.008,14.029850746268655
-Region x Season,Western Indo-Pacific,Spring,Nevents,0.284,1.01e-5,2001,0.008,0.974,0.434,0.005,54.25
-Region x Season,Western Indo-Pacific,Spring,Mean_Intensity,-0.024,0.008754819,2001,0.022,0.456,-0.008,0.7398,-0.36363636363636365
-Region x Season,Western Indo-Pacific,Spring,Maximum_Intensity,0,0.972117136,1985,-0.225,0.734,0.014,0.2552,-0.06222222222222222
-Region x Season,Western Indo-Pacific,Spring,Cumulative_Intensity,4.18,1.18e-6,2004,0.942,0.245,12.943,0.0124,13.739915074309978
-Region x Season,Tropical Eastern Pacific,Summer,Number_MHW_days,1.593,0.009371916,1996,-1.652,0.488,2.193,0.2011,-1.3274818401937047
-Region x Season,Tropical Eastern Pacific,Summer,Nevents,0.155,0.013076818,1996,-0.327,0.373,0.181,0.2704,-0.5535168195718654
-Region x Season,Tropical Eastern Pacific,Summer,Mean_Intensity,-0.01,0.50662057,1984,-0.785,1,0.002,0.9,-0.0025477707006369425
-Region x Season,Tropical Eastern Pacific,Summer,Maximum_Intensity,0.001,0.99070403,1984,-2.009,1,0.034,0.3654,-0.016923842707814836
-Region x Season,Tropical Eastern Pacific,Summer,Cumulative_Intensity,2.212,0.010723676,1996,-2.188,0.488,2.719,0.2011,-1.242687385740402
-Region x Season,Tropical Eastern Pacific,Autumn,Number_MHW_days,1.732,0.007115518,1996,-0.293,0.621,3.708,0.0939,-12.65529010238908
-Region x Season,Tropical Eastern Pacific,Autumn,Nevents,0.17,0.007628452,2011,0.048,0.372,0.192,0.8763,4
-Region x Season,Tropical Eastern Pacific,Autumn,Mean_Intensity,-0.046,0.043838787,2011,-0.019,0.721,-0.173,0.3502,9.105263157894736
-Region x Season,Tropical Eastern Pacific,Autumn,Maximum_Intensity,-0.058,0.158606077,2002,-0.009,0.928,-0.093,0.3145,10.333333333333334
-Region x Season,Tropical Eastern Pacific,Autumn,Cumulative_Intensity,2.013,0.011462469,1996,-0.488,0.621,4.462,0.1457,-9.14344262295082
-Region x Season,Tropical Eastern Pacific,Winter,Number_MHW_days,1.581,0.009371916,2013,0.355,0.593,-1.776,1,-5.002816901408451
-Region x Season,Tropical Eastern Pacific,Winter,Nevents,0.145,0.010027526,2013,0.049,0.549,-0.427,0.7545,-8.714285714285714
-Region x Season,Tropical Eastern Pacific,Winter,Mean_Intensity,0.023,0.448859821,2001,-0.104,0.206,-0.013,0.9278,0.125
-Region x Season,Tropical Eastern Pacific,Winter,Maximum_Intensity,0.034,0.31075456,2006,-0.033,0.624,-0.06,0.5584,1.8181818181818181
-Region x Season,Tropical Eastern Pacific,Winter,Cumulative_Intensity,2.312,0.015875547,2013,0.636,0.593,-8.539,0.917,-13.426100628930817
-Region x Season,Tropical Eastern Pacific,Spring,Number_MHW_days,0.999,0.121240532,2001,-0.564,0.77,2.897,0.4149,-5.136524822695035
-Region x Season,Tropical Eastern Pacific,Spring,Nevents,0.092,0.158606077,2001,-0.128,0.456,0.163,0.6077,-1.2734375
-Region x Season,Tropical Eastern Pacific,Spring,Mean_Intensity,-0.008,0.735453618,1995,-0.187,0.324,-0.083,0.243,0.44385026737967914
-Region x Season,Tropical Eastern Pacific,Spring,Maximum_Intensity,-0.001,0.972117136,1983,4.102,1,0.015,0.7348,0.003656752803510482
-Region x Season,Tropical Eastern Pacific,Spring,Cumulative_Intensity,1.274,0.212521935,2001,-0.986,0.673,2.292,0.5661,-2.3245436105476673
-Region x Season,Temperate South America,Summer,Number_MHW_days,1.385,0.04145691,2004,-1.538,0.398,1.232,0.5445,-0.801040312093628
-Region x Season,Temperate South America,Summer,Nevents,0.059,0.212521935,2004,-0.113,0.154,-0.032,0.8202,0.2831858407079646
-Region x Season,Temperate South America,Summer,Mean_Intensity,0.05,0.016919054,2007,0.009,0.791,-0.046,0.3223,-5.111111111111112
-Region x Season,Temperate South America,Summer,Maximum_Intensity,0.105,0.003201354,2007,0.024,0.791,-0.095,0.4884,-3.9583333333333335
-Region x Season,Temperate South America,Summer,Cumulative_Intensity,2.545,0.048950239,2004,-2.849,0.291,2.132,0.6494,-0.7483327483327483
-Region x Season,Temperate South America,Autumn,Number_MHW_days,2.042,0.001300344,2003,0.962,0.367,4.289,0.0802,4.458419958419959
-Region x Season,Temperate South America,Autumn,Nevents,0.118,0.015368381,1996,0.008,1,0.136,0.1583,17
-Region x Season,Temperate South America,Autumn,Mean_Intensity,0.061,0.032038025,2006,0.023,0.691,-0.04,0.7526,-1.7391304347826089
-Region x Season,Temperate South America,Autumn,Maximum_Intensity,0.126,0.003580246,2006,0.051,0.559,0.034,0.7526,0.6666666666666667
-Region x Season,Temperate South America,Autumn,Cumulative_Intensity,3.41,0.001300344,2003,1.242,0.43,8.269,0.0589,6.65780998389694
-Region x Season,Temperate South America,Winter,Number_MHW_days,1.687,0.014409747,2013,0.227,0.661,9.369,0.4655,41.27312775330396
-Region x Season,Temperate South America,Winter,Nevents,0.112,0.053088171,2014,0.015,0.816,0.551,0.3865,36.733333333333334
-Region x Season,Temperate South America,Winter,Mean_Intensity,0.019,0.455838492,2006,-0.026,0.624,-0.171,0.0957,6.5769230769230775
-Region x Season,Temperate South America,Winter,Maximum_Intensity,0.058,0.155164858,2000,-0.122,0.263,0.027,1,-0.22131147540983606
-Region x Season,Temperate South America,Winter,Cumulative_Intensity,2.668,0.017455395,2013,0.435,0.593,5.372,0.2515,12.349425287356322
-Region x Season,Temperate South America,Spring,Number_MHW_days,0.844,0.067367792,2013,-0.138,0.833,4.643,0.4655,-33.64492753623188
-Region x Season,Temperate South America,Spring,Nevents,0.02,0.568066961,2013,-0.046,0.307,0.138,0.917,-3.0000000000000004
-Region x Season,Temperate South America,Spring,Mean_Intensity,0.039,0.034958632,2006,-0.015,0.691,-0.047,0.6853,3.1333333333333333
-Region x Season,Temperate South America,Spring,Maximum_Intensity,0.083,0.026057912,2006,-0.038,0.559,0.014,0.8926,-0.368421052631579
-Region x Season,Temperate South America,Spring,Cumulative_Intensity,1.691,0.019188017,2010,-0.124,0.896,10.716,0.1148,-86.41935483870967
-Region x Season,Temperate Southern Africa,Summer,Number_MHW_days,3.218,6.53e-7,1998,1.43,0.108,2.774,0.1303,1.93986013986014
-Region x Season,Temperate Southern Africa,Summer,Nevents,0.275,2.3e-7,1998,0.157,0.053,0.22,0.1123,1.4012738853503184
-Region x Season,Temperate Southern Africa,Summer,Mean_Intensity,0.026,0.158606077,2007,-0.014,0.597,-0.015,0.9212,1.0714285714285714
-Region x Season,Temperate Southern Africa,Summer,Maximum_Intensity,0.092,0.001591662,2006,0.024,0.624,0.095,0.3444,3.9583333333333335
-Region x Season,Temperate Southern Africa,Summer,Cumulative_Intensity,6.152,9.34e-7,2001,2.926,0.056,6.315,0.2639,2.1582365003417636
-Region x Season,Temperate Southern Africa,Autumn,Number_MHW_days,1.976,0.00140998,2009,0.848,0.277,7.271,0.1606,8.57429245283019
-Region x Season,Temperate Southern Africa,Autumn,Nevents,0.145,4.14e-4,1998,-0.054,0.65,0.19,0.0371,-3.5185185185185186
-Region x Season,Temperate Southern Africa,Autumn,Mean_Intensity,0.027,0.176499549,2005,0.017,0.823,-0.048,0.6505,-2.8235294117647056
-Region x Season,Temperate Southern Africa,Autumn,Maximum_Intensity,0.067,0.098013943,2006,-0.004,0.944,-0.002,1,0.5
-Region x Season,Temperate Southern Africa,Autumn,Cumulative_Intensity,3.413,0.002267334,2009,1.243,0.333,13.863,0.1606,11.152855993563957
-Region x Season,Temperate Southern Africa,Winter,Number_MHW_days,1.972,0.001792069,2004,0.346,0.792,4.756,0.1727,13.745664739884395
-Region x Season,Temperate Southern Africa,Winter,Nevents,0.122,0.003580246,1997,-0.156,0.163,0.163,0.0798,-1.044871794871795
-Region x Season,Temperate Southern Africa,Winter,Mean_Intensity,0.063,0.001104298,2002,0.07,0.194,0.048,0.381,0.6857142857142856
-Region x Season,Temperate Southern Africa,Winter,Maximum_Intensity,0.129,1.76e-4,2006,0.085,0.129,0.113,0.4995,1.3294117647058823
-Region x Season,Temperate Southern Africa,Winter,Cumulative_Intensity,3.152,9.36e-4,2004,0.792,0.561,7.475,0.1727,9.438131313131311
-Region x Season,Temperate Southern Africa,Spring,Number_MHW_days,1.442,0.004637351,2002,-0.174,0.74,2.037,0.23,-11.706896551724139
-Region x Season,Temperate Southern Africa,Spring,Nevents,0.104,0.019786863,2002,-0.047,0.566,0.067,0.7212,-1.4255319148936172
-Region x Season,Temperate Southern Africa,Spring,Mean_Intensity,0.047,0.016919054,2003,0.015,0.91,0.036,0.4011,2.4
-Region x Season,Temperate Southern Africa,Spring,Maximum_Intensity,0.099,0.001469032,2003,0.066,0.463,0.087,0.4415,1.3181818181818181
-Region x Season,Temperate Southern Africa,Spring,Cumulative_Intensity,2.663,0.001355162,2002,0.201,0.928,3.179,0.2561,15.815920398009949
-Region x Season,Temperate Australasia,Summer,Number_MHW_days,3.41,5.78e-7,1997,-0.856,0.499,4.49,0.0016,-5.2453271028037385
-Region x Season,Temperate Australasia,Summer,Nevents,0.25,5.12e-7,2004,0.102,0.205,0.414,0.008,4.0588235294117645
-Region x Season,Temperate Australasia,Summer,Mean_Intensity,0.024,0.082563101,2009,-0.013,0.621,0.052,0.5022,-4
-Region x Season,Temperate Australasia,Summer,Maximum_Intensity,0.087,0.005757261,2008,-0.012,0.835,0.079,0.7426,-6.583333333333333
-Region x Season,Temperate Australasia,Summer,Cumulative_Intensity,6.272,1.33e-6,1997,-2.033,0.392,8.82,0.0022,-4.338416133792426
-Region x Season,Temperate Australasia,Autumn,Number_MHW_days,3.926,1.18e-5,1997,-0.446,0.753,4.485,0.065,-10.056053811659194
-Region x Season,Temperate Australasia,Autumn,Nevents,0.229,3.03e-5,1997,-0.054,0.558,0.161,0.0798,-2.9814814814814814
-Region x Season,Temperate Australasia,Autumn,Mean_Intensity,0.003,0.833876179,2007,-0.044,0.064,0.005,1,-0.11363636363636365
-Region x Season,Temperate Australasia,Autumn,Maximum_Intensity,0.05,0.059080245,2006,-0.088,0.183,0.033,0.7526,-0.37500000000000006
-Region x Season,Temperate Australasia,Autumn,Cumulative_Intensity,6.193,3.03e-5,1997,-0.845,0.558,6.982,0.0973,-8.262721893491126
-Region x Season,Temperate Australasia,Winter,Number_MHW_days,3.461,6.12e-5,1997,-0.329,0.753,1.283,0.3875,-3.8996960486322183
-Region x Season,Temperate Australasia,Winter,Nevents,0.213,1.76e-4,1997,-0.031,0.822,0.035,0.7261,-1.1290322580645162
-Region x Season,Temperate Australasia,Winter,Mean_Intensity,0.007,0.470040488,2005,-0.02,0.309,-0.007,0.4838,0.35
-Region x Season,Temperate Australasia,Winter,Maximum_Intensity,0.049,0.009053987,2005,0.005,0.901,0.026,0.9016,5.199999999999999
-Region x Season,Temperate Australasia,Winter,Cumulative_Intensity,4.647,7.44e-5,1997,-0.374,0.822,2.425,0.4982,-6.483957219251336
-Region x Season,Temperate Australasia,Spring,Number_MHW_days,2.581,2.42e-4,1997,-0.948,0.344,2.638,0.1412,-2.782700421940928
-Region x Season,Temperate Australasia,Spring,Nevents,0.185,0.001469032,1997,-0.091,0.3,0.108,0.4691,-1.1868131868131868
-Region x Season,Temperate Australasia,Spring,Mean_Intensity,0.014,0.289033543,2006,-0.052,0.034,0.053,0.3923,-1.0192307692307692
-Region x Season,Temperate Australasia,Spring,Maximum_Intensity,0.064,0.03112731,2006,-0.043,0.252,0.066,0.6204,-1.5348837209302328
-Region x Season,Temperate Australasia,Spring,Cumulative_Intensity,3.938,5.88e-4,1997,-1.353,0.224,4.077,0.1831,-3.0133037694013303
-Region x Season,Southern Ocean,Summer,Number_MHW_days,-0.924,0.015875547,1997,0.32,0.964,-1.072,0.2723,-3.35
-Region x Season,Southern Ocean,Summer,Nevents,-0.094,6.41e-4,1993,0.14,0.451,-0.086,0.0747,-0.6142857142857142
-Region x Season,Southern Ocean,Summer,Mean_Intensity,0.01,0.435026428,2016,-0.015,0.14,0.202,0.7071,-13.466666666666669
-Region x Season,Southern Ocean,Summer,Maximum_Intensity,0.007,0.717963344,2016,-0.045,0.057,0.391,0.7071,-8.68888888888889
-Region x Season,Southern Ocean,Summer,Cumulative_Intensity,-0.888,0.054552843,1993,4.009,0.244,-0.547,0.5609,-0.13644300324270392
-Region x Season,Southern Ocean,Autumn,Number_MHW_days,-0.591,0.059080245,1995,0.357,0.827,-0.258,0.8025,-0.7226890756302522
-Region x Season,Southern Ocean,Autumn,Nevents,-0.076,0.002179335,1994,0.035,0.541,-0.042,0.2951,-1.2
-Region x Season,Southern Ocean,Autumn,Mean_Intensity,0.078,4.33e-4,2005,-0.038,0.107,0.211,0.0058,-5.552631578947368
-Region x Season,Southern Ocean,Autumn,Maximum_Intensity,0.104,7.27e-4,2005,-0.074,0.078,0.296,0.002,-4
-Region x Season,Southern Ocean,Autumn,Cumulative_Intensity,0.187,0.470040488,2008,-0.591,0.033,0.659,0.5841,-1.1150592216582065
-Region x Season,Southern Ocean,Winter,Number_MHW_days,-1.591,3.04e-4,2006,-0.299,0.591,1.078,0.3923,-3.605351170568562
-Region x Season,Southern Ocean,Winter,Nevents,-0.14,3.71e-5,2005,-0.018,0.673,-0.03,0.6505,1.6666666666666667
-Region x Season,Southern Ocean,Winter,Mean_Intensity,0.111,1.1e-4,2005,-0.028,0.087,0.218,0.0529,-7.785714285714286
-Region x Season,Southern Ocean,Winter,Maximum_Intensity,0.157,1.21e-4,2005,-0.04,0.078,0.302,0.0638,-7.55
-Region x Season,Southern Ocean,Winter,Cumulative_Intensity,0.197,0.155164858,2008,-0.285,0.095,0.736,0.3244,-2.5824561403508772
-Region x Season,Southern Ocean,Spring,Number_MHW_days,-1.527,5.39e-4,2005,0.774,0.107,-0.964,0.4338,-1.2454780361757105
-Region x Season,Southern Ocean,Spring,Nevents,-0.144,1.53e-4,2005,0.053,0.118,-0.087,0.3031,-1.641509433962264
-Region x Season,Southern Ocean,Spring,Mean_Intensity,0.143,8.11e-6,2005,-0.024,0.413,0.362,8e-4,-15.083333333333332
-Region x Season,Southern Ocean,Spring,Maximum_Intensity,0.197,1.12e-5,2005,-0.036,0.442,0.499,6e-4,-13.861111111111112
-Region x Season,Southern Ocean,Spring,Cumulative_Intensity,-0.074,0.666404183,2002,0.485,0.156,0.198,0.6732,0.4082474226804124
+Scale,Region_Name,Season_Name,Metrics,Trend_Decadal,P_Value,Change_Point_Year,Change_Point_pvalue,Trend_Decadal_pre,P_Value_pre,Trend_Decadal_post,P_Value_post,RatioPostPre
+All,None,None,Number_MHW_days,11.698482400318799,6.87418008698027e-8,2001,6.55494015166751e-5,1.38821354856315,0.581254760411818,28.8740509414796,1.25559643273859e-4,20.7994302975686
+All,None,None,Nevents,0.743945613196117,4.64644788555115e-8,2001,4.51834518032562e-5,0.211122699734221,0.144292055440105,0.993904080612284,0.00279438759166356,4.7077082751570245
+All,None,None,Mean_Intensity,0.0875560282029348,2.45098930791137e-7,1996,2.55407085297392e-5,-0.00798443227820263,0.766525299523572,0.07869741245428391,0.00627313191889528,-9.85635668413477
+All,None,None,Maximum_Intensity,0.153522385398677,1.90874122396223e-7,2004,1,0.0842010097914022,0.11305101958707,0.162929646785323,0.0339090759496075,1.9350082283925272
+All,None,None,Cumulative_Intensity,19.7209396906684,2.62181348493538e-9,2001,5.11870723406465e-5,5.545680674593379,0.0855148056305152,40.5470706774567,4.57020556458197e-5,7.311468700896612
+Season,None,Summer,Number_MHW_days,3.1500773608066304,1.39457277270643e-8,2002,6.16361902409939e-5,0.84633895199835,0.0654733584595351,6.177181005858749,6.57654395317844e-4,7.298708149109025
+Season,None,Summer,Nevents,0.202914048760362,2.09282285119544e-8,2001,5.11870723406465e-5,0.0731473345699721,0.0743529053685636,0.279461010509816,0.00186908189838691,3.8205221304747066
+Season,None,Summer,Mean_Intensity,0.11242273192366001,3.73766637617095e-6,2003,6.55494015166751e-5,0.041086347024015396,0.429795272339556,0.0989211572936238,0.107542828899301,2.4076406022614605
+Season,None,Summer,Maximum_Intensity,0.194764858925714,1.88597992131685e-6,2003,7.40962597705834e-5,0.044268017346632896,0.49856438700637,0.25293026069729896,0.0209409336737407,5.713611674016779
+Season,None,Summer,Cumulative_Intensity,7.0337406420104,5.30954521474614e-9,2002,4.80960677134675e-5,1.70416903903295,0.0852100829937604,13.791843202830101,1.12984090110866e-4,8.093001860106812
+Season,None,Autumn,Number_MHW_days,3.71479506032985,4.01019085983497e-9,2001,1.2465016381908e-5,0.629966155147879,0.22996907772364,8.912969200395649,2.58359804977547e-4,14.148330235778156
+Season,None,Autumn,Nevents,0.223750358936455,1.8289347804956e-8,2000,4.24394549247558e-5,0.05222876043229101,0.293917170251957,0.335213068728126,3.0698294704142e-4,6.418170103092794
+Season,None,Autumn,Mean_Intensity,0.08344056481392191,5.22475630357289e-6,2005,8.36962625766769e-5,0.0492818424021699,0.0965338291080209,0.0122025434032971,0.836819705051275,0.24760728918608402
+Season,None,Autumn,Maximum_Intensity,0.15242368718260502,4.01595244345615e-7,2004,5.44667631596643e-5,0.0702059378743431,0.139144174822425,0.151517167078915,0.0408158476159627,2.158181653382445
+Season,None,Autumn,Cumulative_Intensity,5.90127992823551,9.5477170400424e-10,2002,1.33171686671005e-5,1.64612299248444,0.0371976937291238,13.681471191032,4.05578602319922e-4,8.311329866295713
+Season,None,Winter,Number_MHW_days,2.65594784815969,1.90874122396223e-7,2004,2.90297850230217e-5,0.5254327824998191,0.341717880045567,9.48820237683166,0.00399311317492267,18.057880461303206
+Season,None,Winter,Nevents,0.19169455020960702,4.53763451423751e-7,2001,5.11870723406465e-5,0.021756559658948002,0.626496274346911,0.247675385266247,0.00412152626514253,11.3839407125374
+Season,None,Winter,Mean_Intensity,0.084806419143892,6.87418008698027e-8,1996,1.02107830524213e-5,0.0226114108461305,0.620690717075355,0.0687418623189935,0.0135622401304961,3.0401403427136136
+Season,None,Winter,Maximum_Intensity,0.13499541564426099,5.29724577737425e-8,1996,1.1665258384058e-5,0.00974031181075441,0.843085229269984,0.124153443427511,0.00627313191889528,12.746352051115192
+Season,None,Winter,Cumulative_Intensity,3.4824057383730302,6.10461977292404e-9,1996,1.97268550760123e-5,-0.9018145385181691,0.428480419497997,5.84644801219391,4.99960729554432e-5,-6.482982656057636
+Season,None,Spring,Number_MHW_days,2.27549775669079,2.16350804118724e-7,2001,9.44709032399838e-5,0.240086919733857,0.381032385484343,5.88969933342645,0.00152084242070237,24.53152941424441
+Season,None,Spring,Nevents,0.14793863495836498,3.14066612751757e-7,1996,6.96983072473703e-5,-0.059638731843647,0.234954783703343,0.173027960463059,8.07195006689508e-4,-2.901268271711092
+Season,None,Spring,Mean_Intensity,0.08154738275053759,5.1243908223614e-7,2006,2.55407085297392e-5,0.045255867564623,0.0882107097040933,0.037034483310522,0.344417522979072,0.818335506608921
+Season,None,Spring,Maximum_Intensity,0.13049412226749701,8.2911002091801e-7,2006,3.74207293546777e-5,0.082507956515037,0.107072352121493,0.0768456884027195,0.300427116749241,0.9313730656838464
+Season,None,Spring,Cumulative_Intensity,3.20535955142456,2.09282285119544e-8,1996,6.96983072473703e-5,-0.507669040357813,0.766525299523572,4.91464415281465,1.04751923791109e-4,-9.680803362266749
+Region,Arctic,None,Number_MHW_days,16.9038832047668,4.53763451423751e-7,2002,8.93112069581365e-6,-1.3118872659108698,0.739763807728124,40.9435024840889,0.00255021763846321,-31.20961956716685
+Region,Arctic,None,Nevents,0.690243828491349,1.5424742812382e-5,2001,3.51288802808885e-5,-0.0351910918340638,0.974117747355371,0.48982329661528495,0.174190482700077,-13.91895707370899
+Region,Arctic,None,Mean_Intensity,0.200437984027994,5.1243908223614e-7,2006,8.89286682281711e-5,0.132537893538193,0.00953084738180637,0.00435452314004492,0.964089361267912,0.03285492943789763
+Region,Arctic,None,Maximum_Intensity,0.329243058556554,4.01595244345615e-7,2006,8.89286682281711e-5,0.178593772883591,0.00953084738180637,0.0778714898233551,0.821891691251159,0.4360257839119196
+Region,Arctic,None,Cumulative_Intensity,27.5492885151685,2.27311075428515e-9,2002,5.18938428672301e-6,5.0121912000639,0.0496694253231422,57.777599073899104,0.00388265634802251,11.527413214636045
+Region,Temperate Northern Atlantic,None,Number_MHW_days,18.8939220302961,3.93446833143002e-10,2001,4.84489721860331e-6,8.41226602490641,0.02517833280286,24.3514158314754,9.96671926281875e-4,2.8947510408464905
+Region,Temperate Northern Atlantic,None,Nevents,1.3423035595020698,9.5477170400424e-10,2001,8.35045706016972e-6,0.7708572083428831,0.0212482443879279,1.34465327119464,0.00186908189838691,1.744361026454238
+Region,Temperate Northern Atlantic,None,Mean_Intensity,8.905724509391229e-5,0.990704029723175,1994,0.524154561689419,0.046401219687359205,0.669334014464053,0.045278709329306104,0.0553164405563531,0.9758086023251906
+Region,Temperate Northern Atlantic,None,Maximum_Intensity,0.076249107848682,0.00618153687649209,2005,0.00280564698581963,-0.08284046410708909,0.0965338291080209,0.136360192033032,0.0435455862143218,-1.6460577992025391
+Region,Temperate Northern Atlantic,None,Cumulative_Intensity,34.5194356301076,2.915440145654e-10,2001,8.35045706016972e-6,13.577256975929199,0.0103742625672023,48.1491147359001,8.02710779479518e-4,3.546306505155094
+Region,Temperate Northern Pacific,None,Number_MHW_days,13.160623409669201,5.22475630357289e-6,2002,5.62132173731019e-4,6.22393303261624,0.109501701196475,31.1001315704222,0.0644110132528098,4.996861535534422
+Region,Temperate Northern Pacific,None,Nevents,0.902731393129771,5.83580484714041e-6,2002,0.0011874244167918,0.590850764606097,0.0852100829937604,1.42002849779567,0.0409545443203829,2.403362376525588
+Region,Temperate Northern Pacific,None,Mean_Intensity,0.0784560641330196,1.67696465208101e-4,1997,5.93680125677088e-4,-0.0017650975421250699,1,0.0329112885898454,0.315251555404137,-18.645591988203787
+Region,Temperate Northern Pacific,None,Maximum_Intensity,0.177719467836874,2.1164885701628e-6,1997,2.16045062112467e-4,0.00449371334814982,1,0.16016323830672,0.012455077396483,35.64162328526439
+Region,Temperate Northern Pacific,None,Cumulative_Intensity,26.7201046851851,6.52504163118089e-7,2002,3.607994892815e-4,13.4737596073614,0.0571180853056804,66.8774855338991,0.0178636277089348,4.9635356042244165
+Region,Tropical Atlantic,None,Number_MHW_days,13.3421748576934,8.9017539058247e-8,2001,8.35045706016972e-6,1.9257108912199699,0.417304165627405,37.953665093373104,0.0102660035819151,19.708911273451243
+Region,Tropical Atlantic,None,Nevents,1.19210284416568,4.53763451423751e-7,2001,2.10484825623679e-5,0.284213799069969,0.314524869050972,1.63799069968638,0.0496694253231422,5.763234244946468
+Region,Tropical Atlantic,None,Mean_Intensity,-0.032586561321011696,1.84033364406171e-4,2002,1.81498829008239e-4,8.19473973184826e-4,0.975910003234818,-0.019841863651051398,0.49566272449003,-24.21292719515842
+Region,Tropical Atlantic,None,Maximum_Intensity,-0.0183066858399017,0.357347193610757,2002,0.729615959766342,0.00766384561541332,0.879987855827713,0.0119224383502315,0.721176307474874,1.5556730848352964
+Region,Tropical Atlantic,None,Cumulative_Intensity,15.004313651897501,1.90874122396223e-7,2001,2.10484825623679e-5,3.0939742828266796,0.417304165627405,38.962702724115104,0.0102660035819151,12.59309197894123
+Region,Eastern Indo-Pacific,None,Number_MHW_days,12.3585982654029,5.83580484714041e-6,2001,1.92387467246941e-4,1.30788464744124,0.673188747815444,29.960462854920298,0.0274979604216283,22.9075728609058
+Region,Eastern Indo-Pacific,None,Nevents,0.821255240070876,5.27921153162163e-5,2001,3.81606298843534e-4,0.27553203311663,0.626496274346911,0.681106573317775,0.238924218578746,2.471968742122515
+Region,Eastern Indo-Pacific,None,Mean_Intensity,-0.0175942261430721,0.0639519780524364,2002,0.176057561602557,0.00709312413444224,0.694644497461478,-0.023057307622818803,0.346764183516184,-3.2506561545791826
+Region,Eastern Indo-Pacific,None,Maximum_Intensity,-9.6263250901331e-4,0.990704029723175,1995,0.772256766398989,-0.210407285369576,0.0374974908157198,-0.0342371304074564,0.359004296967433,0.1627183695056927
+Region,Eastern Indo-Pacific,None,Cumulative_Intensity,15.1426311416943,1.24737949289118e-5,2001,5.32163312943914e-4,3.52564684700336,0.314524869050972,30.5418363082951,0.0748114813174168,8.662761085743536
+Region,Central Indo-Pacific,None,Number_MHW_days,12.4598437510029,2.77520977921549e-7,1997,3.51288802808885e-5,-1.55958937271159,0.752641982768185,18.5838578388356,0.00350738479929008,-11.915865909322436
+Region,Central Indo-Pacific,None,Nevents,1.03980346063994,1.49519163323304e-6,1997,7.40962597705834e-5,-0.259896452837567,0.685328555783378,1.19335340575544,0.00953084738180637,-4.591649453951091
+Region,Central Indo-Pacific,None,Mean_Intensity,-0.0237726084337239,5.27921153162163e-5,2002,6.26883925725817e-4,-0.00928702598649163,0.566142727568169,-0.0215003098589707,0.111886674896788,2.3150909548701386
+Region,Central Indo-Pacific,None,Maximum_Intensity,-4.85249100227575e-4,0.990704029723175,1984,1,-0.276157685737708,1,0.00847444796037557,0.45066052582383,-0.03068698934718233
+Region,Central Indo-Pacific,None,Cumulative_Intensity,15.977308605717699,7.3571856652491e-7,1997,3.98548101510796e-5,-2.18486373562651,0.620425293710382,22.666843454524802,0.00723517610943606,-10.374488387956644
+Region,Western Indo-Pacific,None,Number_MHW_days,13.5287248251825,1.88597992131685e-6,2004,1.43505183020671e-4,3.35840980160968,0.369209265032158,35.4800840723843,0.0100042125859174,10.564548750238508
+Region,Western Indo-Pacific,None,Nevents,1.0967437348465001,1.24737949289118e-5,2004,5.62132173731019e-4,0.426420352600698,0.341717880045567,1.80818719907252,0.0408158476159627,4.2403867171080245
+Region,Western Indo-Pacific,None,Mean_Intensity,-0.0148120821980437,0.0169190539927849,2006,0.021168586485092,0.00226033921144717,0.907038480803695,-0.00211532878226197,1,-0.93584572242484
+Region,Western Indo-Pacific,None,Maximum_Intensity,0.010853840783416599,0.521648148844523,1995,0.953413593897944,-0.09557165169936829,0.125311111389424,0.00554328908869237,0.900459060976264,-0.05800139466177092
+Region,Western Indo-Pacific,None,Cumulative_Intensity,16.5810661640275,2.66128573471079e-6,2004,1.81498829008239e-4,4.36869574924888,0.398035689594248,44.0793998622148,0.0124218457338865,10.08983055636078
+Region,Tropical Eastern Pacific,None,Number_MHW_days,6.568735316027739,0.0081742874385338,2005,0.0686619468434076,1.23166908159172,0.784969727320738,23.9776718038709,0.127476932741378,19.46762499947136
+Region,Tropical Eastern Pacific,None,Nevents,0.620176494183714,0.00762845212038399,2001,0.0515403952593022,-0.12155259215599601,0.820338216433617,1.27141368353605,0.123549865896804,-10.459782559835217
+Region,Tropical Eastern Pacific,None,Mean_Intensity,-0.017559299401483798,0.408110420461059,2016,0.701862717226917,0.011112018460561299,0.53206097135898,-0.366266353399894,0.00853492041422708,-32.96128014004333
+Region,Tropical Eastern Pacific,None,Maximum_Intensity,-0.00740310927232673,0.753082135935896,2017,1,0.0259402334140264,0.437518177374812,-0.52054943995246306,0.220671361919847,-20.06726121712504
+Region,Tropical Eastern Pacific,None,Cumulative_Intensity,9.0402283088568,0.0158755471413791,2005,0.103284552564723,1.3326537778202299,0.862155608227145,29.265345317268498,0.174033580208164,21.9602013698837
+Region,Temperate South America,None,Number_MHW_days,5.4711650755399,0.0130768184281793,2003,0.142253371878316,0.256434022306671,0.910195683619684,16.6346896530417,0.0930921439937051,64.86927710843366
+Region,Temperate South America,None,Nevents,0.240177686187511,0.0911427988442931,2003,0.406361811042209,-0.011519669504654101,0.910195683619684,0.41956313529211803,0.363020384944015,-36.421455938697626
+Region,Temperate South America,None,Mean_Intensity,0.0472509700598549,0.0180222821867531,2006,0.0151852291851639,0.00903801167870112,0.761421536146361,-0.0833146099391832,0.260350569655991,-9.218245439483278
+Region,Temperate South America,None,Maximum_Intensity,0.0912943201507717,0.002968184303687,2006,0.00198175284401075,0.0173206062660846,0.761421536146361,-0.0753647855247472,0.444043639662887,-4.351163254159217
+Region,Temperate South America,None,Cumulative_Intensity,10.732846556873099,0.0114624693753633,2003,0.125431039071702,-0.716014376091305,0.910195683619684,26.1431707421932,0.0358050648451911,-36.51207519729948
+Region,Temperate Southern Africa,None,Number_MHW_days,8.77818016961614,1.88597992131685e-6,1998,3.22350494512571e-4,0.352908317716592,0.836819705051275,11.9277842317553,0.00433759463682779,33.798535293617185
+Region,Temperate Southern Africa,None,Nevents,0.666934083772587,1.0066404498591e-5,1998,1.61446857245351e-4,-0.07488027165121,0.773080066312313,0.649816603398844,0.0309291487605806,-8.678074866310176
+Region,Temperate Southern Africa,None,Mean_Intensity,0.0519469583027065,9.76390619598101e-4,2005,0.013366234692258,0.0467523889239756,0.385309974990906,0.050161445191062304,0.26605176012296,1.0729172635997315
+Region,Temperate Southern Africa,None,Maximum_Intensity,0.11340497224572799,1.71391179476134e-5,2006,4.03539183557174e-4,0.061209487003107695,0.338287854972766,0.0927127715141603,0.115074647821179,1.5146797670343672
+Region,Temperate Southern Africa,None,Cumulative_Intensity,16.4595229793394,5.1243908223614e-7,1998,1.81498829008239e-4,3.14550143223665,0.59230128143299,22.7596622829154,0.00316005292304445,7.235622927925944
+Region,Temperate Australasia,None,Number_MHW_days,13.940067182808,1.1208555342445e-5,1997,8.36962625766769e-5,-2.92553597596266,0.499461203104015,16.1792948883717,0.0585239735206252,-5.5303694848763
+Region,Temperate Australasia,None,Nevents,0.9144457341958461,1.0066404498591e-5,1997,6.55494015166751e-5,-0.271639144408733,0.558350909375985,0.691922230490334,0.0721243227598351,-2.547211050883023
+Region,Temperate Australasia,None,Mean_Intensity,0.0116641315453168,0.25841287570987,2008,0.031541331630213,-0.042646318544774,0.0243560205449465,0.0035602207783609298,0.912814027184075,-0.0834824880516494
+Region,Temperate Australasia,None,Maximum_Intensity,0.0633897733145808,0.0114624693753633,2007,8.20670060197707e-4,-0.054815631344072,0.122852965411577,0.023881307897785,0.692180772721877,-0.4356660192032547
+Region,Temperate Australasia,None,Cumulative_Intensity,20.956367605743502,6.51491441925888e-6,1997,5.79459915792271e-5,-5.46512882813189,0.444043639662887,25.3501438678876,0.0421655784631013,-4.63852631202344
+Region,Southern Ocean,None,Number_MHW_days,-4.67193357253195,1.15025653964201e-4,2006,3.22350494512571e-4,-0.9563890133790689,0.413686226993168,0.40914638931964703,1,-0.4278033139193749
+Region,Southern Ocean,None,Nevents,-0.48216599412035205,7.26925623920422e-6,2006,4.80960677134675e-5,-0.113448046599784,0.338287854972766,-0.290625961319004,0.499461203104015,2.5617537721408183
+Region,Southern Ocean,None,Mean_Intensity,0.104100565498808,2.88040275488741e-5,2005,4.84489721860331e-6,-0.042715681056385,0.0561410637912752,0.253166966239867,0.00151480435398805,-5.9267922219403415
+Region,Southern Ocean,None,Maximum_Intensity,0.138946069075027,5.82953207970167e-5,2005,1.09148162273998e-5,-0.065916426414799,0.0395167129619474,0.341242106887455,8.48090438710058e-4,-5.176890275271995
+Region,Southern Ocean,None,Cumulative_Intensity,-0.590686816287657,0.491823743144037,1993,0.490076252393634,7.17012965354858,0.243722284772174,0.613117051609213,0.721538652049639,0.08550989748222675
+Region x Season,Arctic,Summer,Number_MHW_days,4.00362988401311,1.5771142626827e-7,2002,3.09406970094943e-5,1.38236904021076,0.155824587862033,6.306577412598,0.02517833280286,4.562151805451662
+Region x Season,Arctic,Summer,Nevents,0.19099981289384602,1.62389017736814e-5,2002,6.55494015166751e-5,0.102578997905899,0.238924218578746,0.057069450968011796,0.820338216433617,0.5563463489901173
+Region x Season,Arctic,Summer,Mean_Intensity,0.35874819203017205,4.53976428173682e-5,2006,4.51834518032562e-5,8.27096688761399e-4,0.981367125268665,0.267556294572898,0.344417522979072,323.48853309226905
+Region x Season,Arctic,Summer,Maximum_Intensity,0.554626359991555,9.03992072298876e-5,2006,5.11870723406465e-5,-0.00417620288686511,0.907038480803695,0.46331071342425095,0.444043639662887,-110.94066212191086
+Region x Season,Arctic,Summer,Cumulative_Intensity,11.9752034407048,1.22364019587525e-7,2002,2.72319099561882e-5,2.32639291190945,0.1941266858781,28.0774683969716,0.0149610176751757,12.069099872697883
+Region x Season,Arctic,Autumn,Number_MHW_days,4.8947243565813805,4.64644788555115e-8,2000,1.73178369308654e-5,0.201045652994125,0.779566064581155,9.27995472430335,5.81397380907571e-4,46.158445040214474
+Region x Season,Arctic,Autumn,Nevents,0.247555052492259,6.03601141113768e-8,2000,1,0.0666885531866937,0.293917170251957,0.27828183921538097,0.00948086851561627,4.172857648243391
+Region x Season,Arctic,Autumn,Mean_Intensity,0.191088010887803,1.15025653964201e-4,2002,3.22350494512571e-4,0.0867889434127468,0.566142727568169,0.10611060010777201,0.537603236348886,1.2226280898839403
+Region x Season,Arctic,Autumn,Maximum_Intensity,0.35133744026126,1.88597992131685e-6,2002,2.90297850230217e-5,0.0660947357429311,0.381187304987758,0.41381241029106003,0.1272886922566,6.260898173502687
+Region x Season,Arctic,Autumn,Cumulative_Intensity,8.00123352835193,7.01503872379656e-9,2002,3.93834820092435e-6,1.76214921432158,0.0654733584595351,16.3541308115205,0.0149610176751757,9.280786597755156
+Region x Season,Arctic,Winter,Number_MHW_days,3.77824918573046,5.82953207970167e-5,2004,1.00340186236579e-4,-0.472538133994502,0.634510292881857,13.1573510124149,0.0488795923567911,-27.843998327059854
+Region x Season,Arctic,Winter,Nevents,0.178550992597239,7.594964414428e-4,2000,2.03892045562092e-4,-0.188129702493956,0.0802428781903364,0.166145636824233,0.214713301425192,-0.8831441001697791
+Region x Season,Arctic,Winter,Mean_Intensity,0.08588433275688781,7.3571856652491e-7,1998,3.74207293546777e-5,0.115119489900159,0.00447905438254336,0.0200271919234168,0.535185319447485,0.17396873405872468
+Region x Season,Arctic,Winter,Maximum_Intensity,0.14399017258404198,1.90874122396223e-7,1998,1.02107830524213e-5,0.139859148222532,0.0188755459296659,0.0395916447847353,0.333358243488261,0.2830822673232675
+Region x Season,Arctic,Winter,Cumulative_Intensity,3.8347099251906904,6.10461977292404e-9,2000,2.24852308086782e-6,-0.17446650565170502,0.674611943553671,6.06224944544378,3.84006337007569e-5,-34.747354071194096
+Region x Season,Arctic,Spring,Number_MHW_days,2.56713649185217,0.00596260439743397,2002,0.00309354317844479,-1.2569810397655001,0.0371976937291238,6.7496934992757796,0.0855148056305152,-5.369765561885475
+Region x Season,Arctic,Spring,Nevents,0.0596546774662612,0.118442463736809,2002,0.0145555975397895,-0.0869276050850459,0.138966893956733,-0.13880953664277101,0.284321714008018,1.5968406872243432
+Region x Season,Arctic,Spring,Mean_Intensity,0.05541868045956701,0.0320380247845667,1989,1,0.11530253274556101,0.536186771900174,0.0028220461507872303,0.98763774198715,0.02447514450540875
+Region x Season,Arctic,Spring,Maximum_Intensity,0.0944041451622982,0.00686705545278083,1989,0.0229596384734092,0.157625318981887,0.71052302291648906,0.0247806691138695,0.566446141766224,0.15721249145714394
+Region x Season,Arctic,Spring,Cumulative_Intensity,2.45774803696077,7.79728720795797e-7,2002,5.11870723406465e-5,0.30098154661171,0.215688695591323,3.70150188970704,0.0555929748188698,12.298102429788727
+Region x Season,Temperate Northern Atlantic,Summer,Number_MHW_days,4.859591349718889,1.70560983445293e-8,2001,5.18938428672301e-6,1.78037812138202,0.0855148056305152,4.8464880295043,0.0274979604216283,2.7221678200259
+Region x Season,Temperate Northern Atlantic,Summer,Nevents,0.348290276458968,1.95225447950235e-8,2001,5.18938428672301e-6,0.143446787378715,0.0644110132528098,0.319279547711819,0.043053172753608,2.2257699426121444
+Region x Season,Temperate Northern Atlantic,Summer,Mean_Intensity,0.0619560234320254,0.0084556496321261,2001,0.0075444409656945,-0.0379880022773557,0.581254760411818,0.0153560384788458,0.650581986958389,-0.40423390434509354
+Region x Season,Temperate Northern Atlantic,Summer,Maximum_Intensity,0.196188660170304,5.54145438235523e-5,2001,7.87573142815474e-5,-0.0296732267767153,0.770287726473667,0.14259043379307199,0.1941266858781,-4.805356521083284
+Region x Season,Temperate Northern Atlantic,Summer,Cumulative_Intensity,10.6520933933006,2.55365030543137e-8,2001,5.95031597916844e-6,4.31165694404566,0.0855148056305152,11.2815703528645,0.0371976937291238,2.6165278219651027
+Region x Season,Temperate Northern Atlantic,Autumn,Number_MHW_days,5.73498367321425,6.14369770441254e-10,1998,3.93834820092435e-6,1.7459971841131599,0.108161354779969,9.288092958934659,0.0011565816777279,5.319649449292976
+Region x Season,Temperate Northern Atlantic,Autumn,Nevents,0.34224375975464705,2.62181348493538e-9,1998,3.42717739956043e-6,0.0820211628084651,0.26605176012296,0.371473844743384,0.00193161353576358,4.528999980295885
+Region x Season,Temperate Northern Atlantic,Autumn,Mean_Intensity,0.007878696812963,0.552376505263504,2011,0.406361811042209,-0.021387994267749698,0.253526359301579,-0.0205045827718224,0.755496874928883,0.9586959167433776
+Region x Season,Temperate Northern Atlantic,Autumn,Maximum_Intensity,0.0713480314142863,0.00535942451005841,2009,0.00498660899221309,-0.0124106493373878,0.736975815039431,0.134353940326703,0.427710510297464,-10.825697888502416
+Region x Season,Temperate Northern Atlantic,Autumn,Cumulative_Intensity,9.78021320784962,4.56700157324123e-10,1998,3.93834820092435e-6,2.41122293965495,0.14937517875499,17.273261081408798,5.65147223178269e-4,7.163693077621695
+Region x Season,Temperate Northern Atlantic,Winter,Number_MHW_days,4.57828803737582,7.12005713374485e-10,2001,1,1.84671144171488,0.0178636277089348,6.8139768398764495,0.00228925857789761,3.6897896909919523
+Region x Season,Temperate Northern Atlantic,Winter,Nevents,0.342386736954695,1.47671309663183e-9,2001,4.22069244862456e-6,0.150913674910924,0.0178636277089348,0.341897082213378,0.0102660035819151,2.265514257837674
+Region x Season,Temperate Northern Atlantic,Winter,Mean_Intensity,-0.011562996971276301,0.649547898256236,1993,0.269747901692371,0.11409416857341201,0.73170172322421,0.0433565522133825,0.170893484254114,0.38000673264458246
+Region x Season,Temperate Northern Atlantic,Winter,Maximum_Intensity,0.045042351189047106,0.204097893101901,2009,0.0844900830278908,-0.0674498322698479,0.0722018475880567,0.203636548673536,0.127203687631099,-3.0190816169689376
+Region x Season,Temperate Northern Atlantic,Winter,Cumulative_Intensity,7.06465571176957,5.29841222878449e-10,2004,8.93112069581365e-6,3.0904938115063803,0.00218681642776657,13.220382726806502,0.0153433001929185,4.277757385433033
+Region x Season,Temperate Northern Atlantic,Spring,Number_MHW_days,3.8583329345419597,4.34168987398162e-8,2001,4.24394549247558e-5,1.97055549242388,0.097993790603023,5.295899522205961,0.00719834839155333,2.6875160545170664
+Region x Season,Temperate Northern Atlantic,Spring,Nevents,0.290214078154597,2.23338532135624e-8,1997,2.55407085297392e-5,0.0635743754297502,0.499461203104015,0.247908850742488,0.00189501579556272,3.899509024928255
+Region x Season,Temperate Northern Atlantic,Spring,Mean_Intensity,-0.024771847209143397,0.316316070202336,1994,0.160860351384194,0.026528724515430202,0.951352130954404,0.040333988642378596,0.213256487472954,1.5203892904432206
+Region x Season,Temperate Northern Atlantic,Spring,Maximum_Intensity,0.0317793471337053,0.37586613879768,2006,0.0966666356258652,-0.19265015118540002,0.0234861869336396,0.0367111706115143,0.964089361267912,-0.19055874280723872
+Region x Season,Temperate Northern Atlantic,Spring,Cumulative_Intensity,6.492756409713279,3.8052081347801e-8,1998,5.79459915792271e-5,1.26457996857374,0.303096532467549,9.134324035479679,0.00268800643700885,7.223207912886562
+Region x Season,Temperate Northern Pacific,Summer,Number_MHW_days,4.83666895021857,2.50973230582535e-6,2003,6.26883925725817e-4,2.08810432569974,0.0483982231812983,9.2178019181836,0.0930921439937051,4.4144355263928885
+Region x Season,Temperate Northern Pacific,Summer,Nevents,0.35234966804129697,3.15089571565034e-6,2003,6.9858305748922e-4,0.22017246253887499,0.0627352288500378,0.41242578456318796,0.0802428781903364,1.8731942215088209
+Region x Season,Temperate Northern Pacific,Summer,Mean_Intensity,0.066979213749703,0.00165524042204664,2005,8.65618537713123e-4,-0.016579393948314,0.637438184742954,0.0386822950594352,0.59230128143299,-2.333154950055873
+Region x Season,Temperate Northern Pacific,Summer,Maximum_Intensity,0.204993227315272,1.31386725749702e-5,2003,2.24545463650385e-5,-0.0677369556639978,0.572782310593727,0.279216490094591,0.0358050648451911,-4.1220702548194765
+Region x Season,Temperate Northern Pacific,Summer,Cumulative_Intensity,11.2466437306189,1.25241808619505e-6,2003,4.03539183557174e-4,4.31822612557132,0.0551796163231682,23.7892257819226,0.050090305683375,5.509027339038477
+Region x Season,Temperate Northern Pacific,Autumn,Number_MHW_days,4.22326169930302,9.33866276907578e-7,2002,2.03892045562092e-4,1.16058033821035,0.31900803011513,10.4346336180783,0.00388265634802251,8.99087574942793
+Region x Season,Temperate Northern Pacific,Autumn,Nevents,0.256399135215929,3.77045870325283e-7,2002,1.52225816857183e-4,0.108725614927905,0.238924218578746,0.393992404965687,0.00255021763846321,3.6237312175878693
+Region x Season,Temperate Northern Pacific,Autumn,Mean_Intensity,0.041889203843611306,0.0169190539927849,2005,0.0145555975397895,-0.0155571704410607,0.784969727320738,-0.00105268364896021,1,0.0676654956599188
+Region x Season,Temperate Northern Pacific,Autumn,Maximum_Intensity,0.126855567785357,0.00135516234741214,2005,0.00230267891604101,-0.00410975398991762,0.940681598665201,0.143010000271667,0.387013990315225,-34.797703371664255
+Region x Season,Temperate Northern Pacific,Autumn,Cumulative_Intensity,7.62675743774457,1.68308861045724e-7,2002,7.87573142815474e-5,2.1301372709345703,0.215688695591323,20.9209600362769,0.00255021763846321,9.821414010139401
+Region x Season,Temperate Northern Pacific,Winter,Number_MHW_days,2.2103740570462898,2.65553478381487e-4,1994,0.0075444409656945,-0.800701260147825,0.502158251500749,2.59940274243709,0.0504774738345123,-3.246407707610189
+Region x Season,Temperate Northern Pacific,Winter,Nevents,0.161330223353124,1.26491986907312e-4,1994,0.00432947004240199,-0.0598361959287532,0.502158251500749,0.165524604556344,0.0459983480414509,-2.766295583921038
+Region x Season,Temperate Northern Pacific,Winter,Mean_Intensity,0.0491438548574391,0.00535942451005841,1997,0.00498660899221309,0.06041278802765,0.260350569655991,-0.0163014289340244,0.528312468533047,-0.26983407762216643
+Region x Season,Temperate Northern Pacific,Winter,Maximum_Intensity,0.0987556652747338,7.09722189755893e-5,1996,0.00198175284401075,0.115165095335671,0.137645845518265,0.053366713778455,0.290057979035239,0.46339312812538697
+Region x Season,Temperate Northern Pacific,Winter,Cumulative_Intensity,3.3860871417159197,4.77836634707228e-5,1994,0.00198175284401075,-0.7631612158752139,0.582950557761892,3.9317739537073697,0.031282495449488,-5.151957243003112
+Region x Season,Temperate Northern Pacific,Spring,Number_MHW_days,2.08302141338152,0.00152808413561492,2013,0.0248840150205099,0.41823089354100795,0.291851120247541,-11.4841762086514,0.754454177494089,-27.45893807944
+Region x Season,Temperate Northern Pacific,Spring,Nevents,0.147933895250212,0.00110429839540322,2013,0.0269499577014627,0.049909881255301096,0.263167756659324,0.0708580718122698,0.916965236628864,1.4197203044786593
+Region x Season,Temperate Northern Pacific,Spring,Mean_Intensity,0.0745748953966848,0.0030807504356524,1997,0.00106945851490149,0.015115424761074801,0.892558465851561,-0.019812547797581,0.623812436069269,-1.3107503170272938
+Region x Season,Temperate Northern Pacific,Spring,Maximum_Intensity,0.160910414929959,1.09549132198352e-4,1997,5.03700028461228e-4,0.07252621163631899,0.499461203104015,0.054681984873962405,0.498219385345291,0.753961686957592
+Region x Season,Temperate Northern Pacific,Spring,Cumulative_Intensity,3.88063153323675,6.13360245619516e-4,1994,0.0158391991341563,1.52138575651821,0.760332307521876,4.65214673775556,0.118579198958194,3.057835080829401
+Region x Season,Tropical Atlantic,Summer,Number_MHW_days,2.25683145393592,2.88040275488741e-5,2002,5.62132173731019e-4,0.574952778832558,0.414890939658485,5.59836008589659,0.111886674896788,9.73707805580845
+Region x Season,Tropical Atlantic,Summer,Nevents,0.206052813925638,2.21294739715289e-4,1997,0.00309354317844479,-0.0100289926720121,0.964089361267912,0.259942413755813,0.154257511832662,-25.919094993581368
+Region x Season,Tropical Atlantic,Summer,Mean_Intensity,-0.031125714463088,0.010723675801035,1996,1,-0.028971014113577997,0.692180772721877,-0.017246204451067802,0.427488999599048,0.5952917072027842
+Region x Season,Tropical Atlantic,Summer,Maximum_Intensity,-0.00731260936836497,0.700619648328836,1984,0.876069251879685,0.426677986611698,0.296269871484286,0.00703723724328237,0.801475417579335,0.016493087208847897
+Region x Season,Tropical Atlantic,Summer,Cumulative_Intensity,2.72143875980799,2.1127674493493e-5,2002,6.9858305748922e-4,0.6533529698817481,0.349219342794742,7.227866747574811,0.0743529053685636,11.062728847598258
+Region x Season,Tropical Atlantic,Autumn,Number_MHW_days,4.61000069975,1.59747647565272e-8,2001,2.77827010667896e-6,0.6294973005798141,0.256144966603527,9.9942042013626,0.0102660035819151,15.876484604711075
+Region x Season,Tropical Atlantic,Autumn,Nevents,0.38402834638776,6.03601141113768e-8,2001,6.36990507629504e-6,0.0770048115133008,0.205754101273055,0.39756705104449,0.0320343717059257,5.162885840916831
+Region x Season,Tropical Atlantic,Autumn,Mean_Intensity,-0.0228578832039014,0.0329953946693364,2002,0.0340850808429161,0.021521496540207602,0.450295153307041,-0.012667558704858499,0.581254760411818,-0.5886002714166412
+Region x Season,Tropical Atlantic,Autumn,Maximum_Intensity,0.0034687919294692704,0.80671062228309,1994,1,-0.12290799331244599,0.360121647755378,-0.011486499043418901,0.514423658892605,0.09345607827327328
+Region x Season,Tropical Atlantic,Autumn,Cumulative_Intensity,5.18805770896854,4.07345426735301e-8,2001,4.84489721860331e-6,0.651939728137928,0.381032385484343,10.2610548628697,0.00861078679505445,15.739269168604517
+Region x Season,Tropical Atlantic,Winter,Number_MHW_days,4.44044271758666,1.8289347804956e-8,2001,1.09148162273998e-5,0.448456256083053,0.537603236348886,13.279982697091,3.26348681185659e-4,29.61266013564449
+Region x Season,Tropical Atlantic,Winter,Nevents,0.365452388373972,1.01218409612511e-7,2001,2.10484825623679e-5,0.0389599045920015,0.537603236348886,0.7109757604783019,0.00186908189838691,18.248909177879913
+Region x Season,Tropical Atlantic,Winter,Mean_Intensity,-0.0301302862204667,0.013956996067476,2002,0.0117457787762324,0.025019920282294397,0.414890939658485,-0.0172141952762327,0.581254760411818,-0.6880195892716134
+Region x Season,Tropical Atlantic,Winter,Maximum_Intensity,-0.006644564736864919,0.616375003480359,2002,0.786729254395615,0.026923355967163002,0.607708140108105,0.0541681025039869,0.417304165627405,2.011937240292513
+Region x Season,Tropical Atlantic,Winter,Cumulative_Intensity,4.65343004342343,4.64644788555115e-8,2001,2.72319099561882e-5,0.656082555880091,0.284321714008018,13.6121419813955,0.00152084242070237,20.747605403310438
+Region x Season,Tropical Atlantic,Spring,Number_MHW_days,3.1554308673915,3.53231725622404e-5,2001,7.37249250594427e-4,0.236280835826634,0.820338216433617,7.33443278901265,0.0320343717059257,31.04116659886091
+Region x Season,Tropical Atlantic,Spring,Nevents,0.228961645218269,3.53231725622404e-5,2001,5.32163312943914e-4,0.043761940809632,0.673188747815444,0.39525465406037197,0.0748114813174168,9.0319269837634
+Region x Season,Tropical Atlantic,Spring,Mean_Intensity,-0.0391480492825488,0.00254769872740663,2002,0.0139495206053489,-0.0112578605999463,0.739763807728124,-0.0300692082580235,0.314524869050972,2.6709522640711083
+Region x Season,Tropical Atlantic,Spring,Maximum_Intensity,-0.0329240467033668,0.187983838138654,1998,0.377655244490405,-0.00999999457854021,0.901649504895373,0.0182813865858573,0.862155608227145,-1.82813964970429
+Region x Season,Tropical Atlantic,Spring,Cumulative_Intensity,3.66014021719376,8.62272015474338e-5,2001,0.00125085746583484,0.11243227746542,0.974117747355371,8.25805513599086,0.0371976937291238,73.44914932040518
+Region x Season,Eastern Indo-Pacific,Summer,Number_MHW_days,3.09418802310673,1.04544749450469e-4,2001,0.00188435462141981,0.09743504259256869,0.92246206718676,6.40757487359004,0.0371976937291238,65.76252961045805
+Region x Season,Eastern Indo-Pacific,Summer,Nevents,0.200347565050015,6.97777126072083e-4,2001,0.0020838041519193,0.0168903150525087,0.871131491597158,0.18597281645706398,0.414890939658485,11.010618563295637
+Region x Season,Eastern Indo-Pacific,Summer,Mean_Intensity,-0.0107878338665581,0.408110420461059,2012,0.906721535939683,0.00773681265620858,0.733910494397011,-0.033395269526787,0.591505036994917,-4.316411810745891
+Region x Season,Eastern Indo-Pacific,Summer,Maximum_Intensity,0.025883191501160703,0.158606077060869,1995,0.170869901934642,-0.155764803568084,0.100518173207465,0.005524763058177491,0.83486270753649,-0.03546862276729059
+Region x Season,Eastern Indo-Pacific,Summer,Cumulative_Intensity,3.89714100591957,2.21294739715289e-4,2001,0.00375274595017546,0.151896883273756,0.974117747355371,7.14473317535292,0.0320343717059257,47.03673321905053
+Region x Season,Eastern Indo-Pacific,Autumn,Number_MHW_days,2.83330092052379,5.27921153162163e-5,2001,0.0015375200361025,0.0319960734196439,0.871131491597158,10.5608604520507,0.0200632459497888,330.06739025567083
+Region x Season,Eastern Indo-Pacific,Autumn,Nevents,0.20208134436547498,0.00115146110032372,2001,0.00547421453238227,-0.0288724591353461,0.820338216433617,0.290817260393072,0.174190482700077,-10.072479764532739
+Region x Season,Eastern Indo-Pacific,Autumn,Mean_Intensity,-0.0227471171733094,0.041456909675792,2002,0.235058727310246,-0.012575754717690901,0.879987855827713,-0.033702275131276,0.284321714008018,2.6799405592624543
+Region x Season,Eastern Indo-Pacific,Autumn,Maximum_Intensity,-0.011240381096649099,0.583967534206333,1999,1,0.0191502730092824,0.761873394777985,0.0026006169215621196,0.957874598777906,0.13580051419118488
+Region x Season,Eastern Indo-Pacific,Autumn,Cumulative_Intensity,3.36646229689536,1.67696465208101e-4,2001,0.00309354317844479,0.09423428566398259,0.871131491597158,11.413774714719601,0.0496694253231422,121.12125257062435
+Region x Season,Eastern Indo-Pacific,Winter,Number_MHW_days,3.5107193791557902,7.3571856652491e-7,1998,4.5101162010841e-4,1.90026578503825,0.14937517875499,6.61036885777259,0.00920185395584991,3.478654885974033
+Region x Season,Eastern Indo-Pacific,Winter,Nevents,0.240999846775809,4.67524608951221e-6,2001,9.12861861862655e-4,0.196139634383508,0.0409545443203829,0.243160897186568,0.109501701196475,1.23973361095963
+Region x Season,Eastern Indo-Pacific,Winter,Mean_Intensity,-0.014752648600029901,0.239293511765585,2002,0.22218134614896,0.0537669695445133,0.109501701196475,-0.009705149252205619,0.537603236348886,-0.18050392898135711
+Region x Season,Eastern Indo-Pacific,Winter,Maximum_Intensity,0.00502566267836866,0.80671062228309,2002,1,0.105865209303904,0.0654733584595351,0.0313085900118885,0.49566272449003,0.2957401229143362
+Region x Season,Eastern Indo-Pacific,Winter,Cumulative_Intensity,3.6482211926610097,1.6796961640945e-6,1998,6.9858305748922e-4,2.04229940931512,0.174033580208164,6.692622702312409,0.0122366701240079,3.277003690931274
+Region x Season,Eastern Indo-Pacific,Spring,Number_MHW_days,2.94879954739931,8.10670976081368e-6,2001,2.71848004841981e-4,0.350034033450019,0.626496274346911,4.47876960974977,0.0371976937291238,12.79524041021368
+Region x Season,Eastern Indo-Pacific,Spring,Nevents,0.175535428744297,1.84033364406171e-4,2000,5.03700028461228e-4,-0.00525087514585763,1,0.10214896927265699,0.28393508435663,-19.453703703703834
+Region x Season,Eastern Indo-Pacific,Spring,Mean_Intensity,-0.0179009571061034,0.126938771346517,2002,0.176057561602557,0.0288230946250843,0.450295153307041,-0.0162537384821201,0.721176307474874,-0.5639137189653022
+Region x Season,Eastern Indo-Pacific,Spring,Maximum_Intensity,-0.0121548720658295,0.753082135935896,1995,0.830882031753125,-0.296697257532224,0.0160061551531633,-0.0599741031027581,0.211002127774922,0.2021390544745577
+Region x Season,Eastern Indo-Pacific,Spring,Cumulative_Intensity,3.65718302763729,2.88040275488741e-5,1999,0.00112700198472742,0.0269208522143391,1,5.315812049194109,0.0130433713952793,197.4607641270249
+Region x Season,Central Indo-Pacific,Summer,Number_MHW_days,3.38623918347494,2.98186761310015e-6,2000,2.03892045562092e-4,0.577274412200805,0.674611943553671,6.7470834080133,0.0111547353359492,11.687826907641156
+Region x Season,Central Indo-Pacific,Summer,Nevents,0.27897316830887703,1.71391179476134e-5,1997,3.81606298843534e-4,-0.0567941114170727,0.620425293710382,0.327331185944959,0.0234861869336396,-5.763470503855106
+Region x Season,Central Indo-Pacific,Summer,Mean_Intensity,-0.0265840054658145,5.39459142852818e-4,2006,0.00432947004240199,-0.00888772539008603,0.528312468533047,-0.022890678863597202,0.344417522979072,2.5755384936995256
+Region x Season,Central Indo-Pacific,Summer,Maximum_Intensity,0.00439417615837338,0.934998803970505,1994,0.937759878305577,-0.19803385291548,0.0173433591624235,-0.011758899540613599,0.707382434960194,0.05937822936582588
+Region x Season,Central Indo-Pacific,Summer,Cumulative_Intensity,4.5345444470583205,4.67524608951221e-6,1997,2.71848004841981e-4,-0.733577792541915,0.620425293710382,7.0536223019203605,0.00723517610943606,-9.615370549153221
+Region x Season,Central Indo-Pacific,Autumn,Number_MHW_days,3.05515629255303,4.18134495928468e-6,1997,1.35259387509383e-4,-0.321620007531361,0.620425293710382,4.43699030925651,0.0141957438826601,-13.795753390198715
+Region x Season,Central Indo-Pacific,Autumn,Nevents,0.259971873672626,3.53231725622404e-5,1997,3.41064760475645e-4,-0.0437289651439196,0.685328555783378,0.274089657430051,0.0650313568334155,-6.2679200508855955
+Region x Season,Central Indo-Pacific,Autumn,Mean_Intensity,-0.0206198157104384,0.003451102206067,2006,0.00689005652430918,-0.0038030991737464997,0.72609516183253,-0.00189351958567365,0.964089361267912,0.4978885638178903
+Region x Season,Central Indo-Pacific,Autumn,Maximum_Intensity,-0.00426767362347902,0.735453618117175,2006,0.816045026285158,0.0258104977725128,0.27234271223111,0.0384815580193837,0.620425293710382,1.4909266128282541
+Region x Season,Central Indo-Pacific,Autumn,Cumulative_Intensity,3.73094415021059,1.71391179476134e-5,1997,2.71848004841981e-4,-0.59973066065357306,0.558350909375985,4.79618842010773,0.0298547537098258,-7.997237317966953
+Region x Season,Central Indo-Pacific,Winter,Number_MHW_days,3.2241686692133698,2.73597834616497e-8,1997,1.62215509764745e-5,0.280185701425243,0.752641982768185,4.93878562686813,0.00161645699040131,17.62682964100457
+Region x Season,Central Indo-Pacific,Winter,Nevents,0.274465339558474,2.16350804118724e-7,1997,3.98548101510796e-5,-0.00306697027465932,1,0.333854056343995,0.00471404499771517,-108.85467625899297
+Region x Season,Central Indo-Pacific,Winter,Mean_Intensity,-0.0118414014730436,0.0785255109265469,2002,0.0340850808429161,0.00234501173304633,0.739763807728124,0.0122317710086738,0.314524869050972,5.216080941643689
+Region x Season,Central Indo-Pacific,Winter,Maximum_Intensity,0.0166821253922278,0.0673677916589717,2009,0.133626527564337,-0.010623932933326601,0.514423658892605,0.0620371387437886,0.127203687631099,-5.839375976215178
+Region x Season,Central Indo-Pacific,Winter,Cumulative_Intensity,4.07964750626455,2.73597834616497e-8,1997,1.62215509764745e-5,0.33947584243582496,0.821891691251159,5.58719707845667,0.00161645699040131,16.45830536384303
+Region x Season,Central Indo-Pacific,Spring,Number_MHW_days,3.00953187883923,8.10670976081368e-6,1997,2.71848004841981e-4,-0.747012672187424,0.392314347285355,4.62457305126033,0.00831236559750444,-6.190755824420652
+Region x Season,Central Indo-Pacific,Spring,Nevents,0.264352590220583,3.53231725622404e-5,1997,2.71848004841981e-4,-0.09081762338487609,0.392314347285355,0.344908388053378,0.0471253041839123,-3.797813411078711
+Region x Season,Central Indo-Pacific,Spring,Mean_Intensity,-0.026148275061930498,0.00371846164139384,2000,0.031541331630213,-0.0084499326190531,0.779566064581155,-0.0217393194770824,0.259354892820018,2.5727210449068063
+Region x Season,Central Indo-Pacific,Spring,Maximum_Intensity,-0.0034001921241687202,0.788719489903205,1983,1,-0.0412298385946452,1,0.0038259877499619297,0.884582596276617,-0.09279657355871475
+Region x Season,Central Indo-Pacific,Spring,Cumulative_Intensity,3.7319552123636104,1.71391179476134e-5,1997,3.04607356703267e-4,-1.11892853955356,0.344417522979072,5.6985879955176,0.0161476232998164,-5.092897172674917
+Region x Season,Western Indo-Pacific,Summer,Number_MHW_days,3.19664938092399,3.33931978478272e-6,2004,3.607994892815e-4,0.947205764963493,0.290777169282727,10.4952068488235,0.0100042125859174,11.08017627957322
+Region x Season,Western Indo-Pacific,Summer,Nevents,0.308563609309345,8.10670976081368e-6,2004,5.03700028461228e-4,0.120854052391449,0.315572735963903,0.542684874463211,0.0280271134446502,4.490415205155409
+Region x Season,Western Indo-Pacific,Summer,Mean_Intensity,-0.00846135555235648,0.204097893101901,2007,0.203895942233581,0.0140437651573603,0.310625062395734,-0.00696768321596403,0.766525299523572,-0.4961406814975317
+Region x Season,Western Indo-Pacific,Summer,Maximum_Intensity,0.0374349540405011,0.0545528426741626,1996,0.22218134614896,-0.0460237301329242,0.692180772721877,0.026882024517975403,0.48060512898583,-0.5840905211362842
+Region x Season,Western Indo-Pacific,Summer,Cumulative_Intensity,4.25299969624485,4.18134495928468e-6,2004,4.5101162010841e-4,1.30617923185913,0.267327019788506,14.3400912306243,0.0124218457338865,10.978655058091492
+Region x Season,Western Indo-Pacific,Autumn,Number_MHW_days,3.13788695696751,4.67524608951221e-6,2004,4.5101162010841e-4,1.30973496693495,0.15382082239203,7.428922950735631,0.0582402695915613,5.672081099064525
+Region x Season,Western Indo-Pacific,Autumn,Nevents,0.26918767396544596,3.90863265608078e-5,1996,1,-0.21838314451222599,0.488422316622593,0.360285807048508,0.009297874290658,-1.6497876145763517
+Region x Season,Western Indo-Pacific,Autumn,Mean_Intensity,-0.0157000102172113,0.126938771346517,2005,0.215950410650648,0.00861757506657796,0.709843676469053,-0.00715364143098458,0.901649504895373,-0.8301223227783604
+Region x Season,Western Indo-Pacific,Autumn,Maximum_Intensity,0.0123825731888238,0.568066960851392,1996,1,-0.116579297081829,0.552615125062848,-0.008244652950068529,0.825547569129488,0.07072141586410034
+Region x Season,Western Indo-Pacific,Autumn,Cumulative_Intensity,3.7392325039725898,9.03592737954117e-6,2004,7.77913282277222e-4,1.72140258256987,0.15382082239203,9.124848070828,0.0690443198477512,5.30082164580326
+Region x Season,Western Indo-Pacific,Winter,Number_MHW_days,2.9558945274819797,4.18134495928468e-6,2005,2.71848004841981e-4,0.711307540394535,0.264337332508495,6.19402192619499,0.0435455862143218,8.70793795150745
+Region x Season,Western Indo-Pacific,Winter,Nevents,0.235418678900506,3.19057668312777e-5,2004,7.77913282277222e-4,0.0802642274934272,0.341717880045567,0.364484544009843,0.0955902198522511,4.541058394160593
+Region x Season,Western Indo-Pacific,Winter,Mean_Intensity,-0.010703256765368499,0.0785255109265469,2001,0.151326392670084,0.0241758785239721,0.22996907772364,-0.021026969991160403,0.238924218578746,-0.8697499853132812
+Region x Season,Western Indo-Pacific,Winter,Maximum_Intensity,0.0089210062947281,0.700619648328836,1985,1,0.07826554028506001,1,0.019598532850161502,0.255177833955966,0.25041075266048646
+Region x Season,Western Indo-Pacific,Winter,Cumulative_Intensity,3.35837377872443,7.26925623920422e-6,2005,3.81606298843534e-4,0.8854404721537761,0.309162694873583,7.14607796654247,0.0435455862143218,8.07064753789727
+Region x Season,Western Indo-Pacific,Spring,Number_MHW_days,3.57034227029613,1.33025647828961e-6,2004,1,0.8041402387021911,0.369209265032158,11.279711556535299,0.00801495735975086,14.027045300879015
+Region x Season,Western Indo-Pacific,Spring,Nevents,0.283673327082476,1.0066404498591e-5,2001,4.76671927020139e-4,0.00843103940709931,0.974117747355371,0.434100579279233,0.00498016799310635,51.48838219326801
+Region x Season,Western Indo-Pacific,Spring,Mean_Intensity,-0.023544298421801,0.00875481860343392,2001,0.00453911349621097,0.021619350097397502,0.455535411940753,-0.00798581608953168,0.739763807728124,-0.3693828007574103
+Region x Season,Western Indo-Pacific,Spring,Maximum_Intensity,2.54446997913902e-4,0.972117135841733,1985,0.661291765403669,-0.225467970808427,0.734095182319476,0.014061543049417102,0.255177833955966,-0.062366033627741964
+Region x Season,Western Indo-Pacific,Spring,Cumulative_Intensity,4.17963822957591,1.18289511703751e-6,2004,1.61446857245351e-4,0.9423022337091649,0.24521106099768,12.9434663155085,0.0124218457338865,13.736003006762916
+Region x Season,Tropical Eastern Pacific,Summer,Number_MHW_days,1.59332705151223,0.00937191589417117,1996,0.057472053352763,-1.65205432353447,0.488422316622593,2.19276158116676,0.20110491981248,-1.327293872804061
+Region x Season,Tropical Eastern Pacific,Summer,Nevents,0.154953538645267,0.0130768184281793,1996,0.0496843028361309,-0.32662884648444196,0.373053116251453,0.180505415162455,0.270427963910375,-0.5526315789473691
+Region x Season,Tropical Eastern Pacific,Summer,Mean_Intensity,-0.0102142642596601,0.506620569504461,1984,1,-0.7845297175088619,1,0.0023090086570794702,0.899954323586782,-0.0029431755171892364
+Region x Season,Tropical Eastern Pacific,Summer,Maximum_Intensity,0.0012922326292440002,0.990704029723175,1984,0.816045026285158,-2.00942646500665,1,0.0344543438721595,0.365371548508621,-0.017146357168161156
+Region x Season,Tropical Eastern Pacific,Summer,Cumulative_Intensity,2.2121517034137,0.010723675801035,1996,0.0711098333452607,-2.18813397829081,0.488422316622593,2.71884601938236,0.20110491981248,-1.2425409259016664
+Region x Season,Tropical Eastern Pacific,Autumn,Number_MHW_days,1.73185973356978,0.00711551760719677,1996,0.0874062765091126,-0.293106412239986,0.620690717075355,3.7084407770328296,0.0939032636730625,-12.652199413489729
+Region x Season,Tropical Eastern Pacific,Autumn,Nevents,0.169940511611476,0.00762845212038399,2011,0.0844900830278908,0.047536829831603095,0.372365302198027,0.19210933470861302,0.876269663627762,4.041273584905661
+Region x Season,Tropical Eastern Pacific,Autumn,Mean_Intensity,-0.0463351003595384,0.0438387871621092,2011,0.284652265197787,-0.019163482470148402,0.721226098500163,-0.172632392206783,0.350201389179296,9.008404003588506
+Region x Season,Tropical Eastern Pacific,Autumn,Maximum_Intensity,-0.0576833514902662,0.158606077060869,2002,0.816045026285158,-0.00920209295700057,0.927817769226368,-0.0929567922002271,0.314524869050972,10.101701062420744
+Region x Season,Tropical Eastern Pacific,Autumn,Cumulative_Intensity,2.01304019666316,0.0114624693753633,1996,0.0999299592124912,-0.48779639801255903,0.620690717075355,4.46196837845957,0.14574060364799,-9.147194191345157
+Region x Season,Tropical Eastern Pacific,Winter,Number_MHW_days,1.58068262456037,0.00937191589417117,2013,0.0554327598615169,0.35451816105503603,0.592551010082945,-1.7761159818921701,1,-5.009943571315216
+Region x Season,Tropical Eastern Pacific,Winter,Nevents,0.145001551654466,0.010027526446318,2013,0.0595754706426856,0.0488098892051011,0.54850039361213,-0.426541254287515,0.754454177494089,-8.738828570070538
+Region x Season,Tropical Eastern Pacific,Winter,Mean_Intensity,0.0233220482344285,0.448859820864049,2001,0.426311692910232,-0.103899761854994,0.205754101273055,-0.012582352433206899,0.927817769226368,0.12110087846752962
+Region x Season,Tropical Eastern Pacific,Winter,Maximum_Intensity,0.0341302171965102,0.310754560425242,2006,0.377655244490405,-0.0334124075649294,0.623812436069269,-0.0603043216146521,0.558350909375985,1.8048481390472804
+Region x Season,Tropical Eastern Pacific,Winter,Cumulative_Intensity,2.31213171261542,0.0158755471413791,2013,0.0904065837363741,0.6360582065514391,0.592551010082945,-8.53851891079042,0.916965236628864,-13.42411562785158
+Region x Season,Tropical Eastern Pacific,Spring,Number_MHW_days,0.9992629449213151,0.121240531890668,2001,0.38706219332008,-0.564176239782222,0.770287726473667,2.8969209023360696,0.414890939658485,-5.13478005286843
+Region x Season,Tropical Eastern Pacific,Spring,Nevents,0.09186038367747149,0.158606077060869,2001,0.284652265197787,-0.127729069967337,0.455535411940753,0.162992092143717,0.607708140108105,-1.2760767160161544
+Region x Season,Tropical Eastern Pacific,Spring,Mean_Intensity,-0.007994834542972739,0.735453618117175,1995,1,-0.187378124901799,0.324423690521579,-0.0829379291111606,0.243037989731207,0.4426233273207673
+Region x Season,Tropical Eastern Pacific,Spring,Maximum_Intensity,-0.00134160510246466,0.972117135841733,1983,1,4.10231985738977,1,0.0151112327720379,0.734826375076703,0.0036835822893763566
+Region x Season,Tropical Eastern Pacific,Spring,Cumulative_Intensity,1.27382840100029,0.212521935405059,2001,0.512633413483397,-0.985712679104416,0.673188747815444,2.29228869875551,0.566142727568169,-2.325514064441378
+Region x Season,Temperate South America,Summer,Number_MHW_days,1.3851208293123498,0.041456909675792,2004,0.0397172898660469,-1.53767726387988,0.398035689594248,1.2319786988431,0.544486056825911,-0.8011945860047129
+Region x Season,Temperate South America,Summer,Nevents,0.059178440121993796,0.212521935405059,2004,0.0999299592124912,-0.11338709179102201,0.15382082239203,-0.031766361361319204,0.820216749509663,0.2801585335645275
+Region x Season,Temperate South America,Summer,Mean_Intensity,0.050377011716393694,0.0169190539927849,2007,0.0172233894740792,0.00907946632416789,0.79139573650529,-0.0464879356049291,0.322299595871919,-5.120117630833286
+Region x Season,Temperate South America,Summer,Maximum_Intensity,0.10497036180894201,0.00320135424849328,2007,0.00254268226252346,0.0237754943264814,0.79139573650529,-0.0948708973638267,0.488422316622593,-3.9902807513094896
+Region x Season,Temperate South America,Summer,Cumulative_Intensity,2.54515489357805,0.048950238599653,2004,0.031541331630213,-2.84942808591055,0.290777169282727,2.13194448819241,0.649445669217466,-0.7482008402788435
+Region x Season,Temperate South America,Autumn,Number_MHW_days,2.04236548047374,0.00130034404577261,2003,0.0496843028361309,0.962223428624392,0.366879600646212,4.28862730558903,0.0802428781903364,4.456997385441041
+Region x Season,Temperate South America,Autumn,Nevents,0.11764627994121,0.0153683809892514,1996,0.241708324321636,0.00820941964699491,1,0.135709209997837,0.158345112567122,16.530913978494677
+Region x Season,Temperate South America,Autumn,Mean_Intensity,0.0611490164132955,0.0320380247845667,2006,0.078903022311416,0.022729648447428998,0.69134204811853,-0.0397315102150016,0.752641982768185,-1.7480037276817504
+Region x Season,Temperate South America,Autumn,Maximum_Intensity,0.12645778736788602,0.00358024633117444,2006,0.0158391991341563,0.0506111730455355,0.559304946892257,0.0336244326205637,0.752641982768185,0.6643677788363328
+Region x Season,Temperate South America,Autumn,Cumulative_Intensity,3.41010239820924,0.00130034404577261,2003,0.0461449073947383,1.24233198637596,0.429795272339556,8.26938054307201,0.0588622411086279,6.656337141567804
+Region x Season,Temperate South America,Winter,Number_MHW_days,1.68689738598905,0.0144097470876383,2013,0.0934927755868988,0.227223575077871,0.661499202661925,9.36875521364352,0.465512169874187,41.231440049443755
+Region x Season,Temperate South America,Winter,Nevents,0.111626038866747,0.0530881709554106,2014,0.269747901692371,0.014841505236815301,0.816214775108135,0.551116878301974,0.386476230771233,37.13348946135823
+Region x Season,Temperate South America,Winter,Mean_Intensity,0.018845484546579,0.455838491604328,2006,0.350399240399205,-0.025964460370774503,0.623812436069269,-0.171370832797611,0.0957466564738153,6.600207759006821
+Region x Season,Temperate South America,Winter,Maximum_Intensity,0.057998853312030904,0.155164858230445,2000,0.125431039071702,-0.122120983909522,0.26291056711835,0.0269593047889477,1,-0.22075898773401245
+Region x Season,Temperate South America,Winter,Cumulative_Intensity,2.66761919637142,0.0174553946868672,2013,0.156034835812443,0.434575885512741,0.592551010082945,5.37171372297676,0.251452186508022,12.36081867874206
+Region x Season,Temperate South America,Spring,Number_MHW_days,0.843652485556277,0.0673677916589717,2013,0.133626527564337,-0.13761429124434998,0.833032498952045,4.64340664433351,0.465512169874187,-33.74218333246078
+Region x Season,Temperate South America,Spring,Nevents,0.019908359307279903,0.568066960851392,2013,0.535836613375701,-0.0457922912506284,0.306952953358313,0.138384995299445,0.916965236628864,-3.022015092934359
+Region x Season,Temperate South America,Spring,Mean_Intensity,0.039369101065745093,0.0349586316177944,2006,0.021168586485092,-0.014978553184869499,0.69134204811853,-0.0470039418776207,0.685328555783378,3.1380829174543683
+Region x Season,Temperate South America,Spring,Maximum_Intensity,0.0833804766346152,0.0260579122316927,2006,0.0179552790081646,-0.0383081875248147,0.559304946892257,0.0143938132945317,0.892558465851561,-0.37573725682552567
+Region x Season,Temperate South America,Spring,Cumulative_Intensity,1.69113863115978,0.0191880165372879,2010,0.057472053352763,-0.123610764876357,0.895532903167044,10.7162779538418,0.114756734318649,-86.69372739955838
+Region x Season,Temperate Southern Africa,Summer,Number_MHW_days,3.2183100283503903,6.52504163118089e-7,1998,2.90297850230217e-5,1.42957917554285,0.108161354779969,2.7736667040400595,0.130262238783228,1.940198032744023
+Region x Season,Temperate Southern Africa,Summer,Nevents,0.27484525480280403,2.2985925845661e-7,1998,1.97268550760123e-5,0.156732562761826,0.0528611484384968,0.219895728220653,0.112293038561232,1.4029996341909563
+Region x Season,Temperate Southern Africa,Summer,Mean_Intensity,0.025627302873506903,0.158606077060869,2007,0.203895942233581,-0.013978132938745,0.596807379746766,-0.0154504862491045,0.921158650225025,1.1053326160805346
+Region x Season,Temperate Southern Africa,Summer,Maximum_Intensity,0.0923555368626224,0.00159166246328571,2006,0.0117457787762324,0.0239536943661295,0.623812436069269,0.09487711109960399,0.344417522979072,3.9608550417909703
+Region x Season,Temperate Southern Africa,Summer,Cumulative_Intensity,6.15164313623601,9.33866276907578e-7,2001,3.98548101510796e-5,2.92587192450184,0.0555929748188698,6.31487959093757,0.263872009473237,2.1582898205678447
+Region x Season,Temperate Southern Africa,Autumn,Number_MHW_days,1.9755297679111998,0.00140998031254549,2009,0.0397172898660469,0.8480057894790489,0.277209835069081,7.27093844601413,0.160555891435809,8.574161327932499
+Region x Season,Temperate Southern Africa,Autumn,Nevents,0.145439911585219,4.14394502511688e-4,1998,0.00547421453238227,-0.054467480047702,0.650463122950713,0.190240301239292,0.037140968119153,-3.492731829573935
+Region x Season,Temperate Southern Africa,Autumn,Mean_Intensity,0.026842091583731,0.1764995493274,2005,0.45745981505295,0.0167618872414298,0.823349012100195,-0.047931088412419,0.650463122950713,-2.8595281499060152
+Region x Season,Temperate Southern Africa,Autumn,Maximum_Intensity,0.0669580488787906,0.098013943032578,2006,0.203895942233581,-0.00366542544895015,0.944141999801307,-0.00176838047027077,1,0.482448898470236
+Region x Season,Temperate Southern Africa,Autumn,Cumulative_Intensity,3.4130811201425497,0.00226733407605266,2009,0.0496843028361309,1.2433353811252499,0.333009683431912,13.8625630113121,0.160555891435809,11.14949612289335
+Region x Season,Temperate Southern Africa,Winter,Number_MHW_days,1.97172221562692,0.00179206870543211,2004,0.0122650789913705,0.345946855028591,0.791699347271874,4.7561385805583605,0.17269436302932,13.748176956733097
+Region x Season,Temperate Southern Africa,Winter,Nevents,0.12169935059272399,0.00358024633117444,1997,0.0151852291851639,-0.156407669021191,0.162805449743693,0.162901689434603,0.0798387196458526,-1.0415198337399438
+Region x Season,Temperate Southern Africa,Winter,Mean_Intensity,0.063324841664004,0.00110429839540322,2002,0.0258987613300933,0.0695189029113471,0.1941266858781,0.047853897855497596,0.381032385484343,0.6883580702722327
+Region x Season,Temperate Southern Africa,Winter,Maximum_Intensity,0.128558887288202,1.75508018848194e-4,2006,0.00658266082902504,0.0845034379063217,0.128996011667487,0.113051263075299,0.499461203104015,1.3378303401173415
+Region x Season,Temperate Southern Africa,Winter,Cumulative_Intensity,3.15160445014945,9.35902417959698e-4,2004,0.0112464081375155,0.7915233200701589,0.561220207393617,7.475318196605359,0.17269436302932,9.44421725432267
+Region x Season,Temperate Southern Africa,Spring,Number_MHW_days,1.4419909051594202,0.00463735110046976,2002,0.0117457787762324,-0.173946470616501,0.739763807728124,2.03720934296111,0.22996907772364,-11.711702661978904
+Region x Season,Temperate Southern Africa,Spring,Nevents,0.10398983003897799,0.0197868633863355,2002,0.0187148456455305,-0.0473307385517275,0.566142727568169,0.06672486238581089,0.721176307474874,-1.4097574732092477
+Region x Season,Temperate Southern Africa,Spring,Mean_Intensity,0.047263241034095904,0.0169190539927849,2003,0.0736315197292213,0.014541045703751301,0.910195683619684,0.0360756010419851,0.401102572891941,2.480949566968097
+Region x Season,Temperate Southern Africa,Spring,Maximum_Intensity,0.09875561197104979,0.0014690324003254,2003,0.0112464081375155,0.066408572871443,0.463469280237699,0.0870584066933544,0.441488211013973,1.3109513264482642
+Region x Season,Temperate Southern Africa,Spring,Cumulative_Intensity,2.66309288912458,0.00135516234741214,2002,0.00573404234439216,0.20096529055167098,0.927817769226368,3.17920462680359,0.256144966603527,15.819670242937658
+Region x Season,Temperate Australasia,Summer,Number_MHW_days,3.4103032989766904,5.78398045100932e-7,1997,9.44709032399838e-5,-0.855512103988221,0.499461203104015,4.49019928868649,0.00161645699040131,-5.24855144392944
+Region x Season,Temperate Australasia,Summer,Nevents,0.24963980937603902,5.1243908223614e-7,2004,1.00340186236579e-4,0.102377258118143,0.204904423719751,0.414496287265875,0.00801495735975086,4.048714479025681
+Region x Season,Temperate Australasia,Summer,Mean_Intensity,0.0236895361089135,0.082563100854813,2009,0.133626527564337,-0.0132761423758152,0.621367632084042,0.051574382960633505,0.502158251500749,-3.8847416290582424
+Region x Season,Temperate Australasia,Summer,Maximum_Intensity,0.0870076793908405,0.00575726137449699,2008,0.00573404234439216,-0.012170423584931398,0.83486270753649,0.0792029535140052,0.742556821926578,-6.507822259536553
+Region x Season,Temperate Australasia,Summer,Cumulative_Intensity,6.2716024675994095,1.33025647828961e-6,1997,1.35259387509383e-4,-2.0334482456601997,0.392314347285355,8.81974833115872,0.00221706158117037,-4.3373360251395106
+Region x Season,Temperate Australasia,Autumn,Number_MHW_days,3.9260962724888198,1.18089049576528e-5,1997,1.13133244068631e-4,-0.44629536483687,0.752641982768185,4.4853451436073595,0.0650313568334155,-10.050171919770765
+Region x Season,Temperate Australasia,Autumn,Nevents,0.22871334983437402,3.02795693552031e-5,1997,1.81498829008239e-4,-0.0544316040824962,0.558350909375985,0.161492059973718,0.0798387196458526,-2.9668804125074404
+Region x Season,Temperate Australasia,Autumn,Mean_Intensity,0.0033361931448433703,0.833876178999114,2007,0.622041069116948,-0.0440623106100066,0.0640990542417592,0.00483426664792143,1,-0.10971432457796625
+Region x Season,Temperate Australasia,Autumn,Maximum_Intensity,0.0503404619443423,0.0590802450411771,2006,0.0172233894740792,-0.0877866468025823,0.183112292200364,0.0332836535166585,0.752641982768185,-0.3791425544651221
+Region x Season,Temperate Australasia,Autumn,Cumulative_Intensity,6.1930028597716404,3.02795693552031e-5,1997,1.43505183020671e-4,-0.8445139670206719,0.558350909375985,6.98203186605888,0.0972765497036966,-8.267514971588355
+Region x Season,Temperate Australasia,Winter,Number_MHW_days,3.46093887516217,6.1176057595258e-5,1997,8.89286682281711e-5,-0.32881070313188204,0.752641982768185,1.28313114348801,0.387514377839314,-3.9023399520342297
+Region x Season,Temperate Australasia,Winter,Nevents,0.21251246813698302,1.75508018848194e-4,1997,1.00340186236579e-4,-0.031464204272582896,0.821891691251159,0.035157067740465696,0.72609516183253,-1.1173671336446498
+Region x Season,Temperate Australasia,Winter,Mean_Intensity,0.0067864516050238095,0.470040487869819,2005,0.341633260984397,-0.0200472532057909,0.309162694873583,-0.00732541382053864,0.483755786496452,0.3654073575736851
+Region x Season,Temperate Australasia,Winter,Maximum_Intensity,0.049341548366869305,0.00905398677398316,2005,0.0165183111578533,0.00501630978504801,0.901297844156357,0.0258345462719593,0.901649504895373,5.1501098175722095
+Region x Season,Temperate Australasia,Winter,Cumulative_Intensity,4.64727699929223,7.4442749847355e-5,1997,7.87573142815474e-5,-0.37371214740544,0.821891691251159,2.42497787527728,0.498219385345291,-6.488892298827053
+Region x Season,Temperate Australasia,Spring,Number_MHW_days,2.58092298207103,2.42478472243562e-4,1997,8.20670060197707e-4,-0.947697154889885,0.344417522979072,2.63759974509587,0.141192972823796,-2.7831673140375086
+Region x Season,Temperate Australasia,Spring,Nevents,0.18526727991429298,0.0014690324003254,1997,0.0015375200361025,-0.0907403302670952,0.300427116749241,0.10813634996279299,0.46906326827448,-1.1917121046891983
+Region x Season,Temperate Australasia,Spring,Mean_Intensity,0.0138578212112582,0.289033542541944,2006,0.106732231782163,-0.051536412555421705,0.0335614117031147,0.0532324204188839,0.392314347285355,-1.0329089236011204
+Region x Season,Temperate Australasia,Spring,Maximum_Intensity,0.0639735512152651,0.0311273101113248,2006,0.0107662985677804,-0.043274477927749695,0.252460504250431,0.0663865484864629,0.620425293710382,-1.5340808639517434
+Region x Season,Temperate Australasia,Spring,Cumulative_Intensity,3.9379468190113,5.88075750708849e-4,1997,0.00125085746583484,-1.35295204209497,0.224134301960167,4.07658888941043,0.183112292200364,-3.0131067196573067
+Region x Season,Southern Ocean,Summer,Number_MHW_days,-0.923668081444718,0.0158755471413791,1997,0.0904065837363741,0.319907117978031,0.964089361267912,-1.07186448751154,0.27234271223111,-3.350549041503816
+Region x Season,Southern Ocean,Summer,Nevents,-0.09394777562986499,6.40746068765776e-4,1993,0.0112464081375155,0.13998222312949501,0.45067028531418,-0.0864639863268698,0.0747466430536485,-0.6176783336758663
+Region x Season,Southern Ocean,Summer,Mean_Intensity,0.010070188927699602,0.435026427854838,2016,0.121490416894221,-0.014704382623231298,0.139689326605406,0.20188594322117,0.707114231289961,-13.729644310412091
+Region x Season,Southern Ocean,Summer,Maximum_Intensity,0.0072926278583941495,0.7179633437776,2016,0.146733185683281,-0.0450219078449573,0.0570416028635743,0.390769580056086,0.707114231289961,-8.679542888359723
+Region x Season,Southern Ocean,Summer,Cumulative_Intensity,-0.888351525993007,0.0545528426741626,1993,0.110274821826928,4.00861699893969,0.243722284772174,-0.546948472402981,0.560903574193679,-0.13644318540475506
+Region x Season,Southern Ocean,Autumn,Number_MHW_days,-0.5913534531914459,0.0590802450411771,1995,0.146733185683281,0.3573873954333,0.826665969670155,-0.258328123604536,0.80246135962087,-0.7228238234069123
+Region x Season,Southern Ocean,Autumn,Nevents,-0.0759670510114708,0.00217933509580327,1994,0.0103047996961682,0.034726563662886,0.541049008790059,-0.0423352485288718,0.295055519313954,-1.219102728961276
+Region x Season,Southern Ocean,Autumn,Mean_Intensity,0.07805365099908751,4.33419595720512e-4,2005,1,-0.0381292438184404,0.106899675879221,0.211158779149449,0.00578179847845661,-5.53797447845862
+Region x Season,Southern Ocean,Autumn,Maximum_Intensity,0.104161109236475,7.27422348408971e-4,2005,4.5101162010841e-4,-0.0740751566438817,0.0782193445501054,0.296478809213153,0.00200529427710156,-4.002405430453328
+Region x Season,Southern Ocean,Autumn,Cumulative_Intensity,0.18695356723587497,0.470040487869819,2008,0.151326392670084,-0.590920402683798,0.0334712310063429,0.659065138089986,0.584070366945506,-1.115319652353673
+Region x Season,Southern Ocean,Winter,Number_MHW_days,-1.59054632689312,3.03767359775192e-4,2006,1.71195140776097e-4,-0.298735645257036,0.591154148374038,1.07807894971867,0.392314347285355,-3.608805868449602
+Region x Season,Southern Ocean,Winter,Nevents,-0.139918430531988,3.71143787635553e-5,2005,5.44667631596643e-5,-0.0182891443943511,0.67326236331124,-0.0298732464714424,0.650463122950713,1.6333867690753887
+Region x Season,Southern Ocean,Winter,Mean_Intensity,0.110965003799498,1.09549132198352e-4,2005,6.81783440063162e-6,-0.0278980778576666,0.0869881489183366,0.217558140381037,0.0528611484384968,-7.798320066744325
+Region x Season,Southern Ocean,Winter,Maximum_Intensity,0.15659086183457,1.20502109609396e-4,2005,5.95031597916844e-6,-0.0397819390909259,0.0782193445501054,0.302377897321636,0.0637866370479415,-7.600883823951336
+Region x Season,Southern Ocean,Winter,Cumulative_Intensity,0.196766056784414,0.155164858230445,2008,0.0554327598615169,-0.28475709617507,0.0953648097992249,0.736223601745047,0.324423690521579,-2.585444266830187
+Region x Season,Southern Ocean,Spring,Number_MHW_days,-1.52661958772971,5.39459142852818e-4,2005,1.42249747069264e-5,0.77368193861451,0.106899675879221,-0.963868049973703,0.433826840365301,-1.2458195052346364
+Region x Season,Southern Ocean,Spring,Nevents,-0.14430604139362302,1.52731108703671e-4,2005,3.67421926557414e-6,0.0533530355804179,0.11812849523842,-0.08733738203685511,0.303096532467549,-1.636971187988232
+Region x Season,Southern Ocean,Spring,Mean_Intensity,0.14338693405375,8.10670976081368e-6,2005,2.39501553842248e-5,-0.0240608293708287,0.413045886904529,0.362133062315014,8.48090438710058e-4,-15.050730659935747
+Region x Season,Southern Ocean,Spring,Maximum_Intensity,0.19701022319821598,1.1208555342445e-5,2005,4.51834518032562e-5,-0.0358262186200666,0.441931012011212,0.498996241855423,6.2854474891713e-4,-13.928241971256506
+Region x Season,Southern Ocean,Spring,Cumulative_Intensity,-0.0744653461871499,0.666404182984928,2002,0.674671314147312,0.48523301351742204,0.155824587862033,0.19800030807219,0.673188747815444,0.408052013272755
