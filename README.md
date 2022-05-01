@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/417355510.svg)](https://zenodo.org/badge/latestdoi/417355510)
+
 # Thoral2021_GlobalCoastalSeasonalMHW
 Supporting Data and Methodology for the paper Thoral et al. (2022) Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Realms, under review
 
