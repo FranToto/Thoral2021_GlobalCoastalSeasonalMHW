@@ -49,6 +49,11 @@ factpal <- colorFactor(hcl(seq(15,330,length=12),l = 65, c = 100), coastal_spal_
 ## Load coastline
 #coast <- ne_coastline(scale = "medium", returnclass = "sf") %>% 
 #    st_cast(.,"MULTIPOLYGON")
+# Issue with rnaturalearth package on Shinapps.io server
+# cf https://community.rstudio.com/t/shiny-app-works-on-rstudio-but-does-not-deploy/93962
+# So get shp file from http://www.naturalearthdata.com/downloads/50m-physical-vectors/
+
+coast <- st_read('ne_50m_land.shp')
 
 ## New facet label names for Metrics
 metrics.labs <- c(`Cumulative_Intensity` = "Cumulative Intensity (DegC Days)",
@@ -77,7 +82,7 @@ ui <- fluidPage(
                             leafletOutput("map", width=1600, height=800),
                             
                             tags$div(id="cite",
-                                     'Data compiled for ', tags$em('Thoral et al., 2022 - Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Regions.'), 'under review'
+                                     'Data compiled for ', tags$em('Thoral et al., 2022 - Unravelling Seasonal Trends in Coastal Marine Heatwave Metrics Across Global Biogeographical Regions.'), 'Published in Scientific Reports.'
                             )
                         ),
                         add_busy_spinner(timeout=1000,color='blue')
@@ -139,13 +144,13 @@ server <- function(input, output) {
             addPolygons(#data=coastal_spal_lonlat,
                         stroke = T, smoothFactor = 0.2, fillOpacity = 1,fillColor = ~factpal(REALM),
                        highlightOptions = highlightOptions(color = "white", weight = 2,
-                                                           bringToFront = TRUE),
+                                                           bringToFront = F),#T
                        #layerId = ~REALM,
                        popup = paste0(" Realm: ",coastal_spal_lonlat$REALM,"<br/>", popupGraph(my_list,width=800,height=500))) %>% 
                        #popup = paste0(" Realm: ",coastal_spal_lonlat$REALM, "<br/>  Province: ",coastal_spal_lonlat$PROVINCE)) %>% 
             
-            addProviderTiles("Esri.WorldPhysical") #%>%
-            #addPolygons(data=coast,fill='transparent')
+            addProviderTiles("Esri.WorldPhysical") %>%
+            addPolygons(data=coast,col='grey',fillOpacity = 1)
             #addPopupGraphs(my_list, type='html')
     })
     

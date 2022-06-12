@@ -5,9 +5,9 @@ account: frantoto
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 4876211
-bundleId: 5588267
+bundleId: 5999648
 url: https://frantoto.shinyapps.io/Global_Coastal_Seasonal_Trends_MHW_Metrics/
-when: 1645069960.21573
-lastSyncTime: 1645069960.21573
+when: 1654997342.68218
+lastSyncTime: 1654997342.68218
 asMultiple: FALSE
 asStatic: FALSE
